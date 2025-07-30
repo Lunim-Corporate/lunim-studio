@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import Packages from './pages/Packages';
 import Expertise from './pages/Expertise';
 import About from './pages/About';
-import AIAgentBuilder from './pages/AIAgentBuilder';
+import AIAgentBuilder from './pages/aiagentbuilder';
 import Contact from './pages/Contact';
 
 // Import your project pages
