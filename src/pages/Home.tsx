@@ -479,15 +479,15 @@ const App: React.FC = () => {
           </div>
           <div className="w-full md:w-1/2 text-white">
             <h2 className="text-3xl font-bold mb-4">
-              From Idea to Validated Prototype in 2 Weeks
+               Clarity in Days. Confidence for Years
             </h2>
             <p className="text-blue-500 font-medium mb-4">
-              Discover hidden opportunities in your business and have a working prototype ready in just two weeks.
+                Intensive design sprints to turn vision into reality.
             </p>
             <p className="text-white-400">
-              Our experts will collaborate with your team to uncover high-potential ideas.
-              Within the following week, we'll assess and then transform these ideas into
-              working prototypes. Let's build the future of your business together.
+              We don’t just do it for you, we equip you with the tools to innovate. By the end of our process, you will have more than just a prototype; you'll have a
+               unified team, a validated concept, and a clear, strategic 
+               plan to take your moonshot idea to market.
             </p>
           </div>
         </div>
