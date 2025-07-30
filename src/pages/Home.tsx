@@ -589,7 +589,7 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-white mb-4 text-center">Contact Us</h2>
           <p className="text-lg text-gray-300 mb-12 text-center">
-            Book a free consultation with our innovation experts. Let's discuss your project idea and how a design sprint can bring it to life.
+            Let's discuss your project and how we can bring it to life.
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
