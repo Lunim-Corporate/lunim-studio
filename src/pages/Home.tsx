@@ -172,29 +172,29 @@ const App: React.FC = () => {
   const expertiseAreas = [
     {
       icon: TargetIcon,
-      title: 'Design Thinking',
-      description: 'Human-centered approach to innovation',
+      title: ' Innovation Discovery',
+      description: 'Our discovery process cuts through the noise to uncover and adapt to high-impact opportunities, ensuring we are solving the right problem from day one.',
       bgColor: 'from-blue-400 to-blue-600',
       iconBg: 'bg-blue-500'
     },
     {
       icon: Timer,
-      title: 'AI Integration',
-      description: 'Cutting-edge artificial intelligence solutions',
+      title: ' Human-Centric Design',
+      description: ' Powerful technology is nothing without a flawless user experience. We facilitate your product being not only functional but beautiful, intuitive, and a delight to use.',
       bgColor: 'from-purple-400 to-purple-600',
       iconBg: 'bg-purple-500'
     },
     {
       icon: BrainIcon,
-      title: 'Web 3.0',
-      description: 'Decentralized web technologies',
+      title: 'AI Implementations',
+      description: 'Seamlessly integrate the power of AI into your workflows. Your unique challenges require a custom-fit solution. We build bespoke intelligent systems to level up your team’s capabilities - in days, not months.',
       bgColor: 'from-pink-400 to-pink-600',
       iconBg: 'bg-pink-500'
     },
     {
       icon: RocketIcon,
-      title: 'UX/UI Design',
-      description: 'Beautiful, intuitive user experiences',
+      title: 'Web3 & Decentralised Solutions',
+      description: ' Build the next generation of the internet. Our experts can guide you through the complexities of blockchain, smart contracts, and tokenisation to create novel, community-owned experiences.',
       bgColor: 'from-yellow-400 to-orange-500',
       iconBg: 'bg-yellow-500'
     }
