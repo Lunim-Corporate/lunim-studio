@@ -667,7 +667,7 @@ const App: React.FC = () => {
                 {/* Work Email */}
                 <div>
                   <label htmlFor="workEmail" className="block text-gray-300 text-sm font-semibold mb-2">
-                    Work Email
+                   Your Email *
                   </label>
                   <input
                     type="email"
@@ -680,27 +680,11 @@ const App: React.FC = () => {
                   />
                 </div>
 
-                {/* Company */}
-                <div>
-                  <label htmlFor="company" className="block text-gray-300 text-sm font-semibold mb-2">
-                    Company
-                  </label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    placeholder="Your company name"
-                    value={company}
-                    required
-                    onChange={(e) => setCompany(e.target.value)}
-                    className="w-full p-3 rounded-lg bg-[#1f2937] border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
-                  />
-                </div>
 
                 {/* Project Budget */}
                 <div>
                   <label htmlFor="projectBudget" className="block text-gray-300 text-sm font-semibold mb-2">
-                    Project Budget
+                    Project Budget 
                   </label>
                   <div className="relative">
                     <select
@@ -715,12 +699,13 @@ const App: React.FC = () => {
                       <option value="10k-50k">$10,000 - $50,000</option>
                       <option value="50k-100k">$50,000 - $100,000</option>
                       <option value=">100k">More than $100,000</option>
+                      <option value=">0">other</option>
                     </select>
                     {/* Custom arrow for select */}
                     <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
                       <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                      </svg>
+                      </svg> 
                     </div>
                   </div>
                 </div>
@@ -728,13 +713,13 @@ const App: React.FC = () => {
                 {/* Project Goals */}
                 <div className="md:col-span-2">
                   <label htmlFor="projectGoals" className="block text-gray-300 text-sm font-semibold mb-2">
-                    Project Goals
+                    Project Goals *
                   </label>
                   <textarea
                     id="projectGoals"
                     name="projectGoals"
                     rows={5}
-                    placeholder="Tell us about your project goals and what you'd like to achieve."
+                    placeholder="Tell us about your idea"
                     value={projectGoals}
                     onChange={(e) => setProjectGoals(e.target.value)}
                     className="w-full p-3 rounded-lg bg-[#1f2937] border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
@@ -765,7 +750,7 @@ const App: React.FC = () => {
                         <Loader2 className="mr-2 h-5 w-5 animate-spin" /> Sending...
                       </>
                     ) : (
-                      'Send Message'
+                      'Receive Reply Within 24 Hours'
                     )}
                   </button>
                 </div>
