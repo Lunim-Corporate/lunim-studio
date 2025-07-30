@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* In your global CSS file, e.g., src/index.css */
+summary::-webkit-details-marker {
+  display: none;
+}
+summary::marker {
+  display: none;
+}
