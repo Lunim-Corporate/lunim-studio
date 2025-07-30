@@ -658,6 +658,7 @@ const App: React.FC = () => {
                     name="fullName"
                     placeholder="Your full name"
                     value={fullName}
+                    required
                     onChange={(e) => setFullName(e.target.value)}
                     className="w-full p-3 rounded-lg bg-[#1f2937] border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
                   />
@@ -690,6 +691,7 @@ const App: React.FC = () => {
                     name="company"
                     placeholder="Your company name"
                     value={company}
+                    required
                     onChange={(e) => setCompany(e.target.value)}
                     className="w-full p-3 rounded-lg bg-[#1f2937] border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
                   />
