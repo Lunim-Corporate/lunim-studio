@@ -435,15 +435,14 @@ const App: React.FC = () => {
 
           <div>
             <h2 className="text-4xl font-bold text-white mb-4">
-              We Help Companies Like Yours Innovate and Grow
+                 Innovation Opportunities: Everywhere, For Everyone.
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed mb-6">
-              Our team of experts works closely with businesses just like yours to identify and implement custom innovation strategies.
-              We support you from the identification of use cases to the development and operation of groundbreaking digital products.
-            </p>
-            <button className="inline-flex items-center px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition">
-              Learn More <span className="ml-2">→</span>
-            </button>
+              Our team of experts in emerging tech work closely with businesses and individuals to identify and implement custom innovation strategies.
+             <br></br>
+              We combine creativity, cutting-edge technology, and agile practices to help you deliver solutions that not only meet today's needs but anticipate tomorrow's opportunities. 
+             </p>
+            
           </div>
         </div>
       </section>
