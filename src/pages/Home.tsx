@@ -650,7 +650,7 @@ const App: React.FC = () => {
                 {/* Full Name */}
                 <div>
                   <label htmlFor="fullName" className="block text-gray-300 text-sm font-semibold mb-2">
-                    Your full name
+                    Your full name *
                   </label>
                   <input
                     type="text"
