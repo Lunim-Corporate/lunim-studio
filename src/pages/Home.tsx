@@ -285,26 +285,26 @@ const App: React.FC = () => {
   // Data for the FAQ section
   const faqData = [
     {
-      question: 'How long does a Design Sprint typically last?',
-      answer: 'Placeholder text for the sprint duration answer. Our design sprints typically run for 5 days, with each day focusing on a specific phase of the innovation process.',
+      question: ' I’ve already completed part of this process- can you just help me with a specific section?',
+      answer: 'Modularity is at the heart of our process. Our kickoff workshop will assess the stage you are currently at, and to discover where you want to be. We will always tailor our services to provide help only in the necessary and relevant areas to add maximum value and avoid retreading old ground.',
     },
     {
-      question: 'How does a Design Sprint differ from traditional product development?',
-      answer: 'Traditional development often involves longer cycles and extensive documentation upfront. Design Sprints are highly focused, rapid workshops designed to validate ideas and build prototypes quickly, minimizing risk and maximizing learning.',
+      question: 'How much is it going to cost?',
+      answer: 'Project costs vary based on the scope, duration, and team required. A one-week Design Sprint has a different cost than a multi-week full process prototype & build engagement. We provide a detailed, fixed-price proposal after our initial workshop so there are no surprises.',
     },
     {
-      question: 'Is a Design Sprint suitable for all types of projects?',
-      answer: 'While highly versatile, Design Sprints are most effective for tackling specific, well-defined challenges, validating new product ideas, or solving critical design problems. They might be less suitable for long-term, incremental development without clear problem statements.',
+      question: 'Who from my team needs to be involved in the Design Sprint?',
+      answer: 'Our philosophy is simple: you are the experts in your business, we are the experts in the process. You will provide the primary decision-maker. Beyond that, we encourage bringing team members from relevant departments to participate in the process alongside us. Your team’s deep knowledge can be invaluable to fuel the sprint, and to understand and take over the process after we finish our collaboration.',
     },
     {
       question: 'What do we receive at the end of the sprint?',
       answer: 'At the end of a Design Sprint, you typically receive a validated prototype, user feedback, a clear understanding of your solution\'s viability, and a roadmap for next steps.',
     },
   ];
-  // --- END: Your existing data arrays ---
+  // --- END: of existing data arrays ---
 
 
-  // This is the function that handles form submission and interacts with Supabase
+  // This is the function that handles form submission and interacts with Supabase 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault(); // Prevent default form submission behavior
     setFormStatus('submitting');
