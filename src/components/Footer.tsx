@@ -112,7 +112,7 @@ const Footer: React.FC = () => {
                 to="/privacy-policy"
                 className="text-gray-400 hover:text-cyan-400 text-sm transition-colors duration-300"
               >
-                Privacy Policy.
+                Privacy Policy
               </Link>
             </div>
           </div>
