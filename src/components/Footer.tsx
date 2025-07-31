@@ -108,15 +108,11 @@ const Footer: React.FC = () => {
               © 2025 Lunim. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center space-x-6">
-              <a href="#" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors duration-300">
-                Terms of Service
-              </a>
+             
               <a href="#" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors duration-300">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors duration-300">
-                Cookie Policy
-              </a>
+              
             </div>
           </div>
         </div>
