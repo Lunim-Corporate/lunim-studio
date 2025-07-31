@@ -6,3 +6,10 @@ export default {
   },
   plugins: [],
 };
+
+module.exports = {
+  // ...
+  plugins: [
+    require('@tailwindcss/typography'), // Add this line
+  ],
+};

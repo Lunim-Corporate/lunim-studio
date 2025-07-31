@@ -1,8 +1,7 @@
-// Footer.tsx or Footer.jsx
-
 import React from 'react';
 import { Twitter, Facebook, Linkedin, Instagram, Bot, Users, Monitor, Cpu, Brain, Code } from 'lucide-react';
 import LunimLogo from '../assets/Lunim Logo.png'; // Adjust path as necessary
+import { Link } from 'react-router-dom'; // ADD: Import Link for internal routing
 
 const Footer: React.FC = () => {
   const socialLinks = [
@@ -108,15 +107,46 @@ const Footer: React.FC = () => {
               © 2025 Lunim. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center space-x-6">
-             
-              <a href="#" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors duration-300">
+              {/* Privacy Policy link */}
+              <Link
+                to="/privacy-policy"
+                className="text-gray-400 hover:text-cyan-400 text-sm transition-colors duration-300"
+              >
                 Privacy Policy
-              </a>
-              
+              </Link>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Styles (kept as is) */}
+      <style jsx>{`
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0px) rotate(0deg);
+          }
+          50% {
+            transform: translateY(-20px) rotate(180deg);
+          }
+        }
+
+        @keyframes float-slow {
+          0%, 100% {
+            transform: translateY(0px) rotate(0deg);
+          }
+          50% {
+            transform: translateY(-15px) rotate(10deg);
+          }
+        }
+
+        .animate-float {
+          animation: float infinite ease-in-out;
+        }
+
+        .animate-float-slow {
+          animation: float-slow infinite ease-in-out;
+        }
+      `}</style>
     </footer>
   );
 };
