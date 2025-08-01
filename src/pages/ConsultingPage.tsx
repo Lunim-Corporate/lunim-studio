@@ -58,8 +58,8 @@ const ConsultingPage: React.FC = () => {
               Inline validation, confirmation screens, and clearer CTA buttons enhance confidence
             </p>
           </div>
-        </div>
-      </section>
+        </div> 
+      </section>  
 
       {/* NEW: Outcome Section */}
       <section className="py-8 bg-gray-900">
