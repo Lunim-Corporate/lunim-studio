@@ -41,7 +41,7 @@ const Header: React.FC = () => {
           <div className="flex items-center flex-shrink-0"> {/* Added flex-shrink-0 */}
             <Link to="/" className="flex-shrink-0">
               <img
-                src="/src/assets/Lunim Logo.png"
+                src="../src/assets/Lunim Logo.png"
                 alt="Lunim Logo"
                 className="h-12 w-auto hover:scale-105 transition-transform duration-300"
               />
