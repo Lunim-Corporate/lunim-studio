@@ -2,15 +2,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// All image imports removed
+// Import the images with the corrected lowercase 'p' for pizzahut2.png
+import pizzaHutImage from '../assets/pizzahut.jpeg'; // Main hero background image
+import pizzahut2 from '../assets/pizzahut2.png'; // Image for the lower content section (now using lowercase 'p')
 
 const ConsultingPage: React.FC = () => {
   return (
     <div className="bg-gradient-to-b from-gray-900 to-black text-white min-h-screen pt-20">
-      {/* Hero Section - Image as background removed, now solid black */}
+      {/* Hero Section */}
       <section
         className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black"
-        // style={{ backgroundImage: `url(${pizzaHutImage})` }} // Removed image usage
+        style={{
+          backgroundImage: `url(${pizzaHutImage})`, // Uses pizzahut.jpeg for hero background
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       >
         <div className="absolute inset-0 bg-black opacity-60"></div> {/* Dark overlay for text readability */}
 
@@ -58,8 +64,8 @@ const ConsultingPage: React.FC = () => {
               Inline validation, confirmation screens, and clearer CTA buttons enhance confidence
             </p>
           </div>
-        </div> 
-      </section>  
+        </div>
+      </section>
 
       {/* NEW: Outcome Section */}
       <section className="py-8 bg-gray-900">
@@ -80,7 +86,7 @@ const ConsultingPage: React.FC = () => {
         </div>
       </section>
 
-      {/* UPDATED: Image and Content Section (Hero-like) - Image removed */}
+      {/* UPDATED: Image and Content Section (Hero-like) */}
       <section className="py-10 bg-gray-900">
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="bg-gray-800/50 border border-gray-700 rounded-3xl overflow-hidden shadow-lg flex flex-col md:flex-row items-center justify-between p-4 md:p-0">
@@ -95,10 +101,17 @@ const ConsultingPage: React.FC = () => {
               </p>
             </div>
 
-            {/* Image Block (right side) - Image and related styling removed */}
-            <div className="flex-1 w-full md:w-1/2 h-48 md:h-80 overflow-hidden rounded-2xl md:rounded-l-none bg-gray-700 flex items-center justify-center">
-               {/* This div will now just show a grey background instead of an image */}
-               <p className="text-gray-400 text-sm">Image Removed</p>
+            {/* Image Block (right side) */}
+            <div className="flex-1 w-full md:w-1/2 h-48 md:h-80 overflow-hidden rounded-2xl md:rounded-l-none">
+              <img
+                src={pizzahut2} // Using pizzahut2 (from pizzahut2.png with lowercase 'p')
+                alt="Pizza Hut Checkout Redesign"
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = "https://placehold.co/800x600/6A0DAD/ffffff?text=Image+Not+Found";
+                }}
+              />
             </div>
           </div>
         </div>
