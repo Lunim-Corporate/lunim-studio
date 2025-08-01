@@ -2,36 +2,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// Import the new images
-import pizzaHutImage from '../assets/pizzahut.jpeg'; // Main hero background image
-// IMPORTANT: This import expects the file to be named Pizzahut2.png now
- // Image for the lower content section (renamed in assets)
-import Pizzahut2 from '../assets/pizzahut2.png'; // Note the lowercase 'p'
+// All image imports removed
+
 const ConsultingPage: React.FC = () => {
   return (
     <div className="bg-gradient-to-b from-gray-900 to-black text-white min-h-screen pt-20">
-      {/* Hero Section */}
+      {/* Hero Section - Image as background removed, now solid black */}
       <section
         className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black"
-        style={{
-          backgroundImage: `url(${pizzaHutImage})`, // Uses pizzahut.jpeg for hero background
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
+        // style={{ backgroundImage: `url(${pizzaHutImage})` }} // Removed image usage
       >
-        {/* Dark Overlay for Text Readability */}
-        <div className="absolute inset-0 bg-black opacity-60"></div>
+        <div className="absolute inset-0 bg-black opacity-60"></div> {/* Dark overlay for text readability */}
 
         {/* Content */}
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight text-white drop-shadow-lg">
             Pizza Hut: Checkout Redesign
           </h1>
-
+          {/* Descriptive paragraph can be added here if desired */}
         </div>
       </section>
 
-      {/* NEW: Challenge Section - Reduced top padding (py-16 to py-8) */}
+      {/* NEW: Challenge Section */}
       <section className="py-8 bg-gray-900">
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold mb-8 text-white">The Challenge</h2>
@@ -49,7 +41,7 @@ const ConsultingPage: React.FC = () => {
         </div>
       </section>
 
-      {/* NEW: Solution Section - Reduced top padding (py-16 to py-8) */}
+      {/* NEW: Solution Section */}
       <section className="py-8 bg-black">
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold mb-8 text-white">Our Solution</h2>
@@ -88,7 +80,7 @@ const ConsultingPage: React.FC = () => {
         </div>
       </section>
 
-      {/* UPDATED: Image and Content Section (Hero-like) */}
+      {/* UPDATED: Image and Content Section (Hero-like) - Image removed */}
       <section className="py-10 bg-gray-900">
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="bg-gray-800/50 border border-gray-700 rounded-3xl overflow-hidden shadow-lg flex flex-col md:flex-row items-center justify-between p-4 md:p-0">
@@ -103,18 +95,10 @@ const ConsultingPage: React.FC = () => {
               </p>
             </div>
 
-            {/* Image Block (right side) */}
-            {/* Reduced height for the image to h-48 on mobile and md:h-80 on desktop */}
-            <div className="flex-1 w-full md:w-1/2 h-48 md:h-80 overflow-hidden rounded-2xl md:rounded-l-none">
-              <img
-                src={Pizzahut2} // IMPORTANT: Using Pizzahut2 now, assuming you renamed the file
-                alt="Pizza Hut Checkout Redesign"
-                className="w-full h-full object-cover"
-                onError={(e) => {
-                  e.currentTarget.onerror = null;
-                  e.currentTarget.src = "https://placehold.co/800x600/6A0DAD/ffffff?text=Image+Not+Found";
-                }}
-              />
+            {/* Image Block (right side) - Image and related styling removed */}
+            <div className="flex-1 w-full md:w-1/2 h-48 md:h-80 overflow-hidden rounded-2xl md:rounded-l-none bg-gray-700 flex items-center justify-center">
+               {/* This div will now just show a grey background instead of an image */}
+               <p className="text-gray-400 text-sm">Image Removed</p>
             </div>
           </div>
         </div>
