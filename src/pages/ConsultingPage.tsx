@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 
 // Import the new images
 import pizzaHutImage from '../assets/pizzahut.jpeg'; // Main hero background image
-import Pizzahuttwo from '../assets/Pizzahuttwo.png'; // Image for the lower content section
+// IMPORTANT: This import expects the file to be named Pizzahut2.png now
+import pizzahut2 from '../assets/pizzahut2.png'; // Image for the lower content section (renamed in assets)
 
 const ConsultingPage: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const ConsultingPage: React.FC = () => {
       <section
         className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black"
         style={{
-          backgroundImage: `url(${pizzaHutImage})`, // Use pizzahut.jpeg for hero background
+          backgroundImage: `url(${pizzaHutImage})`, // Uses pizzahut.jpeg for hero background
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -26,7 +27,7 @@ const ConsultingPage: React.FC = () => {
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight text-white drop-shadow-lg">
             Pizza Hut: Checkout Redesign
           </h1>
-          
+
         </div>
       </section>
 
@@ -106,7 +107,7 @@ const ConsultingPage: React.FC = () => {
             {/* Reduced height for the image to h-48 on mobile and md:h-80 on desktop */}
             <div className="flex-1 w-full md:w-1/2 h-48 md:h-80 overflow-hidden rounded-2xl md:rounded-l-none">
               <img
-                src={Pizzahuttwo} // Use Pizzahut2.png for this image block
+                src={pizzahut2} // IMPORTANT: Using Pizzahut2 now, assuming you renamed the file
                 alt="Pizza Hut Checkout Redesign"
                 className="w-full h-full object-cover"
                 onError={(e) => {
