@@ -91,12 +91,7 @@ const aiagentbuilder: React.FC = () => {
                 user’s profile automatically upon sign-up by scraping publicly 
                 available information from sites like LinkedIn, IMDb, and personal websites. 
               </p>
-              <Link
-                to="https://gofundmedao.netlify.app" // Assuming a demo page path
-                className="px-8 py-3 bg-white text-indigo-700 font-semibold rounded-full shadow-lg text-lg hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105 inline-block"
-              >
-                Try Demo
-              </Link>
+             
             </div>
 
             {/* Image Block (right side) */}
@@ -115,41 +110,6 @@ const aiagentbuilder: React.FC = () => {
         </div>
       </section>
 
-      {/* Call to Action Section */}
-      <section className="bg-gradient-to-r from-purple-800 to-indigo-800 py-20 px-4 md:px-8 text-center">
-        <h2 className="text-5xl font-bold mb-6">BE THE NEXT: GET YOUR IDEA DEVELOPED BY EXPERTS</h2>
-        <p className="text-xl text-gray-200 mb-10 max-w-3xl mx-auto">
-          Partner with Lunim Studio to unlock your full potential. Our strategic consulting
-          ensures your projects are not just built, but built for success.
-        </p>
-        <Link
-          to="/contact"
-          className="px-10 py-4 bg-white text-indigo-700 font-semibold rounded-full shadow-lg text-lg hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105"
-        >SHARE YOUR IDEA WITH US.
-        </Link>
-      </section>
-
-      {/* Optional: Back to Home Button */}
-      <div className="py-10 text-center">
-        <Link
-          to="/"
-          className="inline-flex items-center text-white-400 hover:text-white transition duration-300"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 mr-2"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fillRule="evenodd"
-              d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
-              clipRule="evenodd"
-            />
-          </svg>
-          See More Demos
-        </Link>
-      </div>
     </div>
   );
 };

@@ -2,8 +2,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// Import the new image
-import pizzaHutImage from '../assets/pizzahut.jpeg'; // Make sure this path is correct
+// Import the new images
+import pizzaHutImage from '../assets/pizzahut.jpeg'; // Main hero background image
+import Pizzahut2 from '../assets/Pizzahut2.png'; // Image for the lower content section
 
 const ConsultingPage: React.FC = () => {
   return (
@@ -26,7 +27,9 @@ const ConsultingPage: React.FC = () => {
             Pizza Hut: Checkout Redesign
           </h1>
           {/* Add a descriptive paragraph here for better hero section content */}
-         
+          <p className="mt-4 text-lg md:text-xl text-gray-200 drop-shadow-md">
+            Streamlining the ordering experience to boost conversions and customer satisfaction.
+          </p>
         </div>
       </section>
 
@@ -103,9 +106,10 @@ const ConsultingPage: React.FC = () => {
             </div>
 
             {/* Image Block (right side) */}
-            <div className="flex-1 w-full md:w-1/2 h-64 md:h-auto overflow-hidden rounded-2xl md:rounded-l-none">
+            {/* Reduced height for the image to h-48 on mobile and md:h-80 on desktop */}
+            <div className="flex-1 w-full md:w-1/2 h-48 md:h-80 overflow-hidden rounded-2xl md:rounded-l-none">
               <img
-                src={pizzaHutImage} // Use pizzahut.jpeg for this image block too
+                src={Pizzahut2} // Use Pizzahut2.png for this image block
                 alt="Pizza Hut Checkout Redesign"
                 className="w-full h-full object-cover"
                 onError={(e) => {
