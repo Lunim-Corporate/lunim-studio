@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 // Import the new images
 import pizzaHutImage from '../assets/pizzahut.jpeg'; // Main hero background image
-import Pizzahut2 from '../assets/Pizzahut2.png'; // Image for the lower content section
+import Pizzahuttwo from '../assets/Pizzahuttwo.png'; // Image for the lower content section
 
 const ConsultingPage: React.FC = () => {
   return (
@@ -106,7 +106,7 @@ const ConsultingPage: React.FC = () => {
             {/* Reduced height for the image to h-48 on mobile and md:h-80 on desktop */}
             <div className="flex-1 w-full md:w-1/2 h-48 md:h-80 overflow-hidden rounded-2xl md:rounded-l-none">
               <img
-                src={Pizzahut2} // Use Pizzahut2.png for this image block
+                src={Pizzahuttwo} // Use Pizzahut2.png for this image block
                 alt="Pizza Hut Checkout Redesign"
                 className="w-full h-full object-cover"
                 onError={(e) => {
