@@ -244,7 +244,7 @@ const App: React.FC = () => {
       description: 'We developed an AI-powered WhatsApp agent that helps professionals and service providers handle incoming messages—automating appointment bookings and answering customer questions in real time.',
       tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
       bgColor: 'bg-pink-700',
-      path: '/case-studies/ai-whatsapp-interactor'
+      path: '/ai-whatsapp-interactor'
     },
   ];
 

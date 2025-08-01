@@ -26,10 +26,7 @@ const ConsultingPage: React.FC = () => {
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight text-white drop-shadow-lg">
             Pizza Hut: Checkout Redesign
           </h1>
-          {/* Add a descriptive paragraph here for better hero section content */}
-          <p className="mt-4 text-lg md:text-xl text-gray-200 drop-shadow-md">
-            Streamlining the ordering experience to boost conversions and customer satisfaction.
-          </p>
+          
         </div>
       </section>
 
