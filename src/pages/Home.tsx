@@ -41,13 +41,6 @@ const App: React.FC = () => {
   const [projectGoals, setProjectGoals] = useState('');
   const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
-
-  // ADDED: State for the Lead Generation Form Modal
-  const [showLeadGenModal, setShowLeadGenModal] = useState(false);
-  // const HAS_VISITED_KEY = 'hasVisitedLunimStudio'; // Key for localStorage - Commented out
-
-
-  // Get the current location object from react-router-dom
   const location = useLocation();
 
   // --- START: Scroll to hash logic ---
@@ -61,33 +54,6 @@ const App: React.FC = () => {
     }
   }, [location]); // Re-run when location changes
   // --- END: Scroll to hash logic ---
-
-  // ADDED: Lead Generation Modal Logic - MODIFIED TO ALWAYS SHOW LOCALLY ---
-  useEffect(() => {
-    // This setTimeout will force the modal to pop up after 2 seconds
-    // every time this component mounts (e.g., on page refresh).
-    console.log('Setting timeout to show LeadGenForm...');
-    const timer = setTimeout(() => {
-      setShowLeadGenModal(true); // <--- This line forces the modal to show
-      console.log('LeadGenForm should now be visible.');
-    }, 2000); // 2-second delay
-
-    // Cleanup the timer if the component unmounts before the timeout fires
-    return () => clearTimeout(timer);
-  }, []); // Empty dependency array means this runs once on component mount
-  // --- END: Lead Generation Modal Logic ---
-
-
-  // ADDED: Functions for LeadGenForm callbacks
-  const handleLeadGenClose = () => {
-    setShowLeadGenModal(false);
-  };
-
-  const handleLeadGenSuccess = () => {
-    // Optionally, you can do something here after successful subscription
-    console.log('Lead generation form submitted successfully!');
-    // The modal will close automatically after success (see LeadGenForm.tsx)
-  };
 
 
   // --- START: Hero Section Data Fetching (NEW) ---
@@ -136,7 +102,8 @@ const App: React.FC = () => {
     };
 
     fetchHeroContent();
-  }, []); // Empty dependency array means this runs once on mount
+  }, []); 
+  // Empty dependency array means this runs once on mount
   // --- END: Hero Section Data Fetching ---
 
 
@@ -684,7 +651,23 @@ const App: React.FC = () => {
                     className="w-full p-3 rounded-lg bg-[#1f2937] border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
                   />
                 </div>
+                 
 
+                 {/* Company Name*/}
+                <div>
+                  <label htmlFor="workEmail" className="block text-gray-300 text-sm font-semibold mb-2">
+                   Company Name*
+                  </label>
+                  <input
+                    type="name"
+                    id="companyname"
+                    name="companyname"
+                    placeholder="company name"
+                    value={company}
+                    onChange={(e) => setCompany(e.target.value)}
+                    className="w-full p-3 rounded-lg bg-[#1f2937] border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
+                  />
+                </div>
 
                 {/* Project Budget */}
                 <div>
@@ -699,13 +682,14 @@ const App: React.FC = () => {
                       onChange={(e) => setProjectBudget(e.target.value)}
                       className="w-full p-3 rounded-lg bg-[#1f2937] border border-gray-700 text-white appearance-none focus:outline-none focus:border-blue-500"
                     >
+
                       <option value="">Estimated Budget </option>
-                      <option value="<10k">I don’t know yet</option>
-                      <option value="10k-50k">I’d rather not say</option>
-                      <option value="50k-100k">Less than £500</option>
-                      <option value=">100k">£1000 - £5000</option>
-                      <option value=">0">£5000 - £10000</option>
-                      <option value=">0">Above £10000</option>
+                      <option value=" ">I don’t know yet</option>
+                      <option value=" ">I’d rather not say</option>
+                      <option value="<£500">Less than £500</option>
+                      <option value="£1000 - £5000">£1000 - £5000</option>
+                      <option value="£5000-£10000 ">£5000 - £10000</option>
+                      <option value=">10000 ">Above £10000</option>
                 
                     </select>
                     {/* Custom arrow for select */}
@@ -738,7 +722,7 @@ const App: React.FC = () => {
                   <p className="md:col-span-2 text-center text-blue-400">Submitting...</p>
                 )}
                 {formStatus === 'success' && (
-                  <p className="md:col-span-2 text-center text-green-400">Form submitted successfully!</p>
+                  <p className="md:col-span-2 text-center text-green-400"> Submitted! </p>
                 )}
                 {formStatus === 'error' && (
                   <p className="md:col-span-2 text-center text-red-400">{errorMessage}</p>
