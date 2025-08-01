@@ -1,15 +1,15 @@
 import React from 'react';
-import { Twitter, Facebook, Linkedin, Instagram, Bot, Users, Monitor, Cpu, Brain, Code } from 'lucide-react';
-import LunimLogo from '../assets/Lunim Logo.png'; // Adjust path as necessary
+// Removed: import { Twitter, Facebook, Linkedin, Instagram, Bot, Users, Monitor, Cpu, Brain, Code } from 'lucide-react';
+// Removed: import LunimLogo from '../assets/Lunim Logo.png'; // Adjust path as necessary
 import { Link } from 'react-router-dom'; // ADD: Import Link for internal routing
 
 const Footer: React.FC = () => {
-  const socialLinks = [
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-  ];
+  // Removed: const socialLinks = [
+  // Removed:   { icon: Twitter, href: '#', label: 'Twitter' },
+  // Removed:   { icon: Facebook, href: '#', label: 'Facebook' },
+  // Removed:   { icon: Linkedin, href: '#', label: 'LinkedIn' },
+  // Removed:   { icon: Instagram, href: '#', label: 'Instagram' },
+  // Removed: ];
 
   const bubbles = Array.from({ length: 12 }, (_, i) => ({
     id: i,
@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
     x: Math.random() * 100,
   }));
 
-  const techIcons = [Bot, Users, Monitor, Cpu, Brain, Code];
+  // Removed: const techIcons = [Bot, Users, Monitor, Cpu, Brain, Code];
 
   return (
     <footer className="bg-[#212121] text-white relative overflow-hidden">
@@ -44,8 +44,8 @@ const Footer: React.FC = () => {
           />
         ))}
 
-        {/* Floating tech icons */}
-        {techIcons.map((Icon, index) => (
+        {/* Floating tech icons - Removed this block */}
+        {/* {techIcons.map((Icon, index) => (
           <div
             key={index}
             className="absolute animate-float-slow opacity-5"
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
           >
             <Icon className="w-12 h-12 text-cyan-400" />
           </div>
-        ))}
+        ))} */}
 
         {/* Subtle grid pattern */}
         <div
@@ -74,19 +74,21 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-          {/* Logo */}
-          <div className="flex-shrink-0 mb-6 md:mb-0">
+      {/* REDUCED vertical padding here from py-16 to py-4 */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 relative z-10"> {/* Adjusted py- value */}
+        {/* Adjusted content flex container to center remaining items if logo/socials are gone */}
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8"> {/* Changed justify-between to justify-center */}
+          {/* Logo - Removed this block */}
+          {/* <div className="flex-shrink-0 mb-6 md:mb-0">
             <img
               src={LunimLogo}
               alt="Lunim Logo"
               className="h-12 w-auto hover:scale-105 transition-transform duration-300"
             />
-          </div>
+          </div> */}
 
-          {/* Social Icons */}
-          <div className="flex space-x-4 mb-6 md:mb-0">
+          {/* Social Icons - Removed this block */}
+          {/* <div className="flex space-x-4 mb-6 md:mb-0">
             {socialLinks.map((social) => (
               <a
                 key={social.label}
@@ -97,16 +99,31 @@ const Footer: React.FC = () => {
                 <social.icon className="w-6 h-6" />
               </a>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-gray-700 mt-12 pt-8">
+        {/* REDUCED mt-12 pt-8 to mt-4 pt-4 for less vertical space */}
+        <div className="border-t border-gray-700 mt-4 pt-4"> {/* Adjusted margin-top and padding-top */}
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
               © 2025 Lunim. All rights reserved.
             </p>
-            <div className="flex flex-wrap justify-center space-x-6">
+            <div className="flex flex-col md:flex-row flex-wrap justify-center space-x-0 md:space-x-6 space-y-2 md:space-y-0"> {/* Adjusted spacing for vertical on small screens */}
+              {/* Phone Number */}
+              <a
+                href="tel:+442030519057" // 'tel:' for phone numbers
+                className="text-gray-400 hover:text-cyan-400 text-sm transition-colors duration-300"
+              >
+                Phone: 020 3051 9057
+              </a>
+              {/* Email */}
+              <a
+                href="mailto:hello@lunim.io" // 'mailto:' for email addresses
+                className="text-gray-400 hover:text-cyan-400 text-sm transition-colors duration-300"
+              >
+              Email:  hello@lunim.io
+              </a>
               {/* Privacy Policy link */}
               <Link
                 to="/privacy-policy"

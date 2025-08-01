@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import backgroundImageSrc from "../assets/background.png"; // Your default background image
 import { supabase } from '../supabaseClient';
 import axios from 'axios';
+import creativityimage from '../assets/creativityimage.jpg'; // Assuming it's in the assets folder and has no file extension in its name, which is unusual for image files.
 
 // Import all Lucide React icons you are using, including new ones
 import {
@@ -15,8 +16,6 @@ import {
   Users as UsersIcon
 } from 'lucide-react';
 
-import Chatbot from '../components/Chatbot';
-import LeadGenForm from '../components/LeadGenForm';
 
 // Define the type for your hero section content
 interface HeroContent {
@@ -395,15 +394,15 @@ const App: React.FC = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+                 <Link
+                   to="#contact-form" // Changed to point to the ID
+                   className="bg-gradient-to-r from-[#BBFEFF] to-[#BBFEFF] text-black px-8 py-4 rounded-[0.3rem] font-semibold hover:from-[#BBFEFF] hover:to-[#BBFEFF] transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
+>
+  <span>Get In Touch</span>
+  <ArrowRight className="w-5 h-5" />
+</Link>
                   <Link
-                    to="/contact"
-                    className="bg-gradient-to-r from-[#BBFEFF] to-[#BBFEFF] text-black px-8 py-4 rounded-[0.3rem] font-semibold hover:from-[#BBFEFF] hover:to-[#BBFEFF] transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
-                  >
-                    <span>Get In Touch</span>
-                    <ArrowRight className="w-5 h-5" />
-                  </Link>
-                  <Link
-                    to="/about"
+                    to="#expertiseSection"
                     className="bg-gradient-to-r from-[#BBFEFF] to-[#BBFEFF] text-black px-8 py-4 rounded-[0.3rem] font-semibold hover:from-[#BBFEFF] hover:to-[#BBFEFF] transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
                   >
                     <span>Our Expertise</span>
@@ -448,7 +447,7 @@ const App: React.FC = () => {
       </section>
 
       {/* New Expertise Cards Section */}
-      <section className="bg-[#0f172a] py-20">
+      <section id="expertiseSection" className="bg-[#0f172a] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-12">Our Expertise</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
@@ -471,27 +470,32 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Rapid Prototype Section */}
-      <section className="bg-black py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center md:items-start gap-10">
-          <div className="bg-[#1e293b] rounded-lg w-full md:w-1/2 flex justify-center items-center h-64">
-            <Users className="text-blue-500 w-20 h-20" />
-          </div>
-          <div className="w-full md:w-1/2 text-white">
-            <h2 className="text-3xl font-bold mb-4">
-               Clarity in Days. Confidence for Years
-            </h2>
-            <p className="text-blue-500 font-medium mb-4">
-                Intensive design sprints to turn vision into reality.
-            </p>
-            <p className="text-white-400">
-              We don’t just do it for you, we equip you with the tools to innovate. By the end of our process, you will have more than just a prototype; you'll have a
-               unified team, a validated concept, and a clear, strategic 
-               plan to take your moonshot idea to market.
-            </p>
-          </div>
+       <section className="bg-black py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center md:items-start gap-10">
+        {/* This div held the icon, now it will hold the image */}
+        <div className="bg-[#1e293b] rounded-lg w-full md:w-1/2 flex justify-center items-center h-64 overflow-hidden"> {/* Added overflow-hidden */}
+  {/* REPLACE ICON WITH IMAGE */}
+  <img
+    src={creativityimage}
+    alt="Rapid Prototype Illustration"
+    className="w-full h-full object-cover rounded-lg" // Changed object-contain to object-cover, removed p-4, added rounded-lg
+  />
+</div>
+        <div className="w-full md:w-1/2 text-white">
+          <h2 className="text-3xl font-bold mb-4">
+            Clarity in Days. Confidence for Years
+          </h2>
+          <p className="text-blue-500 font-medium mb-4">
+            Intensive design sprints to turn vision into reality.
+          </p>
+          <p className="text-white-400">
+            We don’t just do it for you, we equip you with the tools to innovate. By the end of our process, you will have more than just a prototype; you'll have a
+            unified team, a validated concept, and a clear, strategic
+            plan to take your moonshot idea to market.
+          </p>
         </div>
-      </section>
+      </div>
+    </section>
 
       <section className="bg-[#0f172a] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -584,44 +588,45 @@ const App: React.FC = () => {
       </section>
       {/* END: FAQ Section */}
 
-      {/* START: Contact Form Section */}
-      <section className="bg-[#0f172a] py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-4 text-center">Contact Us</h2>
-          <p className="text-lg text-gray-300 mb-12 text-center">
-            Let's discuss your project and how we can bring it to life.
-          </p>
+  
+    <section id="contact-form" className="bg-[#0f172a] py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold text-white mb-4 text-center">Contact Us</h2>
+        <p className="text-lg text-gray-300 mb-12 text-center">
+          Let's discuss your project and how we can bring it to life.
+        </p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-            {/* Left Column: Why Contact Us? and Office Hours */}
-            <div className="space-y-8">
-              {/* Why Contact Us? Section */}
-              <div className="bg-[#1a202c] p-8 rounded-lg shadow-xl border border-white">
-                <h3 className="text-xl font-bold text-white mb-6">Why Contact Us?</h3>
-                <ul className="space-y-4">
-                  <li className="flex items-start space-x-3">
-                    <Clock className="w-6 h-6 text-blue-400 flex-shrink-0" />
-                    <div>
-                      <p className="text-white font-semibold">Quick Response</p>
-                      <p className="text-gray-400 text-sm">We respond to all inquiries within 24 hours.</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <Mail className="w-6 h-6 text-green-400 flex-shrink-0" />
-                    <div>
-                      <p className="text-white font-semibold">Expert Consultation</p>
-                      <p className="text-gray-400 text-sm">Get advice from our experienced team.</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <Phone className="w-6 h-6 text-purple-400 flex-shrink-0" />
-                    <div>
-                      <p className="text-white font-semibold">Dedicated Support</p>
-                      <p className="text-gray-400 text-sm">Personal attention for every client.</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+          {/* Left Column: Why Contact Us? and Office Hours */}
+          <div className="space-y-8">
+            {/* Why Contact Us? Section */}
+            <div className="bg-[#1a202c] p-8 rounded-lg shadow-xl border border-white">
+              <h3 className="text-xl font-bold text-white mb-6">Why Contact Us?</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start space-x-3">
+                  <Clock className="w-6 h-6 text-blue-400 flex-shrink-0" />
+                  <div>
+                    <p className="text-white font-semibold">Quick Response</p>
+                    <p className="text-gray-400 text-sm">We respond to all inquiries within 24 hours.</p>
+                  </div>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <Mail className="w-6 h-6 text-blue-400 flex-shrink-0" />
+                  <div>
+                    <p className="text-white font-semibold">Expert Consultation</p>
+                    <p className="text-gray-400 text-sm">Get advice from our experienced team.</p>
+                  </div>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <Phone className="w-6 h-6 text-blue-400 flex-shrink-0" />
+                  <div>
+                    <p className="text-white font-semibold">Dedicated Support</p>
+                    <p className="text-gray-400 text-sm">Personal attention for every client.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
 
               {/* Office Hours Section */}
               <div className="bg-[#1a202c] p-8 rounded-lg shadow-xl border border-white">
@@ -643,11 +648,11 @@ const App: React.FC = () => {
               </div>
             </div>
 
-            {/* Right Column: Contact Form */}
-            <div className="bg-[#1a202c] p-8 rounded-lg shadow-xl border border-white">
-              <h3 className="text-xl font-bold text-white mb-6 text-center">Ready to Innovate?</h3>
-              <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-                {/* Full Name */}
+           {/* Right Column: Contact Form */}
+          <div className="bg-[#1a202c] p-8 rounded-lg shadow-xl border border-white">
+            <h3 className="text-xl font-bold text-white mb-6 text-center">Ready to Innovate?</h3>
+            <form id="innovateForm" onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left"> {/* <--- Added id="innovateForm" here */}
+              {/* Full Name */}
                 <div>
                   <label htmlFor="fullName" className="block text-gray-300 text-sm font-semibold mb-2">
                     Your full name *
@@ -694,12 +699,14 @@ const App: React.FC = () => {
                       onChange={(e) => setProjectBudget(e.target.value)}
                       className="w-full p-3 rounded-lg bg-[#1f2937] border border-gray-700 text-white appearance-none focus:outline-none focus:border-blue-500"
                     >
-                      <option value="">Select budget range</option>
-                      <option value="<10k">Less than $10,000</option>
-                      <option value="10k-50k">$10,000 - $50,000</option>
-                      <option value="50k-100k">$50,000 - $100,000</option>
-                      <option value=">100k">More than $100,000</option>
-                      <option value=">0">other</option>
+                      <option value="">Estimated Budget </option>
+                      <option value="<10k">I don’t know yet</option>
+                      <option value="10k-50k">I’d rather not say</option>
+                      <option value="50k-100k">Less than £500</option>
+                      <option value=">100k">£1000 - £5000</option>
+                      <option value=">0">£5000 - £10000</option>
+                      <option value=">0">Above £10000</option>
+                
                     </select>
                     {/* Custom arrow for select */}
                     <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
@@ -761,14 +768,7 @@ const App: React.FC = () => {
       </section>
       {/* END: Contact Form Section */}
 
-      {/* Chatbot and LeadGenForm outside main content div */}
-      <Chatbot />
-      {showLeadGenModal && (
-        <LeadGenForm
-          onClose={handleLeadGenClose}
-          onSuccess={handleLeadGenSuccess}
-        />
-      )}
+      
     </div>
   );
 };
