@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import pizzaHutImage from '../assets/pizzahut.jpeg'; // Main hero background image
 // IMPORTANT: This import expects the file to be named Pizzahut2.png now
  // Image for the lower content section (renamed in assets)
-
+import Pizzahut2 from '../assets/pizzahut2.png'; // Note the lowercase 'p'
 const ConsultingPage: React.FC = () => {
   return (
     <div className="bg-gradient-to-b from-gray-900 to-black text-white min-h-screen pt-20">
@@ -107,7 +107,7 @@ const ConsultingPage: React.FC = () => {
             {/* Reduced height for the image to h-48 on mobile and md:h-80 on desktop */}
             <div className="flex-1 w-full md:w-1/2 h-48 md:h-80 overflow-hidden rounded-2xl md:rounded-l-none">
               <img
-                src={pizzaHutImage} // IMPORTANT: Using Pizzahut2 now, assuming you renamed the file
+                src={Pizzahut2} // IMPORTANT: Using Pizzahut2 now, assuming you renamed the file
                 alt="Pizza Hut Checkout Redesign"
                 className="w-full h-full object-cover"
                 onError={(e) => {
