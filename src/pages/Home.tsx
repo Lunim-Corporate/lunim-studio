@@ -172,14 +172,14 @@ const App: React.FC = () => {
     {
       icon: TargetIcon,
       title: ' Innovation Discovery',
-      description: 'Our discovery process cuts through the noise to uncover and adapt to high-impact opportunities, ensuring we are solving the right problem from day one.',
+      description: 'Our discovery process cuts through the noise to uncover and adapt to high-impact opportunities, ensuring we\'re solving the right problems from day one.',
       bgColor: 'from-blue-400 to-blue-600',
       iconBg: 'bg-blue-500'
     },
     {
       icon: Timer,
       title: ' Human-Centric Design',
-      description: ' Powerful technology is nothing without a flawless user experience. We facilitate your product being not only functional but beautiful, intuitive, and a delight to use.',
+      description: 'Powerful technology is nothing without a flawless user experience. We help you deliver products that are not only functional but also beautiful, intuitive, and a delight to use.',
       bgColor: 'from-purple-400 to-purple-600',
       iconBg: 'bg-purple-500'
     },
@@ -193,7 +193,7 @@ const App: React.FC = () => {
     {
       icon: RocketIcon,
       title: 'Web3 & Decentralised Solutions',
-      description: ' Build the next generation of the internet. Our experts can guide you through the complexities of blockchain, smart contracts, and tokenisation to create novel, community-owned experiences.',
+      description: 'Build the next generation of the internet. Our experts can guide you through the complexities of blockchain, smart contracts, and tokenisation to create novel, community-owned experiences.',
       bgColor: 'from-yellow-400 to-orange-500',
       iconBg: 'bg-yellow-500'
     }
@@ -202,29 +202,29 @@ const App: React.FC = () => {
   const devProcess = [
     {
       icon: 1,
-      title: 'Kickoff Meeting',
-      description: 'Define goals and align expectations',
+      title: 'FREE Introductory Session',
+      description: 'A brief but intensive session to clarify your business goals, define the problem you’re solving, and align on your next steps.',
       bgColor: 'from-blue-400 to-blue-600',
       iconBg: 'bg-blue-500'
     },
     {
       icon: 2,
-      title: 'Design Sprint',
-      description: 'CIntensive 5-day innovation workshop',
+      title: 'Discovery Sprint',
+      description: 'An immersive and collaborative process where our teams ideate solutions and create the blueprint for your prototype.',
       bgColor: 'from-purple-400 to-purple-600',
       iconBg: 'bg-purple-500'
     },
     {
       icon: 3,
-      title: 'Rapid Prototyping',
-      description: 'Build and test your solution quickly',
+      title: 'Prototype Sprint',
+      description: 'Rapidly develop a clickable prototype that you can use to test your core assumptions with real users and stakeholders.',
       bgColor: 'from-pink-400 to-pink-600',
       iconBg: 'bg-pink-500'
     },
     {
       icon: 4,
-      title: 'MVP Handoff & Strategy',
-      description: 'Deliver your validated product and roadmap',
+      title: 'Build Sprint',
+      description: 'Build the core functional product, and outline the strategy and timeline of a successful launch.',
       bgColor: 'from-yellow-400 to-orange-500',
       iconBg: 'bg-yellow-500'
     }
@@ -284,20 +284,16 @@ const App: React.FC = () => {
   // Data for the FAQ section
   const faqData = [
     {
-      question: ' I’ve already completed part of this process- can you just help me with a specific section?',
-      answer: 'Modularity is at the heart of our process. Our kickoff workshop will assess the stage you are currently at, and to discover where you want to be. We will always tailor our services to provide help only in the necessary and relevant areas to add maximum value and avoid retreading old ground.',
+      question: 'I’ve already completed part of this process - can you just help me with a specific section?',
+      answer: 'Modularity is at the heart of our process. Our kickoff meeting will assess the stage you are currently at, and discover where you want to be. We will always tailor our services to provide help only in the necessary and relevant areas that add maximum value, and avoid retreading old ground.',
     },
     {
       question: 'How much is it going to cost?',
-      answer: 'Project costs vary based on the scope, duration, and team required. A one-week Design Sprint has a different cost than a multi-week full process prototype & build engagement. We provide a detailed, fixed-price proposal after our initial workshop so there are no surprises.',
+      answer: 'Project costs vary based on the scope, duration, and team required. A one-week Discovery Sprint has a different cost than a multi-week full process prototype & build engagement. We provide a detailed, fixed-price proposal after the initial session so there are no surprises.',
     },
     {
-      question: 'Who from my team needs to be involved in the Design Sprint?',
-      answer: 'Our philosophy is simple: you are the experts in your business, we are the experts in the process. You will provide the primary decision-maker. Beyond that, we encourage bringing team members from relevant departments to participate in the process alongside us. Your team’s deep knowledge can be invaluable to fuel the sprint, and to understand and take over the process after we finish our collaboration.',
-    },
-    {
-      question: 'What do we receive at the end of the sprint?',
-      answer: 'At the end of a Design Sprint, you typically receive a validated prototype, user feedback, a clear understanding of your solution\'s viability, and a roadmap for next steps.',
+      question: 'Who from my team needs to be involved in a Sprint?',
+      answer: 'Our philosophy is simple: you are the experts in your business, we are the experts in the process.\nYou will provide the primary decision-maker. Beyond that, we encourage bringing relevant team members to participate in the process alongside us. Your team’s deep knowledge can be invaluable fuel for the sprint, and allow you to more effectively take the process forward after we finish working together.',
     },
   ];
   // --- END: of existing data arrays ---
@@ -437,9 +433,9 @@ const App: React.FC = () => {
                  Innovation Opportunities: Everywhere, For Everyone.
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed mb-6">
-              Our team of experts in emerging tech work closely with businesses and individuals to identify and implement custom innovation strategies.
+              Our team of experts in emerging tech will work closely with you to identify and implement custom strategies.
              <br></br>
-              We combine creativity, cutting-edge technology, and agile practices to help you deliver solutions that not only meet today's needs but anticipate tomorrow's opportunities. 
+              We combine creativity, cutting-edge technology, and agile practices to help you not only meet today's needs but also anticipate tomorrow's opportunities. 
              </p>
             
           </div>
@@ -489,9 +485,7 @@ const App: React.FC = () => {
             Intensive design sprints to turn vision into reality.
           </p>
           <p className="text-white-400">
-            We don’t just do it for you, we equip you with the tools to innovate. By the end of our process, you will have more than just a prototype; you'll have a
-            unified team, a validated concept, and a clear, strategic
-            plan to take your moonshot idea to market.
+            We don’t just innovate for you, we equip you with the tools to do so yourself. By the end of our process, you will have more than just a product; you'll have a unified team, a validated concept, and a clear strategic plan to take your moonshot idea to market.
           </p>
         </div>
       </div>
@@ -499,7 +493,7 @@ const App: React.FC = () => {
 
       <section className="bg-[#0f172a] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-12">A Development Process That Delivers Results in Weeks, Not Years</h2>
+          <h2 className="text-3xl font-bold text-white mb-12">The Framework for Your Next Breakthrough</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
             {devProcess.map((item, index) => (
               <div
@@ -565,7 +559,7 @@ const App: React.FC = () => {
       {/* START: FAQ Section (Simplified with <details>) */}
       <section className="bg-[#0f172a] py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-12 text-center">Questions That Make Sense</h2>
+          <h2 className="text-3xl font-bold text-white mb-12 text-center">Frequently Asked Questions</h2>
 
           <div className="space-y-4">
             {faqData.map((item, index) => (
