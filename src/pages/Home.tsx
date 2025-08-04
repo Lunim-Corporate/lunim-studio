@@ -14,12 +14,13 @@ import {
   Target as TargetIcon,
   Brain as BrainIcon,
   Users as UsersIcon
+  
 } from 'lucide-react';
 
 
 // Define the type for your hero section content
 interface HeroContent {
-  id: number;
+ //add ID if you are retriving from database formerly superbase for this project. 
   hero_title_part1: string;
   hero_title_part2: string;
   hero_description: string;
@@ -41,13 +42,6 @@ const App: React.FC = () => {
   const [projectGoals, setProjectGoals] = useState('');
   const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
-
-  // ADDED: State for the Lead Generation Form Modal
-  const [showLeadGenModal, setShowLeadGenModal] = useState(false);
-  // const HAS_VISITED_KEY = 'hasVisitedLunimStudio'; // Key for localStorage - Commented out
-
-
-  // Get the current location object from react-router-dom
   const location = useLocation();
 
   // --- START: Scroll to hash logic ---
@@ -62,73 +56,28 @@ const App: React.FC = () => {
   }, [location]); // Re-run when location changes
   // --- END: Scroll to hash logic ---
 
-  // ADDED: Lead Generation Modal Logic - MODIFIED TO ALWAYS SHOW LOCALLY ---
-  useEffect(() => {
-    // This setTimeout will force the modal to pop up after 2 seconds
-    // every time this component mounts (e.g., on page refresh).
-    console.log('Setting timeout to show LeadGenForm...');
-    const timer = setTimeout(() => {
-      setShowLeadGenModal(true); // <--- This line forces the modal to show
-      console.log('LeadGenForm should now be visible.');
-    }, 2000); // 2-second delay
 
-    // Cleanup the timer if the component unmounts before the timeout fires
-    return () => clearTimeout(timer);
-  }, []); // Empty dependency array means this runs once on component mount
-  // --- END: Lead Generation Modal Logic ---
-
-
-  // ADDED: Functions for LeadGenForm callbacks
-  const handleLeadGenClose = () => {
-    setShowLeadGenModal(false);
-  };
-
-  const handleLeadGenSuccess = () => {
-    // Optionally, you can do something here after successful subscription
-    console.log('Lead generation form submitted successfully!');
-    // The modal will close automatically after success (see LeadGenForm.tsx)
-  };
-
-
-  // --- START: Hero Section Data Fetching (NEW) ---
+  // --- START: Hero Section Data Fetching (NEW) ---not fetching from database any longer, still kept database for future use.
+  //try catch methos will normally assume and call most data from superbase. 
   useEffect(() => {
     const fetchHeroContent = async () => {
-      setLoadingHero(true);
+      setLoadingHero(false);
       setErrorHero(null);
       try {
-        const { data, error } = await supabase
-          .from('hero_section_content')
-          .select('*')
-          .order('created_at', { ascending: false }) // Get the latest entry
-          .limit(1)
-          .single(); // Expect one row for hero content
-
-        if (error && error.code !== 'PGRST116') { // PGRST116 means no rows found (which is fine)
-          throw error;
-        }
-
-        if (data) {
-          setHeroContent(data);
-        } else {
-          // Fallback to default if no data found in Supabase
-          setHeroContent({
-            id: 0, // Dummy ID
-            hero_title_part1: 'Light the Way',
-            hero_title_part2: 'To Your Next Moonshot',
-            hero_description: 'We specialise in short burst collaborations that harness design thinking, AI integration, and Web 3.0 to power your next giant leap in digital innovation.',
-            background_image_url: backgroundImageSrc, // Your default local image
-          });
-        }
-      } catch (error: any) {
-        console.error('Error fetching hero content:', error);
-        setErrorHero(`Failed to load hero content: ${error.message}`);
-        // Fallback to default on error as well
         setHeroContent({
-          id: 0, // Dummy ID
+         
           hero_title_part1: 'Light the Way',
           hero_title_part2: 'To Your Next Moonshot',
-          hero_description: 'We specialise in short burst collaborations that harness design thinking, AI integration, and Web 3.0 to power your next giant leap in digital innovation.',
-          background_image_url: backgroundImageSrc, // Your default local image
+          hero_description: 'We specialise in design thinking, AI integration, and Web3 to power your next giant leap in digital innovation.',
+          background_image_url: backgroundImageSrc, // default local image
+        });
+      } catch (error: any) {
+        setHeroContent({
+    
+          hero_title_part1: 'Light the Way',
+          hero_title_part2: 'To Your Next Moonshot',
+          hero_description: 'We specialise in design thinking, AI integration, and Web3 to power your next giant leap in digital innovation.',
+          background_image_url: backgroundImageSrc, //  default local image
         });
       } finally {
         setLoadingHero(false);
@@ -136,66 +85,98 @@ const App: React.FC = () => {
     };
 
     fetchHeroContent();
-  }, []); // Empty dependency array means this runs once on mount
+  }, []); 
+  // Empty dependency array means this runs once on mount
   // --- END: Hero Section Data Fetching ---
 
 
   // --- START: Your existing data arrays (sprintPackages, expertiseAreas, devProcess, ourServices, faqData) ---
   const sprintPackages = [
-    {
-      icon: Search,
-      title: 'Discovery Sprint',
-      duration: '1-2 weeks',
-      description: 'Validate ideas and define project scope through research and strategic planning',
-      borderColor: 'from-cyan-400 to-cyan-600',
-      iconBg: 'from-cyan-400 to-cyan-600'
-    },
-    {
-      icon: Rocket,
-      title: 'Prototype Sprint',
-      duration: '2-4 weeks',
-      description: 'Build interactive prototypes and test the experience with target users',
-      borderColor: 'from-purple-400 to-purple-600',
-      iconBg: 'from-purple-400 to-purple-600'
-    },
-    {
-      icon: Target,
-      title: 'PoC Sprint',
-      duration: '4-8 weeks',
-      description: 'Develop a fully functioning proof of concept tested with real users',
-      borderColor: 'from-pink-400 to-pink-600',
-      iconBg: 'from-pink-400 to-pink-600'
-    }
-  ];
+  {
+    icon: Search,
+    title: 'Discovery Sprint',
+    duration: '1-2 weeks',
+    description: 'Validate ideas and define project scope through research and strategic planning',
+    borderColor: 'from-cyan-400 to-cyan-600', // You might want to adjust this too if it's a background border
+    iconBg: 'bg-[#BBFEFF]' // Changed to your desired background color
+  },
+  {
+    icon: Rocket,
+    title: 'Prototype Sprint',
+    duration: '2-4 weeks',
+    description: 'Build interactive prototypes and test the experience with target users',
+    borderColor: 'from-purple-400 to-purple-600', // You might want to adjust this too
+    iconBg: 'bg-[#BBFEFF]' // Changed
+  },
+  {
+    icon: Target,
+    title: 'PoC Sprint',
+    duration: '4-8 weeks',
+    description: 'Develop a fully functioning proof of concept tested with real users',
+    borderColor: 'from-pink-400 to-pink-600', // You might want to adjust this too
+    iconBg: 'bg-[#BBFEFF]' // Changed
+  }
+];
 
-  const expertiseAreas = [
+const expertiseAreas = [
+  {
+    icon: TargetIcon,
+    title: ' Innovation Discovery',
+    description: 'Our discovery process cuts through the noise to uncover and adapt to high-impact opportunities, ensuring we are solving the right problem from day one.',
+    bgColor: 'bg-[#BBFEFF]', // Changed to your desired background color
+    iconBg: 'bg-[#BBFEFF]' // Changed
+  },
+  {
+    icon: Timer,
+    title: ' Human-Centric Design',
+    description: ' Powerful technology is nothing without a flawless user experience. We facilitate your product being not only functional but beautiful, intuitive, and a delight to use.',
+    bgColor: 'bg-[#BBFEFF]', // Changed
+    iconBg: 'bg-[#BBFEFF]' // Changed
+  },
+  {
+    icon: BrainIcon,
+    title: 'AI Implementations',
+    description: 'Seamlessly integrate the power of AI into your workflows. Your unique challenges require a custom-fit solution. We build bespoke intelligent systems to level up your team’s capabilities - in days, not months.',
+    bgColor: 'bg-[#BBFEFF]', // Changed
+    iconBg: 'bg-[#BBFEFF]' // Changed
+  },
+  {
+    icon: RocketIcon,
+    title: 'Web3 & Decentralised Solutions',
+    description: ' Build the next generation of the internet. Our experts can guide you through the complexities of blockchain, smart contracts, and tokenisation to create novel, community-owned experiences.',
+    bgColor: 'bg-[#BBFEFF]', // Changed
+    iconBg: 'bg-[#BBFEFF]' // Changed
+  }
+];
+
+  const expertiseSection = [
     {
       icon: TargetIcon,
-      title: ' Innovation Discovery',
-      description: 'Our discovery process cuts through the noise to uncover and adapt to high-impact opportunities, ensuring we\'re solving the right problems from day one.',
-      bgColor: 'from-blue-400 to-blue-600',
-      iconBg: 'bg-blue-500'
+      title: 'Design Thinking:',
+      description: 'Deep empathy and human-centered approach to innovation',
+      bgColor: 'bg-[#BBFEFF]', // Changed
+    iconBg: 'bg-[#BBFEFF]' // Changed
     },
     {
       icon: Timer,
-      title: ' Human-Centric Design',
-      description: 'Powerful technology is nothing without a flawless user experience. We help you deliver products that are not only functional but also beautiful, intuitive, and a delight to use.',
-      bgColor: 'from-purple-400 to-purple-600',
-      iconBg: 'bg-purple-500'
+      title: 'Emerging Tech',
+      description: 'Our home is the cutting edge. We learn quickly, and powerfully.',
+       bgColor: 'bg-[#BBFEFF]', // Changed
+    iconBg: 'bg-[#BBFEFF]' // Changed
     },
     {
       icon: BrainIcon,
-      title: 'AI Implementations',
-      description: 'Seamlessly integrate the power of AI into your workflows. Your unique challenges require a custom-fit solution. We build bespoke intelligent systems to level up your team’s capabilities - in days, not months.',
-      bgColor: 'from-pink-400 to-pink-600',
-      iconBg: 'bg-pink-500'
+      title: 'Agile Methodologies:',
+      description: ' Fast value, high adaptability, and reduced waste.',
+       bgColor: 'bg-[#BBFEFF]', // Changed
+    iconBg: 'bg-[#BBFEFF]' // Changed
     },
     {
       icon: RocketIcon,
-      title: 'Web3 & Decentralised Solutions',
-      description: 'Build the next generation of the internet. Our experts can guide you through the complexities of blockchain, smart contracts, and tokenisation to create novel, community-owned experiences.',
-      bgColor: 'from-yellow-400 to-orange-500',
-      iconBg: 'bg-yellow-500'
+      title: 'UX/UI:',
+      description: 'Beautiful, intuitive user experiences are at the core of everything we do.',
+       bgColor: 'bg-[#BBFEFF]', // Changed
+    iconBg: 'bg-[#BBFEFF]' // Changed
     }
   ];
 
@@ -277,7 +258,7 @@ const App: React.FC = () => {
       description: 'We developed an AI-powered WhatsApp agent that helps professionals and service providers handle incoming messages—automating appointment bookings and answering customer questions in real time.',
       tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
       bgColor: 'bg-pink-700',
-      path: '/case-studies/ai-whatsapp-interactor'
+      path: '/ai-whatsapp-interactor'
     },
   ];
 
@@ -419,7 +400,7 @@ const App: React.FC = () => {
                 key={index}
                 className="bg-black rounded-2xl p-6 transition-all duration-300 transform hover:scale-105 border border-white border-opacity-20 hover:border-opacity-100 hover:shadow-2xl hover:shadow-white/20"
               >
-                <div className={`${area.iconBg} text-white w-14 h-14 rounded-xl flex items-center justify-center mb-4`}>
+                <div className={`${area.iconBg} text-black w-14 h-14 rounded-xl flex items-center justify-center mb-4`}>
                   <area.icon className="w-7 h-7" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">{area.title}</h3>
@@ -442,20 +423,20 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* New Expertise Cards Section */}
+      {/*Expertise Section */}
       <section id="expertiseSection" className="bg-[#0f172a] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-12">Our Expertise</h2>
+          <h2 className="text-3xl font-bold text-white mb-12">Core Expertise</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-            {expertiseAreas.map((item, index) => {
+            {expertiseSection.map((item, index) => {
               const Icon = item.icon;
               return (
                 <div
                   key={index}
                   className="flex flex-col items-center text-center group transition-transform duration-300 hover:scale-105"
                 >
-                  <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mb-4 transform transition-transform duration-300 group-hover:scale-125">
-                    <Icon className="w-7 h-7 text-white" />
+                  <div className="bg-[#BBFEFF] w-16 h-16 rounded-full flex items-center justify-center mb-4 transform transition-transform duration-300 group-hover:scale-125">
+                    <Icon className="w-7 h-7 text-black" />
                   </div>
                   <h3 className="text-white font-semibold text-lg mb-1">{item.title}</h3>
                   <p className="text-gray-400 text-sm max-w-xs">{item.description}</p>
@@ -481,7 +462,7 @@ const App: React.FC = () => {
           <h2 className="text-3xl font-bold mb-4">
             Clarity in Days. Confidence for Years
           </h2>
-          <p className="text-blue-500 font-medium mb-4">
+          <p className="text- font-medium mb-4">
             Intensive design sprints to turn vision into reality.
           </p>
           <p className="text-white-400">
@@ -500,8 +481,8 @@ const App: React.FC = () => {
                 key={index}
                 className="flex flex-col items-center text-center group transition-transform duration-300 hover:scale-105"
               >
-                <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mb-4 transform transition-transform duration-300 group-hover:scale-125">
-                  <span className="text-white text-2xl font-bold">{item.icon}</span>
+                <div className="bg-[#BBFEFF] w-16 h-16 rounded-full flex items-center justify-center mb-4 transform transition-transform duration-300 group-hover:scale-125">
+                  <span className="text-black text-2xl font-bold">{item.icon}</span>
                 </div>
                 <h3 className="text-white font-semibold text-lg mb-1">{item.title}</h3>
                 <p className="text-gray-400 text-sm max-w-xs">{item.description}</p>
@@ -678,7 +659,23 @@ const App: React.FC = () => {
                     className="w-full p-3 rounded-lg bg-[#1f2937] border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
                   />
                 </div>
+                 
 
+                 {/* Company Name*/}
+                <div>
+                  <label htmlFor="workEmail" className="block text-gray-300 text-sm font-semibold mb-2">
+                   Company Name*
+                  </label>
+                  <input
+                    type="name"
+                    id="companyname"
+                    name="companyname"
+                    placeholder="company name"
+                    value={company}
+                    onChange={(e) => setCompany(e.target.value)}
+                    className="w-full p-3 rounded-lg bg-[#1f2937] border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
+                  />
+                </div>
 
                 {/* Project Budget */}
                 <div>
@@ -693,13 +690,14 @@ const App: React.FC = () => {
                       onChange={(e) => setProjectBudget(e.target.value)}
                       className="w-full p-3 rounded-lg bg-[#1f2937] border border-gray-700 text-white appearance-none focus:outline-none focus:border-blue-500"
                     >
+
                       <option value="">Estimated Budget </option>
-                      <option value="<10k">I don’t know yet</option>
-                      <option value="10k-50k">I’d rather not say</option>
-                      <option value="50k-100k">Less than £500</option>
-                      <option value=">100k">£1000 - £5000</option>
-                      <option value=">0">£5000 - £10000</option>
-                      <option value=">0">Above £10000</option>
+                      <option value=" ">I don’t know yet</option>
+                      <option value=" ">I’d rather not say</option>
+                      <option value="<£500">Less than £500</option>
+                      <option value="£1000 - £5000">£1000 - £5000</option>
+                      <option value="£5000-£10000 ">£5000 - £10000</option>
+                      <option value=">10000 ">Above £10000</option>
                 
                     </select>
                     {/* Custom arrow for select */}
@@ -732,7 +730,7 @@ const App: React.FC = () => {
                   <p className="md:col-span-2 text-center text-blue-400">Submitting...</p>
                 )}
                 {formStatus === 'success' && (
-                  <p className="md:col-span-2 text-center text-green-400">Form submitted successfully!</p>
+                  <p className="md:col-span-2 text-center text-green-400"> Submitted! </p>
                 )}
                 {formStatus === 'error' && (
                   <p className="md:col-span-2 text-center text-red-400">{errorMessage}</p>
