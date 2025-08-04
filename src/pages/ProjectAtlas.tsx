@@ -75,43 +75,7 @@ Community Engagement
         </div>
       </section>
       
-<section className="py-10 bg-gray-900">
-  <div className="container mx-auto px-6 max-w-5xl">
-    {/* Main Card Container */}
-    {/* This container defines the overall shape and border */}
-    <div className="bg-gray-800/50 border border-gray-700 rounded-3xl shadow-lg flex flex-col md:flex-row items-center justify-between"> {/* Removed p-0, removed overflow-hidden - it's handled by image rounding */}
 
-      {/* Content Block (left side) */}
-      <div className="flex-1 p-8 md:p-12 text-center md:text-left">
-        <h3 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
-          Winner-Takes-All DAO for Community Grants
-        </h3>
-        <p className="text-gray-300 text-lg mb-8">
-          We built a decentralized application (dApp) that enables communities to run
-          transparent, competitive funding rounds. Using a winner-take-all voting model,
-          the top proposal each epoch receives the entire treasury allocation,
-          encouraging bold ideas and active participation.
-        </p>
-      </div>
-
-      {/* Image Block (right side) */}
-      {/* This div acts as a wrapper for the image */}
-      <div className="w-full md:w-1/2 h-64 md:h-auto"> {/* Removed flex-1 here as the image will dictate its own size within the flex container, removed overflow-hidden and rounded classes */}
-        <img
-          src={Doa} // Your image source
-          alt="Strategic Insights"
-          // Apply rounding directly to the image, and object-cover to make it fit
-          // The overflow-hidden on the parent is enough to crop any excess, but explicit rounding helps visual fidelity
-          className="w-full h-full object-cover rounded-tr-3xl rounded-br-3xl md:rounded-l-none"
-          onError={(e) => {
-            e.currentTarget.onerror = null;
-            e.currentTarget.src = "https://placehold.co/800x600/6A0DAD/ffffff?text=Image+Not+Found";
-          }}
-        />
-      </div>
-    </div>
-  </div>
-</section>
 
       </div>
   );

@@ -14,6 +14,7 @@ import {
   Target as TargetIcon,
   Brain as BrainIcon,
   Users as UsersIcon
+  
 } from 'lucide-react';
 
 
@@ -152,7 +153,7 @@ const App: React.FC = () => {
     {
       icon: TargetIcon,
       title: 'Design Thinking:',
-      description: ': Deep empathy and human-centered approach to innovation',
+      description: 'Deep empathy and human-centered approach to innovation',
       bgColor: 'from-blue-400 to-blue-600',
       iconBg: 'bg-blue-500'
     },

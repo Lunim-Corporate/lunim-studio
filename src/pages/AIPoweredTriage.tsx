@@ -75,35 +75,7 @@ const AIPoweredTriage: React.FC = () => {
         </div>
       </section>
 
-      {/* UPDATED: Image and Content Section (Hero-like) - this is where the image was originally used */}
-      <section className="py-10 bg-gray-900">
-        <div className="container mx-auto px-6 max-w-5xl">
-          <div className="bg-gray-800/50 border border-gray-700 rounded-3xl overflow-hidden shadow-lg flex flex-col md:flex-row items-center justify-between p-4 md:p-0">
-            {/* Content Block (left side) */}
-            <div className="flex-1 p-8 md:p-12 text-center md:text-left">
-              <h3 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
-                ThisIsNumberOne
-              </h3>
-              <p className="text-gray-300 text-lg mb-8">
-                ThisIsNumberOne is a pioneering multimedia NFT contract on the Stacks Network
-              </p>
-            </div>
-
-            {/* Image Block (right side) - this image will now be "Doa" if you rename it or keep the original name */}
-            <div className="flex-1 w-full md:w-1/2 h-64 md:h-auto overflow-hidden rounded-2xl md:rounded-l-none">
-              <img
-                src={thisIsNumber} // Still using thisIsNumber for this section as per your current code, or change to a different image if needed for this section specifically
-                alt="Strategic Insights"
-                className="w-full h-full object-cover"
-                onError={(e) => {
-                  e.currentTarget.onerror = null;
-                  e.currentTarget.src = "https://placehold.co/800x600/6A0DAD/ffffff?text=Image+Not+Found";
-                }}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </div>
   );
 };
