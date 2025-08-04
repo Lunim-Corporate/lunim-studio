@@ -92,91 +92,91 @@ const App: React.FC = () => {
 
   // --- START: Your existing data arrays (sprintPackages, expertiseAreas, devProcess, ourServices, faqData) ---
   const sprintPackages = [
-    {
-      icon: Search,
-      title: 'Discovery Sprint',
-      duration: '1-2 weeks',
-      description: 'Validate ideas and define project scope through research and strategic planning',
-      borderColor: 'from-cyan-400 to-cyan-600',
-      iconBg: 'from-cyan-400 to-cyan-600'
-    },
-    {
-      icon: Rocket,
-      title: 'Prototype Sprint',
-      duration: '2-4 weeks',
-      description: 'Build interactive prototypes and test the experience with target users',
-      borderColor: 'from-purple-400 to-purple-600',
-      iconBg: 'from-purple-400 to-purple-600'
-    },
-    {
-      icon: Target,
-      title: 'PoC Sprint',
-      duration: '4-8 weeks',
-      description: 'Develop a fully functioning proof of concept tested with real users',
-      borderColor: 'from-pink-400 to-pink-600',
-      iconBg: 'from-pink-400 to-pink-600'
-    }
-  ];
+  {
+    icon: Search,
+    title: 'Discovery Sprint',
+    duration: '1-2 weeks',
+    description: 'Validate ideas and define project scope through research and strategic planning',
+    borderColor: 'from-cyan-400 to-cyan-600', // You might want to adjust this too if it's a background border
+    iconBg: 'bg-[#BBFEFF]' // Changed to your desired background color
+  },
+  {
+    icon: Rocket,
+    title: 'Prototype Sprint',
+    duration: '2-4 weeks',
+    description: 'Build interactive prototypes and test the experience with target users',
+    borderColor: 'from-purple-400 to-purple-600', // You might want to adjust this too
+    iconBg: 'bg-[#BBFEFF]' // Changed
+  },
+  {
+    icon: Target,
+    title: 'PoC Sprint',
+    duration: '4-8 weeks',
+    description: 'Develop a fully functioning proof of concept tested with real users',
+    borderColor: 'from-pink-400 to-pink-600', // You might want to adjust this too
+    iconBg: 'bg-[#BBFEFF]' // Changed
+  }
+];
 
-  const expertiseAreas = [
-    {
-      icon: TargetIcon,
-      title: ' Innovation Discovery',
-      description: 'Our discovery process cuts through the noise to uncover and adapt to high-impact opportunities, ensuring we are solving the right problem from day one.',
-      bgColor: 'from-blue-400 to-blue-600',
-      iconBg: 'bg-blue-500'
-    },
-    {
-      icon: Timer,
-      title: ' Human-Centric Design',
-      description: ' Powerful technology is nothing without a flawless user experience. We facilitate your product being not only functional but beautiful, intuitive, and a delight to use.',
-      bgColor: 'from-purple-400 to-purple-600',
-      iconBg: 'bg-purple-500'
-    },
-    {
-      icon: BrainIcon,
-      title: 'AI Implementations',
-      description: 'Seamlessly integrate the power of AI into your workflows. Your unique challenges require a custom-fit solution. We build bespoke intelligent systems to level up your team’s capabilities - in days, not months.',
-      bgColor: 'from-pink-400 to-pink-600',
-      iconBg: 'bg-pink-500'
-    },
-    {
-      icon: RocketIcon,
-      title: 'Web3 & Decentralised Solutions',
-      description: ' Build the next generation of the internet. Our experts can guide you through the complexities of blockchain, smart contracts, and tokenisation to create novel, community-owned experiences.',
-      bgColor: 'from-yellow-400 to-orange-500',
-      iconBg: 'bg-yellow-500'
-    }
-  ];
+const expertiseAreas = [
+  {
+    icon: TargetIcon,
+    title: ' Innovation Discovery',
+    description: 'Our discovery process cuts through the noise to uncover and adapt to high-impact opportunities, ensuring we are solving the right problem from day one.',
+    bgColor: 'bg-[#BBFEFF]', // Changed to your desired background color
+    iconBg: 'bg-[#BBFEFF]' // Changed
+  },
+  {
+    icon: Timer,
+    title: ' Human-Centric Design',
+    description: ' Powerful technology is nothing without a flawless user experience. We facilitate your product being not only functional but beautiful, intuitive, and a delight to use.',
+    bgColor: 'bg-[#BBFEFF]', // Changed
+    iconBg: 'bg-[#BBFEFF]' // Changed
+  },
+  {
+    icon: BrainIcon,
+    title: 'AI Implementations',
+    description: 'Seamlessly integrate the power of AI into your workflows. Your unique challenges require a custom-fit solution. We build bespoke intelligent systems to level up your team’s capabilities - in days, not months.',
+    bgColor: 'bg-[#BBFEFF]', // Changed
+    iconBg: 'bg-[#BBFEFF]' // Changed
+  },
+  {
+    icon: RocketIcon,
+    title: 'Web3 & Decentralised Solutions',
+    description: ' Build the next generation of the internet. Our experts can guide you through the complexities of blockchain, smart contracts, and tokenisation to create novel, community-owned experiences.',
+    bgColor: 'bg-[#BBFEFF]', // Changed
+    iconBg: 'bg-[#BBFEFF]' // Changed
+  }
+];
 
   const expertiseSection = [
     {
       icon: TargetIcon,
       title: 'Design Thinking:',
       description: 'Deep empathy and human-centered approach to innovation',
-      bgColor: 'from-blue-400 to-blue-600',
-      iconBg: 'bg-blue-500'
+      bgColor: 'bg-[#BBFEFF]', // Changed
+    iconBg: 'bg-[#BBFEFF]' // Changed
     },
     {
       icon: Timer,
       title: 'Emerging Tech',
       description: 'Our home is the cutting edge. We learn quickly, and powerfully.',
-      bgColor: 'from-purple-400 to-purple-600',
-      iconBg: 'bg-purple-500'
+       bgColor: 'bg-[#BBFEFF]', // Changed
+    iconBg: 'bg-[#BBFEFF]' // Changed
     },
     {
       icon: BrainIcon,
       title: 'Agile Methodologies:',
       description: ' Fast value, high adaptability, and reduced waste.',
-      bgColor: 'from-pink-400 to-pink-600',
-      iconBg: 'bg-pink-500'
+       bgColor: 'bg-[#BBFEFF]', // Changed
+    iconBg: 'bg-[#BBFEFF]' // Changed
     },
     {
       icon: RocketIcon,
       title: 'UX/UI:',
       description: 'Beautiful, intuitive user experiences are at the core of everything we do.',
-      bgColor: 'from-yellow-400 to-orange-500',
-      iconBg: 'bg-yellow-500'
+       bgColor: 'bg-[#BBFEFF]', // Changed
+    iconBg: 'bg-[#BBFEFF]' // Changed
     }
   ];
 
@@ -404,7 +404,7 @@ const App: React.FC = () => {
                 key={index}
                 className="bg-black rounded-2xl p-6 transition-all duration-300 transform hover:scale-105 border border-white border-opacity-20 hover:border-opacity-100 hover:shadow-2xl hover:shadow-white/20"
               >
-                <div className={`${area.iconBg} text-white w-14 h-14 rounded-xl flex items-center justify-center mb-4`}>
+                <div className={`${area.iconBg} text-black w-14 h-14 rounded-xl flex items-center justify-center mb-4`}>
                   <area.icon className="w-7 h-7" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">{area.title}</h3>
@@ -439,8 +439,8 @@ const App: React.FC = () => {
                   key={index}
                   className="flex flex-col items-center text-center group transition-transform duration-300 hover:scale-105"
                 >
-                  <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mb-4 transform transition-transform duration-300 group-hover:scale-125">
-                    <Icon className="w-7 h-7 text-white" />
+                  <div className="bg-[#BBFEFF] w-16 h-16 rounded-full flex items-center justify-center mb-4 transform transition-transform duration-300 group-hover:scale-125">
+                    <Icon className="w-7 h-7 text-black" />
                   </div>
                   <h3 className="text-white font-semibold text-lg mb-1">{item.title}</h3>
                   <p className="text-gray-400 text-sm max-w-xs">{item.description}</p>
@@ -466,7 +466,7 @@ const App: React.FC = () => {
           <h2 className="text-3xl font-bold mb-4">
             Clarity in Days. Confidence for Years
           </h2>
-          <p className="text-blue-500 font-medium mb-4">
+          <p className="text- font-medium mb-4">
             Intensive design sprints to turn vision into reality.
           </p>
           <p className="text-white-400">
@@ -487,8 +487,8 @@ const App: React.FC = () => {
                 key={index}
                 className="flex flex-col items-center text-center group transition-transform duration-300 hover:scale-105"
               >
-                <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mb-4 transform transition-transform duration-300 group-hover:scale-125">
-                  <span className="text-white text-2xl font-bold">{item.icon}</span>
+                <div className="bg-[#BBFEFF] w-16 h-16 rounded-full flex items-center justify-center mb-4 transform transition-transform duration-300 group-hover:scale-125">
+                  <span className="text-black text-2xl font-bold">{item.icon}</span>
                 </div>
                 <h3 className="text-white font-semibold text-lg mb-1">{item.title}</h3>
                 <p className="text-gray-400 text-sm max-w-xs">{item.description}</p>
