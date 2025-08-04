@@ -148,6 +148,37 @@ const App: React.FC = () => {
     }
   ];
 
+  const expertiseSection = [
+    {
+      icon: TargetIcon,
+      title: 'Design Thinking:',
+      description: ': Deep empathy and human-centered approach to innovation',
+      bgColor: 'from-blue-400 to-blue-600',
+      iconBg: 'bg-blue-500'
+    },
+    {
+      icon: Timer,
+      title: 'Emerging Tech',
+      description: 'Our home is the cutting edge. We learn quickly, and powerfully.',
+      bgColor: 'from-purple-400 to-purple-600',
+      iconBg: 'bg-purple-500'
+    },
+    {
+      icon: BrainIcon,
+      title: 'Agile Methodologies:',
+      description: ' Fast value, high adaptability, and reduced waste.',
+      bgColor: 'from-pink-400 to-pink-600',
+      iconBg: 'bg-pink-500'
+    },
+    {
+      icon: RocketIcon,
+      title: 'UX/UI:',
+      description: 'Beautiful, intuitive user experiences are at the core of everything we do.',
+      bgColor: 'from-yellow-400 to-orange-500',
+      iconBg: 'bg-yellow-500'
+    }
+  ];
+
   const devProcess = [
     {
       icon: 1,
@@ -395,12 +426,12 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* New Expertise Cards Section */}
+      {/*Expertise Section */}
       <section id="expertiseSection" className="bg-[#0f172a] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-12">Our Expertise</h2>
+          <h2 className="text-3xl font-bold text-white mb-12">Core Expertise</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-            {expertiseAreas.map((item, index) => {
+            {expertiseSection.map((item, index) => {
               const Icon = item.icon;
               return (
                 <div
