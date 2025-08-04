@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-700 mt-4 pt-4"> {/* Adjusted margin-top and padding-top */}
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 Lunim. All rights reserved.
+              Risidio Ltd. T/A Lunim Innovation Studio
             </p>
             <div className="flex flex-col md:flex-row flex-wrap justify-center space-x-0 md:space-x-6 space-y-2 md:space-y-0"> {/* Adjusted spacing for vertical on small screens */}
               {/* Phone Number */}
@@ -115,14 +115,14 @@ const Footer: React.FC = () => {
                 href="tel:+442030519057" // 'tel:' for phone numbers
                 className="text-gray-400 hover:text-cyan-400 text-sm transition-colors duration-300"
               >
-                Phone: 020 3051 9057
+                020 3051 9057
               </a>
               {/* Email */}
               <a
                 href="mailto:hello@lunim.io" // 'mailto:' for email addresses
                 className="text-gray-400 hover:text-cyan-400 text-sm transition-colors duration-300"
               >
-              Email:  hello@lunim.io
+              hello@lunim.io
               </a>
               {/* Privacy Policy link */}
               <Link

@@ -121,15 +121,15 @@ const App: React.FC = () => {
 const expertiseAreas = [
   {
     icon: TargetIcon,
-    title: ' Innovation Discovery',
-    description: 'Our discovery process cuts through the noise to uncover and adapt to high-impact opportunities, ensuring we are solving the right problem from day one.',
+    title: 'Innovation Discovery',
+    description: 'Our discovery process cuts through the noise to uncover and adapt to high-impact opportunities, ensuring we\'re solving the right problems from day one.',
     bgColor: 'bg-[#BBFEFF]', // Changed to your desired background color
     iconBg: 'bg-[#BBFEFF]' // Changed
   },
   {
     icon: Timer,
-    title: ' Human-Centric Design',
-    description: ' Powerful technology is nothing without a flawless user experience. We facilitate your product being not only functional but beautiful, intuitive, and a delight to use.',
+    title: 'Human-Centric Design',
+    description: 'Powerful technology is nothing without a flawless user experience. We help you deliver products that are not only functional but also beautiful, intuitive, and a delight to use.',
     bgColor: 'bg-[#BBFEFF]', // Changed
     iconBg: 'bg-[#BBFEFF]' // Changed
   },
@@ -143,7 +143,7 @@ const expertiseAreas = [
   {
     icon: RocketIcon,
     title: 'Web3 & Decentralised Solutions',
-    description: ' Build the next generation of the internet. Our experts can guide you through the complexities of blockchain, smart contracts, and tokenisation to create novel, community-owned experiences.',
+    description: 'Build the next generation of the internet. Our experts can guide you through the complexities of blockchain, smart contracts, and tokenisation to create novel, community-owned experiences.',
     bgColor: 'bg-[#BBFEFF]', // Changed
     iconBg: 'bg-[#BBFEFF]' // Changed
   }
@@ -152,7 +152,7 @@ const expertiseAreas = [
   const expertiseSection = [
     {
       icon: TargetIcon,
-      title: 'Design Thinking:',
+      title: 'Design Thinking',
       description: 'Deep empathy and human-centered approach to innovation',
       bgColor: 'bg-[#BBFEFF]', // Changed
     iconBg: 'bg-[#BBFEFF]' // Changed
@@ -160,21 +160,21 @@ const expertiseAreas = [
     {
       icon: Timer,
       title: 'Emerging Tech',
-      description: 'Our home is the cutting edge. We learn quickly, and powerfully.',
+      description: 'Our home is the cutting edge. We learn quickly, and powerfully',
        bgColor: 'bg-[#BBFEFF]', // Changed
     iconBg: 'bg-[#BBFEFF]' // Changed
     },
     {
       icon: BrainIcon,
-      title: 'Agile Methodologies:',
-      description: ' Fast value, high adaptability, and reduced waste.',
+      title: 'Agile Methodologies',
+      description: 'Fast value, high adaptability, and reduced waste',
        bgColor: 'bg-[#BBFEFF]', // Changed
     iconBg: 'bg-[#BBFEFF]' // Changed
     },
     {
       icon: RocketIcon,
-      title: 'UX/UI:',
-      description: 'Beautiful, intuitive user experiences are at the core of everything we do.',
+      title: 'UX/UI',
+      description: 'Beautiful, intuitive user experiences are at the core of everything we do',
        bgColor: 'bg-[#BBFEFF]', // Changed
     iconBg: 'bg-[#BBFEFF]' // Changed
     }
@@ -215,22 +215,22 @@ const expertiseAreas = [
     {
       icon: 1,
       title: 'Winner-Takes-All DAO for Community Grants',
-      description: 'We built a decentralized application (dApp) that enables communities to run transparent, competitive funding rounds. ',
+      description: 'A decentralised application (dApp) that enables communities to run transparent, competitive funding rounds.',
       tags: ['Web 3.0', 'UI/UX Design'],
       bgColor: 'bg-indigo-700',
       path: '/case-studies/project-atlas'
     },
     {
       icon: 2,
-      title: 'Home of Stacks’ First Curated Multimedia NFT Collections',
-      description: 'ThisIsNumberOne is a pioneering multimedia NFT contract on the Stacks Network',
+      title: 'Stacks’ First Curated Multimedia NFT Collections',
+      description: 'Launching the Network’s First Music, Generative, and Mixed-Media Collections',
       tags: ['AI Integration', 'Design thinking'],
       bgColor: 'bg-emerald-700',
       path: '/case-studies/ai-powered-triage'
     },
     {
       icon: 3,
-      title: ' Pizza Hut: Checkout Redesign Streamlining Checkout for Returning Customers ',
+      title: 'Pizza Hut: Checkout Redesign',
       description: 'Expert guidance to navigate complex technical challenges.',
       tags: ['Tech Stack Audit', 'Scalability', 'Security'],
       bgColor: 'bg-rose-700',
@@ -238,8 +238,8 @@ const expertiseAreas = [
     },
     {
       icon: 4,
-      title: 'Optimising Sign-Up and Homepage for Parents',
-      description: 'ToucanBox is a subscription-based activity box for children aged 3–8.',
+      title: 'ToucanBox: Redesigning Sign-Up for Busy Parents',
+      description: 'How a User-Centric Overhaul Reduced Friction and Boosted Subscriber Conversion',
       tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
       bgColor: 'bg-cyan-700',
       path: '/services/maintenance'
@@ -247,15 +247,15 @@ const expertiseAreas = [
     {
       icon: 5,
       title: 'AI Agent Portfolio Builder',
-      description: 'We developed an AI-powered onboarding agent that builds a user’s profile automatically upon sign-up by scraping publicly available information from sites like LinkedIn, IMDb, and personal websites..',
+      description: 'Slashing Onboarding Friction with AI-Powered Data Sourcing',
       tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
       bgColor: 'bg-orange-700',
       path: '/aiagentbuilder'
     },
     {
       icon: 6,
-      title: 'AI WhatsApp Interactor',
-      description: 'We developed an AI-powered WhatsApp agent that helps professionals and service providers handle incoming messages—automating appointment bookings and answering customer questions in real time.',
+      title: 'AI WhatsApp Assistant',
+      description: 'Automated Assistant for Managing Bookings and Answering Questions 24/7',
       tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
       bgColor: 'bg-pink-700',
       path: '/ai-whatsapp-interactor'
@@ -265,7 +265,7 @@ const expertiseAreas = [
   // Data for the FAQ section
   const faqData = [
     {
-      question: 'I’ve already completed part of this process - can you just help me with a specific section?',
+      question: 'I’ve already completed part of this process—can you just help me with a specific section?',
       answer: 'Modularity is at the heart of our process. Our kickoff meeting will assess the stage you are currently at, and discover where you want to be. We will always tailor our services to provide help only in the necessary and relevant areas that add maximum value, and avoid retreading old ground.',
     },
     {
@@ -566,7 +566,7 @@ const expertiseAreas = [
   
     <section id="contact-form" className="bg-[#0f172a] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-white mb-4 text-center">Contact Us</h2>
+        <h2 className="text-3xl font-bold text-white mb-4 text-center">Ready to Innovate?</h2>
         <p className="text-lg text-gray-300 mb-12 text-center">
           Let's discuss your project and how we can bring it to life.
         </p>
@@ -640,7 +640,7 @@ const expertiseAreas = [
                     type="text"
                     id="fullName"
                     name="fullName"
-                    placeholder="Your full name"
+                    placeholder="Your Full Name"
                     value={fullName}
                     required
                     onChange={(e) => setFullName(e.target.value)}
@@ -657,7 +657,7 @@ const expertiseAreas = [
                     type="email"
                     id="workEmail"
                     name="workEmail"
-                    placeholder="your@company.com"
+                    placeholder="Your Email Address"
                     value={workEmail}
                     onChange={(e) => setWorkEmail(e.target.value)}
                     className="w-full p-3 rounded-lg bg-[#1f2937] border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
@@ -674,7 +674,7 @@ const expertiseAreas = [
                     type="name"
                     id="companyname"
                     name="companyname"
-                    placeholder="company name"
+                    placeholder="Your Company Name"
                     value={company}
                     onChange={(e) => setCompany(e.target.value)}
                     className="w-full p-3 rounded-lg bg-[#1f2937] border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
@@ -722,7 +722,7 @@ const expertiseAreas = [
                     id="projectGoals"
                     name="projectGoals"
                     rows={5}
-                    placeholder="Tell us about your idea"
+                    placeholder="Tell us about your idea…"
                     value={projectGoals}
                     onChange={(e) => setProjectGoals(e.target.value)}
                     className="w-full p-3 rounded-lg bg-[#1f2937] border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
