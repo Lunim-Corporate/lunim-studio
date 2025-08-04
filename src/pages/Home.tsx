@@ -589,7 +589,7 @@ const expertiseAreas = [
           <Clock className="w-6 h-6 text-[#BBFEFF] flex-shrink-0" />
           <div>
             <p className="text-white font-semibold">Quick Response</p>
-            <p className="text-gray-400 text-sm">We respond to all inquiries within 24 hours.</p>
+            <p className="text-gray-400 text-sm">We respond to all inquiries within 24 hours. </p>
           </div>
         </li>
         <li className="flex items-start space-x-3">
@@ -597,7 +597,7 @@ const expertiseAreas = [
           <Mail className="w-6 h-6 text-[#BBFEFF] flex-shrink-0" />
           <div>
             <p className="text-white font-semibold">Expert Consultation</p>
-            <p className="text-gray-400 text-sm">Get advice from our experienced team.</p>
+            <p className="text-gray-400 text-sm">Email: hello@lunim.io</p>
           </div>
         </li>
         <li className="flex items-start space-x-3">
@@ -605,7 +605,7 @@ const expertiseAreas = [
           <Phone className="w-6 h-6 text-[#BBFEFF] flex-shrink-0" />
           <div>
             <p className="text-white font-semibold">Dedicated Support</p>
-            <p className="text-gray-400 text-sm">Personal attention for every client.</p>
+            <p className="text-gray-400 text-sm">Phone: 020 3051 9057 </p>
           </div>
         </li>
       </ul>
