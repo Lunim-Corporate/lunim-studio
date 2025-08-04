@@ -19,7 +19,7 @@ import {
 
 // Define the type for your hero section content
 interface HeroContent {
-  id: number;
+ //add ID if you are retriving from database formerly superbase for this project. 
   hero_title_part1: string;
   hero_title_part2: string;
   hero_description: string;
@@ -56,45 +56,27 @@ const App: React.FC = () => {
   // --- END: Scroll to hash logic ---
 
 
-  // --- START: Hero Section Data Fetching (NEW) ---
+  // --- START: Hero Section Data Fetching (NEW) ---not fetching from database any longer, still kept database for future use.
+  //try catch methos will normally assume and call most data from superbase. 
   useEffect(() => {
     const fetchHeroContent = async () => {
-      setLoadingHero(true);
+      setLoadingHero(false);
       setErrorHero(null);
       try {
-        const { data, error } = await supabase
-          .from('hero_section_content')
-          .select('*')
-          .order('created_at', { ascending: false }) // Get the latest entry
-          .limit(1)
-          .single(); // Expect one row for hero content
-
-        if (error && error.code !== 'PGRST116') { // PGRST116 means no rows found (which is fine)
-          throw error;
-        }
-
-        if (data) {
-          setHeroContent(data);
-        } else {
-          // Fallback to default if no data found in Supabase
-          setHeroContent({
-            id: 0, // Dummy ID
-            hero_title_part1: 'Light the Way',
-            hero_title_part2: 'To Your Next Moonshot',
-            hero_description: 'We specialise in short burst collaborations that harness design thinking, AI integration, and Web 3.0 to power your next giant leap in digital innovation.',
-            background_image_url: backgroundImageSrc, // Your default local image
-          });
-        }
-      } catch (error: any) {
-        console.error('Error fetching hero content:', error);
-        setErrorHero(`Failed to load hero content: ${error.message}`);
-        // Fallback to default on error as well
         setHeroContent({
-          id: 0, // Dummy ID
+         
           hero_title_part1: 'Light the Way',
           hero_title_part2: 'To Your Next Moonshot',
-          hero_description: 'We specialise in short burst collaborations that harness design thinking, AI integration, and Web 3.0 to power your next giant leap in digital innovation.',
-          background_image_url: backgroundImageSrc, // Your default local image
+          hero_description: 'We specialise in design thinking, AI integration, and Web3 to power your next giant leap in digital innovation.',
+          background_image_url: backgroundImageSrc, // default local image
+        });
+      } catch (error: any) {
+        setHeroContent({
+    
+          hero_title_part1: 'Light the Way',
+          hero_title_part2: 'To Your Next Moonshot',
+          hero_description: 'We specialise in design thinking, AI integration, and Web3 to power your next giant leap in digital innovation.',
+          background_image_url: backgroundImageSrc, //  default local image
         });
       } finally {
         setLoadingHero(false);
