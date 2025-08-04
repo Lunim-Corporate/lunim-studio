@@ -571,36 +571,40 @@ const expertiseAreas = [
           Let's discuss your project and how we can bring it to life.
         </p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-          {/* Left Column: Why Contact Us? and Office Hours */}
-          <div className="space-y-8">
-            {/* Why Contact Us? Section */}
-            <div className="bg-[#1a202c] p-8 rounded-lg shadow-xl border border-white">
-              <h3 className="text-xl font-bold text-white mb-6">Why Contact Us?</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start space-x-3">
-                  <Clock className="w-6 h-6 text-blue-400 flex-shrink-0" />
-                  <div>
-                    <p className="text-white font-semibold">Quick Response</p>
-                    <p className="text-gray-400 text-sm">We respond to all inquiries within 24 hours.</p>
-                  </div>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <Mail className="w-6 h-6 text-blue-400 flex-shrink-0" />
-                  <div>
-                    <p className="text-white font-semibold">Expert Consultation</p>
-                    <p className="text-gray-400 text-sm">Get advice from our experienced team.</p>
-                  </div>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <Phone className="w-6 h-6 text-blue-400 flex-shrink-0" />
-                  <div>
-                    <p className="text-white font-semibold">Dedicated Support</p>
-                    <p className="text-gray-400 text-sm">Personal attention for every client.</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+  {/* Left Column: Why Contact Us? and Office Hours */}
+  <div className="space-y-8">
+    {/* Why Contact Us? Section */}
+    <div className="bg-[#1a202c] p-8 rounded-lg shadow-xl border border-white">
+      <h3 className="text-xl font-bold text-white mb-6">Why Contact Us?</h3>
+      <ul className="space-y-4">
+        <li className="flex items-start space-x-3">
+          {/* Changed text-blue-400 to text-[#BBFEFF] */}
+          <Clock className="w-6 h-6 text-[#BBFEFF] flex-shrink-0" />
+          <div>
+            <p className="text-white font-semibold">Quick Response</p>
+            <p className="text-gray-400 text-sm">We respond to all inquiries within 24 hours. </p>
+          </div>
+        </li>
+        <li className="flex items-start space-x-3">
+          {/* Changed text-blue-400 to text-[#BBFEFF] */}
+          <Mail className="w-6 h-6 text-[#BBFEFF] flex-shrink-0" />
+          <div>
+            <p className="text-white font-semibold">Expert Consultation</p>
+            <p className="text-gray-400 text-sm">Email: hello@lunim.io</p>
+          </div>
+        </li>
+        <li className="flex items-start space-x-3">
+          {/* Changed text-blue-400 to text-[#BBFEFF] */}
+          <Phone className="w-6 h-6 text-[#BBFEFF] flex-shrink-0" />
+          <div>
+            <p className="text-white font-semibold">Dedicated Support</p>
+            <p className="text-gray-400 text-sm">Phone: 020 3051 9057 </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+   
 
 
               {/* Office Hours Section */}
@@ -749,7 +753,7 @@ const expertiseAreas = [
                         <Loader2 className="mr-2 h-5 w-5 animate-spin" /> Sending...
                       </>
                     ) : (
-                      'Receive Reply Within 24 Hours'
+                      'Send Enquiries'
                     )}
                   </button>
                 </div>
