@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
       icon: Phone,
       title: 'Call Us',
       details: '+1 (555) 123-4567',
-      subtext: 'Mon-Fri 9AM-6PM EST',
+      subtext: 'Mon-Fri 9AM-6PM BST',
     },
     {
       icon: MapPin,

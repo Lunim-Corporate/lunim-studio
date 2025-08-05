@@ -621,11 +621,11 @@ const expertiseAreas = [
                 <ul className="space-y-3 text-gray-300">
                   <li className="flex justify-between items-center">
                     <span className="font-semibold">Monday - Friday</span>
-                    <span>9:00 AM - 6:00 PM EST</span>
+                    <span>9:00 AM - 6:00 PM BST</span>
                   </li>
                   <li className="flex justify-between items-center">
                     <span className="font-semibold">Saturday</span>
-                    <span>10:00 AM - 4:00 PM EST</span>
+                    <span>10:00 AM - 4:00 PM BST</span>
                   </li>
                   <li className="flex justify-between items-center">
                     <span className="font-semibold">Sunday</span>
