@@ -222,7 +222,7 @@ const expertiseAreas = [
     },
     {
       icon: 2,
-      title: 'Stacks’ First Curated Multimedia NFT Collections',
+      title: 'Stacks’ First Curated Multimedia NFT Collection',
       description: 'Launching the Network’s First Music, Generative, and Mixed-Media Collections',
       tags: ['AI Integration', 'Design thinking'],
       bgColor: 'bg-emerald-700',
@@ -265,7 +265,7 @@ const expertiseAreas = [
   // Data for the FAQ section
   const faqData = [
     {
-      question: 'I’ve already completed part of this process—can you just help me with a specific section?',
+      question: 'I’ve already completed part of this process - can you just help me with a specific section?',
       answer: 'Modularity is at the heart of our process. Our kickoff meeting will assess the stage you are currently at, and discover where you want to be. We will always tailor our services to provide help only in the necessary and relevant areas that add maximum value, and avoid retreading old ground.',
     },
     {
@@ -495,7 +495,7 @@ const expertiseAreas = [
       {/* New Services Section - Changed to 'Past Projects' and added ID */}
       <section id="past-projects" className="bg-[#0f172a] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-12">Past Projects</h2>
+          <h2 className="text-3xl font-bold text-white mb-12">Previous Work</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {ourServices.map((service, index) => (
               <Link
@@ -747,14 +747,14 @@ const expertiseAreas = [
                     disabled={formStatus === 'submitting'}
                     className="bg-[#BBFEFF] text-black px-8 py-4 rounded-lg font-semibold 
            transition-all duration-200 transform hover:scale-105 
-           shadow-lg hover:shadow-xl inline-flex items-center justify-center space-x-2"Added space-x-2 for icon
+           shadow-lg hover:shadow-xl inline-flex items-center justify-center space-x-2"
                   >
                     {formStatus === 'submitting' ? (
                       <>
                         <Loader2 className="mr-2 h-5 w-5 animate-spin" /> Sending...
                       </>
                     ) : (
-                      'Send Enquiries'
+                      'Send Enquiry'
                     )}
                   </button>
                 </div>

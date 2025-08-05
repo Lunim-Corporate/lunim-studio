@@ -16,9 +16,11 @@ const AIWhatsAppInteractorPage: React.FC = () => {
         {/* Content */}
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight text-white drop-shadow-lg">
-            Automated Assistant for Managing Bookings and Answering Questions
+            AI WhatsApp Assistant
           </h1>
-          
+          <h2 className="text-xl md:text-2xl font-semibold mb-4 text-gray-300">
+            Automated Assistant for Managing Bookings and Answering Questions 24/7
+          </h2>
         </div>
       </section>
 
@@ -28,8 +30,17 @@ const AIWhatsAppInteractorPage: React.FC = () => {
           <h2 className="text-3xl font-bold mb-8 text-white">The Challenge</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed">
-              For many small business owners and independent professionals, WhatsApp is the main channel for customer communication—but keeping up with every message is difficult when you're on the job or off the clock.
-              Late replies, missed messages, and lack of follow-up can result in lost opportunities, frustrated clients, and disorganized bookings.
+For independent professionals and small businesses, WhatsApp is a primary client communication channel. However, managing the constant flow of messages manually was leading to significant business challenges. The team needed a solution to:
+              <br />
+              <br />
+- Eliminate slow response times and missed messages
+              <br />
+- Prevent lost business opportunities due to delayed replies
+                <br />
+- Streamline the disorganised and time-consuming manual booking process
+                <br />
+- Provide 24/7 customer service without being tied to a phone
+
             </p>
           </div>
         </div>
@@ -39,21 +50,20 @@ const AIWhatsAppInteractorPage: React.FC = () => {
       <section className="py-8 bg-black">
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold mb-8 text-white">Our Solution</h2>
-          <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
-            <ul className="text-gray-300 text-lg leading-relaxed list-disc pl-5 space-y-2">
-              <li>
-                <span className="font-semibold text-white">Collects Appointment Details:</span> Gathers key information like service type, location, preferred time/date, and contact info.
-              </li>
-              <li>
-                <span className="font-semibold text-white">Answers Frequently Asked Questions:</span> Responds to common inquiries such as availability, services offered, working hours, and more.
-              </li>
-              <li>
-                <span className="font-semibold text-white">Sends Reminders & Follows Up:</span> Automatically follows up with leads who haven’t responded and sends appointment reminders when needed.
-              </li>
-              <li>
-                <span className="font-semibold text-white">Real-Time Assistant:</span> The AI agent acts as a real-time assistant to manage WhatsApp messages and keep customer communication seamless.
-              </li>
-            </ul>
+<div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
+            <p className="text-gray-300 text-lg leading-relaxed">
+              We developed an AI-powered WhatsApp agent that acts as a real-time assistant, automating conversations and managing client interactions. Key features include:
+              <br />
+              <br />
+              - Automated Appointment Booking: The agent intelligently captures necessary booking details, such as service type, preferred time/date, location and contact information.
+              <br />
+              - Instant FAQ Answering: Responds to common inquiries such as availability, services offered, working hours, and more.
+
+              <br />
+              - 24/7 Availability: The assistant operates around the clock, ensuring every customer inquiry receives an instant, professional response.
+              <br />
+              - Follow-Ups & Reminders: Automatically follows up with leads who haven’t responded and sends appointment reminders when needed.
+            </p>
           </div>
         </div>
       </section>
@@ -63,20 +73,13 @@ const AIWhatsAppInteractorPage: React.FC = () => {
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold mb-8 text-white">The Outcome</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
-            <ul className="text-gray-300 text-lg leading-relaxed list-disc pl-5 space-y-2">
-              <li>
-                <span className="font-semibold text-white">Saves 10+ Hours Weekly:</span> Frees up time by automating back-and-forth conversations during peak hours or off-days.
-              </li>
-              <li>
-                <span className="font-semibold text-white">Improved Customer Experience:</span> Fast, consistent responses lead to smoother communication and stronger relationships.
-              </li>
-              <li>
-                <span className="font-semibold text-white">Fewer Missed Messages:</span> Leads and appointment requests are handled instantly, reducing response time and boosting engagement.
-              </li>
-              <li>
-                <span className="font-semibold text-white">Always Available:</span> The agent responds 24/7, so you never miss a message—even outside working hours.
-              </li>
-            </ul>
+            <p className="text-gray-300 text-lg leading-relaxed">
+              - 10+ Weekly Manpower Hours Saved: Frees up significant time by automating the back-and-forth conversations required for bookings and inquiries.
+              <br />
+              - Improved Customer Experience: Fast, consistent responses lead to smoother communication and stronger relationships.
+              <br />
+              - Fewer Missed Messages: 24/7 uptime means leads and appointment requests are handled instantly, reducing response time and preventing lost opportunities.
+            </p>
           </div>
         </div>
       </section>
