@@ -73,7 +73,7 @@ const Header: React.FC = () => {
           {/* Right Group: Get In Touch button and Mobile menu button */}
           <div className="flex items-center flex-shrink-0"> {/* New container for right-aligned items */}
             {/* Desktop Button (remains as is) */}
-            <div className="hidden md:flex">
+            <div className="md:flex">
               <Link
                 to="#innovateForm"
                 className="px-4 py-2 rounded-md text-black bg-[#BBFEFF] hover:bg-cyan-300 transition-colors duration-300 font-semibold"
@@ -113,14 +113,6 @@ const Header: React.FC = () => {
                   {item.name}
                 </Link>
               ))}
-              {/* Mobile version of the "Get In Touch" button - this ensures it's available on mobile too */}
-              <Link
-                to="#innovateForm"
-                className="block px-3 py-2 text-base font-medium bg-[#BBFEFF] text-black rounded-md text-center hover:bg-cyan-300 transition-colors duration-300 mt-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Get In Touch
-              </Link>
             </div>
           </div>
         )}
