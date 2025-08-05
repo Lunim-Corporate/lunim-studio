@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /private/
+Allow: /
+
+Sitemap: https://studio.lunim.io/sitemap.xml
