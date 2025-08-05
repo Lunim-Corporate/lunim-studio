@@ -222,7 +222,7 @@ const expertiseAreas = [
     },
     {
       icon: 2,
-      title: 'Stacks’ First Curated Multimedia NFT Collections',
+      title: 'Stacks’ First Curated Multimedia NFT Collection',
       description: 'Launching the Network’s First Music, Generative, and Mixed-Media Collections',
       tags: ['AI Integration', 'Design thinking'],
       bgColor: 'bg-emerald-700',
@@ -495,7 +495,7 @@ const expertiseAreas = [
       {/* New Services Section - Changed to 'Past Projects' and added ID */}
       <section id="past-projects" className="bg-[#0f172a] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-12">Past Projects</h2>
+          <h2 className="text-3xl font-bold text-white mb-12">Previous Work</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {ourServices.map((service, index) => (
               <Link
@@ -754,7 +754,7 @@ const expertiseAreas = [
                         <Loader2 className="mr-2 h-5 w-5 animate-spin" /> Sending...
                       </>
                     ) : (
-                      'Send Enquiries'
+                      'Send Enquiry'
                     )}
                   </button>
                 </div>

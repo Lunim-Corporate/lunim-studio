@@ -21,7 +21,7 @@ const AIPoweredTriage: React.FC = () => {
         {/* Content */}
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight text-white drop-shadow-lg">
-            Home of Stacks’ First Curated Multimedia NFT Collections
+            Stacks’ First Curated Multimedia NFT Collection
           </h1>
           {/* Add a descriptive paragraph here for better hero section content if desired */}
           

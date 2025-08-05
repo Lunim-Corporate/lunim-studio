@@ -13,7 +13,7 @@ const Header: React.FC = () => {
 
   const menuItems = [
     { name: 'Home', path: '/' },
-    { name: 'Past Projects', path: '/#past-projects' },
+    { name: 'Previous Work', path: '/#past-projects' },
   ];
 
   const isActive = (path: string) => {
