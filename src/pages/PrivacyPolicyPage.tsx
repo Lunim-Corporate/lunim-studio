@@ -3,8 +3,8 @@ import React from 'react';
 const PrivacyPolicyPage: React.FC = () => {
   return (
     <div className="pt-24 md:pt-16 bg-[#0f172a] text-white min-h-screen p-8">
-      <div className="max-w-4xl mx-auto bg-[#1a202c] p-8 rounded-lg shadow-xl border border-white">
-        <h1 className="text-4xl font-bold mb-8 text-center text-cyan-400">Privacy Policy</h1>
+      <div className="max-w-4xl mx-auto p-8">
+        <h1 className="text-4xl font-bold mb-8 text-center" style={{ color: '#BBFEFF' }}>Privacy Policy</h1>
 
         <div className="prose prose-invert max-w-none text-gray-300 leading-relaxed">
           <p className="text-sm text-gray-400 mb-6"><strong>Last Updated: July 31, 2025</strong></p>
