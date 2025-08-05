@@ -121,15 +121,15 @@ const App: React.FC = () => {
 const expertiseAreas = [
   {
     icon: TargetIcon,
-    title: ' Innovation Discovery',
-    description: 'Our discovery process cuts through the noise to uncover and adapt to high-impact opportunities, ensuring we are solving the right problem from day one.',
+    title: 'Innovation Discovery',
+    description: 'Our discovery process cuts through the noise to uncover and adapt to high-impact opportunities, ensuring we\'re solving the right problems from day one.',
     bgColor: 'bg-[#BBFEFF]', // Changed to your desired background color
     iconBg: 'bg-[#BBFEFF]' // Changed
   },
   {
     icon: Timer,
-    title: ' Human-Centric Design',
-    description: 'Powerful technology is nothing without a flawless user experience. We facilitate your product being not only functional but beautiful, intuitive, and a delight to use.',
+    title: 'Human-Centric Design',
+    description: 'Powerful technology is nothing without a flawless user experience. We help you deliver products that are not only functional but also beautiful, intuitive, and a delight to use.',
     bgColor: 'bg-[#BBFEFF]', // Changed
     iconBg: 'bg-[#BBFEFF]' // Changed
   },
@@ -167,7 +167,7 @@ const expertiseAreas = [
     {
       icon: BrainIcon,
       title: 'Agile Methodologies',
-      description: ' Fast value, high adaptability, and reduced waste',
+      description: 'Fast value, high adaptability, and reduced waste',
        bgColor: 'bg-[#BBFEFF]', // Changed
     iconBg: 'bg-[#BBFEFF]' // Changed
     },
@@ -184,28 +184,28 @@ const expertiseAreas = [
     {
       icon: 1,
       title: 'FREE Introductory Session',
-      description: 'A brief but intensive session to clarify your business goals, define the problem you’re solving, and align on your next steps.        (1 hour)',
+      description: 'A brief but intensive session to clarify your business goals, define the problem you’re solving, and align on your next steps.',
       bgColor: 'from-blue-400 to-blue-600',
       iconBg: 'bg-blue-500'
     },
     {
       icon: 2,
       title: 'Discovery Sprint',
-      description: ' An immersive and collaborative process where our teams ideate solutions and create the blueprint for your prototype.   (1 week)',
+      description: 'An immersive and collaborative process where our teams ideate solutions and create the blueprint for your prototype.',
       bgColor: 'from-purple-400 to-purple-600',
       iconBg: 'bg-purple-500'
     },
     {
       icon: 3,
       title: 'Prototype Sprint',
-      description: 'Rapidly develop a clickable prototype that you can use to test your core assumptions with real users and stakeholders.  (1 week)',
+      description: 'Rapidly develop a clickable prototype that you can use to test your core assumptions with real users and stakeholders.',
       bgColor: 'from-pink-400 to-pink-600',
       iconBg: 'bg-pink-500'
     },
     {
       icon: 4,
       title: 'Build Sprint',
-      description: 'Build the core functional product, and outline the strategy and timeline of a successful launch. (1-3 weeks)',
+      description: 'Build the core functional product, and outline the strategy and timeline of a successful launch.',
       bgColor: 'from-yellow-400 to-orange-500',
       iconBg: 'bg-yellow-500'
     }
@@ -222,15 +222,15 @@ const expertiseAreas = [
     },
     {
       icon: 2,
-      title: 'Home of Stacks’ First Curated Multimedia NFT Collections',
-      description: 'ThisIsNumberOne is a pioneering multimedia NFT contract on the Stacks Network',
+      title: 'Stacks’ First Curated Multimedia NFT Collections',
+      description: 'Launching the Network’s First Music, Generative, and Mixed-Media Collections',
       tags: ['AI Integration', 'Design thinking'],
       bgColor: 'bg-emerald-700',
       path: '/case-studies/ai-powered-triage'
     },
     {
       icon: 3,
-      title: ' Pizza Hut: Checkout Redesign Streamlining Checkout for Returning Customers ',
+      title: 'Pizza Hut: Checkout Redesign',
       description: 'Expert guidance to navigate complex technical challenges.',
       tags: ['Tech Stack Audit', 'Scalability', 'Security'],
       bgColor: 'bg-rose-700',
@@ -238,8 +238,8 @@ const expertiseAreas = [
     },
     {
       icon: 4,
-      title: 'Optimising Sign-Up and Homepage for Parents',
-      description: 'ToucanBox is a subscription-based activity box for children aged 3–8.',
+      title: 'ToucanBox: Redesigning Sign-Up for Busy Parents',
+      description: 'How a User-Centric Overhaul Reduced Friction and Boosted Subscriber Conversion',
       tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
       bgColor: 'bg-cyan-700',
       path: '/services/maintenance'
@@ -247,15 +247,15 @@ const expertiseAreas = [
     {
       icon: 5,
       title: 'AI Agent Portfolio Builder',
-      description: 'We developed an AI-powered onboarding agent that builds a user’s profile automatically upon sign-up by scraping publicly available information from sites like LinkedIn, IMDb, and personal websites..',
+      description: 'Slashing Onboarding Friction with AI-Powered Data Sourcing',
       tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
       bgColor: 'bg-orange-700',
       path: '/aiagentbuilder'
     },
     {
       icon: 6,
-      title: 'AI WhatsApp Interactor',
-      description: 'We developed an AI-powered WhatsApp agent that helps professionals and service providers handle incoming messages—automating appointment bookings and answering customer questions in real time.',
+      title: 'AI WhatsApp Assistant',
+      description: 'Automated Assistant for Managing Bookings and Answering Questions 24/7',
       tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
       bgColor: 'bg-pink-700',
       path: '/ai-whatsapp-interactor'
@@ -265,18 +265,17 @@ const expertiseAreas = [
   // Data for the FAQ section
   const faqData = [
     {
-      question: ' I’ve already completed part of this process- can you just help me with a specific section?',
-      answer: 'Modularity is at the heart of our process. Our kickoff workshop will assess the stage you are currently at, and to discover where you want to be. We will always tailor our services to provide help only in the necessary and relevant areas to add maximum value and avoid retreading old ground.',
+      question: 'I’ve already completed part of this process—can you just help me with a specific section?',
+      answer: 'Modularity is at the heart of our process. Our kickoff meeting will assess the stage you are currently at, and discover where you want to be. We will always tailor our services to provide help only in the necessary and relevant areas that add maximum value, and avoid retreading old ground.',
     },
     {
       question: 'How much is it going to cost?',
-      answer: 'Project costs vary based on the scope, duration, and team required. A one-week Design Sprint has a different cost than a multi-week full process prototype & build engagement. We provide a detailed, fixed-price proposal after our initial workshop so there are no surprises.',
+      answer: 'Project costs vary based on the scope, duration, and team required. A one-week Discovery Sprint has a different cost than a multi-week full process prototype & build engagement. We provide a detailed, fixed-price proposal after the initial session so there are no surprises.',
     },
     {
-      question: 'Who from my team needs to be involved in the Design Sprint?',
-      answer: 'Our philosophy is simple: you are the experts in your business, we are the experts in the process. You will provide the primary decision-maker. Beyond that, we encourage bringing team members from relevant departments to participate in the process alongside us. Your team’s deep knowledge can be invaluable to fuel the sprint, and to understand and take over the process after we finish our collaboration.',
+      question: 'Who from my team needs to be involved in a Sprint?',
+      answer: 'Our philosophy is simple: you are the experts in your business, we are the experts in the process.\nYou will provide the primary decision-maker. Beyond that, we encourage bringing relevant team members to participate in the process alongside us. Your team’s deep knowledge can be invaluable fuel for the sprint, and allow you to more effectively take the process forward after we finish working together.',
     },
-   
   ];
   // --- END: of existing data arrays ---
 
@@ -415,10 +414,9 @@ const expertiseAreas = [
                  Innovation Opportunities: Everywhere, For Everyone.
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed mb-6">
-             Our team of experts in emerging tech will work closely with you to identify and implement custom strategies.
-
+              Our team of experts in emerging tech will work closely with you to identify and implement custom strategies.
              <br></br>
-             We combine creativity, cutting-edge technology, and agile practices to help you not only meet today's needs but also anticipate tomorrow's opportunities.
+              We combine creativity, cutting-edge technology, and agile practices to help you not only meet today's needs but also anticipate tomorrow's opportunities. 
              </p>
             
           </div>
@@ -468,11 +466,7 @@ const expertiseAreas = [
             Intensive design sprints to turn vision into reality.
           </p>
           <p className="text-white-400">
-             We don’t just innovate for you, we equip you with 
-             the tools to do so yourself. By the end of our process,
-              you will have more than just a product; you'll have a unified team,
-               a validated concept, and a clear strategic plan to take your moonshot idea to market.
-
+            We don’t just innovate for you, we equip you with the tools to do so yourself. By the end of our process, you will have more than just a product; you'll have a unified team, a validated concept, and a clear strategic plan to take your moonshot idea to market.
           </p>
         </div>
       </div>
@@ -480,8 +474,7 @@ const expertiseAreas = [
 
       <section className="bg-[#0f172a] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-12">The Framework for Your Next Breakthrough
-</h2>
+          <h2 className="text-3xl font-bold text-white mb-12">The Framework for Your Next Breakthrough</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
             {devProcess.map((item, index) => (
               <div
@@ -547,7 +540,7 @@ const expertiseAreas = [
       {/* START: FAQ Section (Simplified with <details>) */}
       <section className="bg-[#0f172a] py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-12 text-center">Questions That Make Sense</h2>
+          <h2 className="text-3xl font-bold text-white mb-12 text-center">Frequently Asked Questions</h2>
 
           <div className="space-y-4">
             {faqData.map((item, index) => (
@@ -573,7 +566,7 @@ const expertiseAreas = [
   
     <section id="contact-form" className="bg-[#0f172a] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-white mb-4 text-center">Contact Us</h2>
+        <h2 className="text-3xl font-bold text-white mb-4 text-center">Ready to Innovate?</h2>
         <p className="text-lg text-gray-300 mb-12 text-center">
           Let's discuss your project and how we can bring it to life.
         </p>
@@ -647,7 +640,7 @@ const expertiseAreas = [
                     type="text"
                     id="fullName"
                     name="fullName"
-                    placeholder="Your full name"
+                    placeholder="Your Full Name"
                     value={fullName}
                     required
                     onChange={(e) => setFullName(e.target.value)}
@@ -664,7 +657,7 @@ const expertiseAreas = [
                     type="email"
                     id="workEmail"
                     name="workEmail"
-                    placeholder="your@company.com"
+                    placeholder="Your Email Address"
                     value={workEmail}
                     onChange={(e) => setWorkEmail(e.target.value)}
                     className="w-full p-3 rounded-lg bg-[#1f2937] border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
@@ -681,7 +674,7 @@ const expertiseAreas = [
                     type="name"
                     id="companyname"
                     name="companyname"
-                    placeholder="company name"
+                    placeholder="Your Company Name"
                     value={company}
                     onChange={(e) => setCompany(e.target.value)}
                     className="w-full p-3 rounded-lg bg-[#1f2937] border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
@@ -729,7 +722,7 @@ const expertiseAreas = [
                     id="projectGoals"
                     name="projectGoals"
                     rows={5}
-                    placeholder="Tell us about your idea"
+                    placeholder="Tell us about your idea…"
                     value={projectGoals}
                     onChange={(e) => setProjectGoals(e.target.value)}
                     className="w-full p-3 rounded-lg bg-[#1f2937] border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"

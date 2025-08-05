@@ -15,9 +15,10 @@ const PrivacyPolicyPage: React.FC = () => {
 
           <h2 className="text-2xl font-semibold text-white mb-3">2. Who We Are</h2>
           <ul className="list-disc list-inside mb-6 space-y-1">
-            <li><strong>Company Name:</strong> Lunim</li>
-            <li><strong>Contact for Privacy Queries:</strong> [Your Lunim Email Here]</li>
-            <li><strong>Registered Address:</strong> [Your Company Address Here]</li>
+            <li><strong>Company Name:</strong> Risidio Ltd. T/A Lunim Innovation Studio</li>
+            <li><strong>Phone Number:</strong> 020 3051 9057</li>
+            <li><strong>Contact for Privacy Queries:</strong> hello@lunim.io</li>
+            <li><strong>Registered Address:</strong> 124 City Road, London, England, EC1V 2NX</li>
           </ul>
 
           <h2 className="text-2xl font-semibold text-white mb-3">3. Information We Collect</h2>
@@ -35,7 +36,7 @@ const PrivacyPolicyPage: React.FC = () => {
           <ul className="list-disc list-inside mb-6 space-y-1">
             <li><strong>To Respond to You:</strong> To reply to your enquiries and provide you with information about our services.</li>
             <li><strong>To Provide Our Services:</strong> To carry out our obligations arising from any contracts entered into between you and us, such as facilitating workshops and developing prototypes.</li>
-            <li><strong>To Improve Our Website:</strong> We plan to use Google Analytics to understand how our visitors use our site, which will help us improve the user experience.</li>
+            <li><strong>To Improve Our Website:</strong> We use Google Analytics to understand how our visitors use our site, which will help us improve the user experience.</li>
             <li><strong>For Marketing:</strong> In the future, we may wish to send you marketing communications. You will be able to unsubscribe at any time.</li>
           </ul>
 
@@ -55,7 +56,7 @@ const PrivacyPolicyPage: React.FC = () => {
           <p className="mb-6">We may update this policy from time to time. Any changes will be posted on this page, and, where appropriate, we may notify you by email.</p>
 
           <h2 className="text-2xl font-semibold text-white mb-3">8. How to Contact Us</h2>
-          <p className="mb-6">If you have any questions about our privacy policy or the information we hold about you, please contact us at [Your Contact Email Here].</p>
+          <p className="mb-6">If you have any questions about our privacy policy or the information we hold about you, please contact us at hello@lunim.io.</p>
         </div>
       </div>
     </div>
