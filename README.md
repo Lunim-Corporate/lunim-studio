@@ -248,6 +248,9 @@ const handleSubmit = (e: React.FormEvent) => {
 .p-4 { padding: 1rem; }      /* 16px */
 .p-6 { padding: 1.5rem; }    /* 24px */
 .p-8 { padding: 2rem; }      /* 32px */
+.p-12 { padding: 3rem; }      /* 48px */
+.p-14 { padding: 3.5rem; }      /* 48px */
+.p-16 { padding: 4rem; }      /* 48px */
 .py-3 { padding: 0.75rem 0; } /* 12px vertical */
 .px-4 { padding: 0 1rem; }   /* 16px horizontal */
 ```

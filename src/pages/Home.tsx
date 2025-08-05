@@ -5,6 +5,12 @@ import backgroundImageSrc from "../assets/background.png"; // Your default backg
 import { supabase } from '../supabaseClient';
 import axios from 'axios';
 import creativityimage from '../assets/creativityimage.jpg'; // Assuming it's in the assets folder and has no file extension in its name, which is unusual for image files.
+import aiAgentImage from '../assets/ai-agent-listing.png'; // Assuming it's in the assets folder and has no file extension in its name, which is unusual for image files.
+import aiWhatsAppImage from '../assets/ai-whatsapp-listing.png'; // Assuming it's in the assets folder and has no file extension in its name, which is unusual for image files.
+import nftCollectionImage from '../assets/nft-collection-listing.png'; // Assuming it's in the assets folder and has no file extension in its name, which is unusual for image files.
+import pizzaHutImage from '../assets/pizza-hut-listing.png'; // Assuming it's in the assets folder and has no file extension in its name, which is unusual for image files.
+import toucanBoxImage from '../assets/toucanbox-listing.png'; // Assuming it's in the assets folder and has no file extension in its name, which is unusual for image files.
+import winnerTakesAllImage from '../assets/winner-takes-all-listing.png'; // Assuming it's in the assets folder and has no file extension in its name, which is unusual for image files.
 
 // Import all Lucide React icons you are using, including new ones
 import {
@@ -213,52 +219,52 @@ const expertiseAreas = [
 
   const ourServices = [
     {
-      icon: 1,
       title: 'Winner-Takes-All DAO for Community Grants',
       description: 'A decentralised application (dApp) that enables communities to run transparent, competitive funding rounds.',
       tags: ['Web 3.0', 'UI/UX Design'],
       bgColor: 'bg-indigo-700',
-      path: '/case-studies/project-atlas'
+      path: '/case-studies/project-atlas',
+      image: winnerTakesAllImage
     },
     {
-      icon: 2,
       title: 'Stacks’ First Curated Multimedia NFT Collection',
       description: 'Launching the Network’s First Music, Generative, and Mixed-Media Collections',
       tags: ['AI Integration', 'Design thinking'],
       bgColor: 'bg-emerald-700',
-      path: '/case-studies/ai-powered-triage'
+      path: '/case-studies/ai-powered-triage',
+      image: nftCollectionImage
     },
     {
-      icon: 3,
       title: 'Pizza Hut: Checkout Redesign',
       description: 'Expert guidance to navigate complex technical challenges.',
       tags: ['Tech Stack Audit', 'Scalability', 'Security'],
       bgColor: 'bg-rose-700',
-      path: '/services/consulting'
+      path: '/services/consulting',
+      image: pizzaHutImage
     },
     {
-      icon: 4,
       title: 'ToucanBox: Redesigning Sign-Up for Busy Parents',
       description: 'How a User-Centric Overhaul Reduced Friction and Boosted Subscriber Conversion',
       tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
       bgColor: 'bg-cyan-700',
-      path: '/services/maintenance'
+      path: '/services/maintenance',
+      image: toucanBoxImage
     },
     {
-      icon: 5,
       title: 'AI Agent Portfolio Builder',
       description: 'Slashing Onboarding Friction with AI-Powered Data Sourcing',
       tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
       bgColor: 'bg-orange-700',
-      path: '/aiagentbuilder'
+      path: '/aiagentbuilder',
+      image: aiAgentImage
     },
     {
-      icon: 6,
       title: 'AI WhatsApp Assistant',
       description: 'Automated Assistant for Managing Bookings and Answering Questions 24/7',
       tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
       bgColor: 'bg-pink-700',
-      path: '/ai-whatsapp-interactor'
+      path: '/ai-whatsapp-interactor',
+      image: aiWhatsAppImage
     },
   ];
 
@@ -507,12 +513,14 @@ const expertiseAreas = [
                 <div
                   className={`
                     ${service.bgColor}
-                    p-8 h-35 flex items-center justify-center
+                    p-14 h-35 flex items-center justify-center
                   `}
+                  style={{
+                    backgroundImage: `url(${service.image})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
                 >
-                  <span className="text-white text-6xl font-extrabold">
-                    {service.icon}
-                  </span>
                 </div>
 
                 <div className="bg-[#1f2937] p-6 text-left flex flex-col justify-between h-35">
