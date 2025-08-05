@@ -42,7 +42,7 @@ const Header: React.FC = () => {
                 <img
                   src={logo} // Verify this path from Header.tsx
                   alt="Lunim Logo"
-                  className="h-10 sm:h-12 md:h-16 w-auto  hover:scale-105 transition-transform duration-300 hover-disabled"
+                  className="h-10 sm:h-12 md:h-12 w-auto  hover:scale-105 transition-transform duration-300 hover-disabled"
                 />
               </Link>
             </div>
