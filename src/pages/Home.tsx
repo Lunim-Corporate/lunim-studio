@@ -636,9 +636,9 @@ const expertiseAreas = [
             </div>
 
            {/* Right Column: Contact Form */}
-          <div className="bg-[#1a202c] p-8 rounded-lg shadow-xl border border-white">
+          <div id="innovateForm" className="bg-[#1a202c] p-8 rounded-lg shadow-xl border border-white">
             <h3 className="text-xl font-bold text-white mb-6 text-center">Ready to Innovate?</h3>
-            <form id="innovateForm" onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left"> {/* <--- Added id="innovateForm" here */}
+            <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left"> {/* <--- Added id="innovateForm" here */}
               {/* Full Name */}
                 <div>
                   <label htmlFor="fullName" className="block text-gray-300 text-sm font-semibold mb-2">
