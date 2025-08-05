@@ -9,9 +9,9 @@ import creativityimage from '../assets/creativityimage.jpg'; // Assuming it's in
 // Import all Lucide React icons you are using, including new ones
 import {
   FileDown, Search, Rocket, Target, ArrowRight, Star, Palette, Users, Brain, Coins, Zap, Timer,
-  ChevronDown, ChevronUp, Clock, Mail, Phone, Loader2, // Add Loader2
-  Rocket as RocketIcon,
-  Target as TargetIcon,
+  ChevronDown, ChevronUp, Clock, Mail, Phone, Loader2, Telescope, PersonStanding, Network, UserStar, Cpu, Kanban, Images, 
+  Network as NetworkIcon,
+  Telescope as TelescopeIcon,
   Brain as BrainIcon,
   Users as UsersIcon
   
@@ -120,14 +120,14 @@ const App: React.FC = () => {
 
 const expertiseAreas = [
   {
-    icon: TargetIcon,
+    icon: TelescopeIcon,
     title: 'Innovation Discovery',
     description: 'Our discovery process cuts through the noise to uncover and adapt to high-impact opportunities, ensuring we\'re solving the right problems from day one.',
     bgColor: 'bg-[#BBFEFF]', // Changed to your desired background color
     iconBg: 'bg-[#BBFEFF]' // Changed
   },
   {
-    icon: Timer,
+    icon: PersonStanding,
     title: 'Human-Centric Design',
     description: 'Powerful technology is nothing without a flawless user experience. We help you deliver products that are not only functional but also beautiful, intuitive, and a delight to use.',
     bgColor: 'bg-[#BBFEFF]', // Changed
@@ -141,7 +141,7 @@ const expertiseAreas = [
     iconBg: 'bg-[#BBFEFF]' // Changed
   },
   {
-    icon: RocketIcon,
+    icon: NetworkIcon,
     title: 'Web3 & Decentralised Solutions',
     description: 'Build the next generation of the internet. Our experts can guide you through the complexities of blockchain, smart contracts, and tokenisation to create novel, community-owned experiences.',
     bgColor: 'bg-[#BBFEFF]', // Changed
@@ -151,28 +151,28 @@ const expertiseAreas = [
 
   const expertiseSection = [
     {
-      icon: TargetIcon,
+      icon: UserStar,
       title: 'Design Thinking',
       description: 'Deep empathy and human-centered approach to innovation',
       bgColor: 'bg-[#BBFEFF]', // Changed
     iconBg: 'bg-[#BBFEFF]' // Changed
     },
     {
-      icon: Timer,
+      icon: Cpu,
       title: 'Emerging Tech',
       description: 'Our home is the cutting edge. We learn quickly, and powerfully',
        bgColor: 'bg-[#BBFEFF]', // Changed
     iconBg: 'bg-[#BBFEFF]' // Changed
     },
     {
-      icon: BrainIcon,
+      icon: Kanban,
       title: 'Agile Methodologies',
       description: 'Fast value, high adaptability, and reduced waste',
        bgColor: 'bg-[#BBFEFF]', // Changed
     iconBg: 'bg-[#BBFEFF]' // Changed
     },
     {
-      icon: RocketIcon,
+      icon: Images,
       title: 'UX/UI',
       description: 'Beautiful, intuitive user experiences are at the core of everything we do',
        bgColor: 'bg-[#BBFEFF]', // Changed
@@ -479,9 +479,9 @@ const expertiseAreas = [
             {devProcess.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center text-center group transition-transform duration-300 hover:scale-105"
+                className="flex flex-col items-center text-center group transition-transform duration-300 hover-disabled"
               >
-                <div className="bg-[#BBFEFF] w-16 h-16 rounded-full flex items-center justify-center mb-4 transform transition-transform duration-300 group-hover:scale-125">
+                <div className="bg-[#BBFEFF] w-16 h-16 rounded-full flex items-center justify-center mb-4 transform transition-transform duration-300 group-hover-disabled">
                   <span className="text-black text-2xl font-bold">{item.icon}</span>
                 </div>
                 <h3 className="text-white font-semibold text-lg mb-1">{item.title}</h3>
