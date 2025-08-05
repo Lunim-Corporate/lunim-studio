@@ -637,7 +637,7 @@ const expertiseAreas = [
 
            {/* Right Column: Contact Form */}
           <div id="innovateForm" className="bg-[#1a202c] p-8 rounded-lg shadow-xl border border-white">
-            <h3 className="text-xl font-bold text-white mb-6 text-center">Ready to Innovate?</h3>
+            <h3 className="text-xl font-bold text-white mb-6 text-center">Get In Touch</h3>
             <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left"> {/* <--- Added id="innovateForm" here */}
               {/* Full Name */}
                 <div>
