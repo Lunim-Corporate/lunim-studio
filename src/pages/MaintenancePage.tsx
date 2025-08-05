@@ -37,11 +37,16 @@ const MaintenancePage: React.FC = () => {
           <h2 className="text-3xl font-bold mb-8 text-white">The Challenge</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed">
-              The original user flow had friction points that caused drop-offs during sign-up, especially on mobile. Parents struggled with:
-              Long forms with unclear expectations
-              A homepage that didn’t clearly communicate value
-              Poor visual hierarchy and inconsistent CTAs
-              The experience needed to better support parents who were short on time and not always tech-savvy.
+  ToucanBox, a children's craft subscription service, found its initial digital touchpoints were creating a barrier for its target audience: busy parents. The original user flow suffered from critical issues that led to high drop-off rates:
+              <br />
+              <br />
+              - Unclear Value Proposition: The homepage failed to instantly communicate their unique benefits
+              <br />
+              - High-Friction Sign-Up: A long, multi-field form felt overwhelming for parents, causing many to abandon the process.
+              <br />
+              - Poor Mobile Experience: The flow was poorly optimised for mobile devices, frustrating users trying to sign up on the go.
+              <br />
+              - Lack of Trust Signals: Inconsistent design and weak CTAs failed to build the confidence needed for a parent to commit to a subscription.
             </p>
           </div>
         </div>
@@ -53,15 +58,16 @@ const MaintenancePage: React.FC = () => {
           <h2 className="text-3xl font-bold mb-8 text-white">Our Solution</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed">
-              Through usability testing and rapid prototyping, we identified pain points and redesigned the key flows with a parent-first mindset:
-              Simplified Sign-Up Journey
-              Shorter steps, real-time validation, and visual progress indicators
-              Value-Focused Homepage
-              Clear explanation of how the box works, what’s inside, and benefits for kids
-              Mobile-Optimized Layouts
-              Prioritized readability and ease of tapping on small devices
-              Emotional Design Cues
-              Used warm visuals, playful copy, and trust signals to connect with parents emotionally
+We conducted in-depth usability testing and rapid prototyping to redesign the entire onboarding experience with a parent-first mindset. The solution focused on clarity, convenience, and trust:
+              <br />
+              <br />
+              - Value-Focused Homepage: We used clear, benefit-oriented headlines and visuals of children joyfully engaged with the kits. The new homepage immediately answers "What is ToucanBox?" and "Why will my child love it?". 
+              <br />
+              - Simplified, Chunked Sign-Up: We replaced the long form with a multi-step journey, breaking it into small, logical sections with a visual progress bar. This minimised cognitive load and made the process feel faster and less tiresome.
+              <br />
+              - Mobile-First Design: The entire flow was re-engineered for a seamless mobile experience, featuring large tap targets, readable fonts, and an intuitive layout.
+              <br />
+              - Emotional & Trust-Building Design: We introduced warm visuals and prominent trust signals (like parent testimonials and "cancel anytime" reassurances) to create a welcoming and credible experience.
             </p>
           </div>
         </div>
@@ -70,22 +76,20 @@ const MaintenancePage: React.FC = () => {
       {/* NEW: Outcome Section */}
       <section className="py-8 bg-gray-900">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">The Outcome</h2>
+          <h2 className="text-3xl font-bold mb-8 text-white">The Impact</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
-            <ul className="text-gray-300 text-lg leading-relaxed list-disc pl-5 space-y-2">
-              <li>
-                <span className="font-semibold text-white">Lower Drop-Off Rates:</span> Form abandonment reduced by 22% in A/B testing.
-              </li>
-              <li>
-                <span className="font-semibold text-white">Higher Conversion:</span> More users completed the sign-up process after viewing the new homepage.
-              </li>
-              <li>
-                <span className="font-semibold text-white">Positive User Feedback:</span> Parents described the flow as “friendly,” “simple,” and “welcoming.”
-              </li>
-              <li>
-                <span className="font-semibold text-white">Improved Cross-Device Experience:</span> Mobile sign-ups increased significantly following the redesign.
-              </li>
-            </ul>
+            <p className="text-gray-300 text-lg leading-relaxed">
+The redesigned flow delivered measurable improvements in user conversion and satisfaction:
+              <br />
+              <br />
+              - 22% Reduction in Form Abandonment: A/B testing confirmed that the simplified sign-up process significantly lowered drop-off rates.
+              <br />
+              - Higher Subscriber Conversion: More parents who visited the new homepage successfully completed the entire sign-up process.
+              <br />
+              - Significant Increase in Mobile Sign-Ups: The mobile-first approach directly led to a higher conversion rate among the core parent demographic.
+              <br />
+              - Overwhelmingly Positive User Feedback: In post-launch surveys, parents consistently described the new experience as “friendly,” “simple,” and “welcoming.”
+            </p>
           </div>
         </div>
       </section>

@@ -32,8 +32,7 @@ const  ProjectAtlas: React.FC = () => {
           <h2 className="text-3xl font-bold mb-8 text-white">The Challenge</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed">
-              Decentralized grant allocation is often slow, opaque, and suffers from low engagement. Many DAOs face fragmented tools, unclear incentives, and decision fatigue, which reduce proposal quality and community involvement.
-
+              Decentralised Autonomous Organisation (DAO) platforms were struggling with grant allocation processes that were slow and opaque, with low community engagement. The reliance on fragmented tools, combined with voter fatigue and unclear incentives, resulted in mediocre proposals and inefficient use of community funds. The core challenge was to create a system that encouraged high-quality submissions and active participation.
             </p>
           </div>
         </div>
@@ -45,12 +44,17 @@ const  ProjectAtlas: React.FC = () => {
           <h2 className="text-3xl font-bold mb-8 text-white">Our Solution</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed">
-              Our platform features a gamified, epoch-based governance system with:
-              Onchain proposal submission and ERC-20 token voting
-              Automatic finalization of the top-voted proposal each epoch
-              Treasury distribution via revenue splitter contracts, removing manual friction
-              A React-based dashboard for real-time voting, proposal details, and funding transparency
-</p>
+              We designed and built a fully automated, on-chain governance platform that transforms grant allocation into a competitive, transparent, and engaging process. The system uses an epoch-based, winner-takes-all model to drive excellence. Key features include:
+              <br />
+              <br />
+              - Onchain proposal submission and ERC-20 token voting
+              <br />
+              - Automatic finalization of the top-voted proposal each epoch
+              <br />
+              - Treasury distribution via revenue splitter contracts, removing manual friction
+              <br />
+              - A React-based dashboard for real-time voting, proposal details, and funding transparency
+            </p>
 
           </div>
         </div>
@@ -59,17 +63,14 @@ const  ProjectAtlas: React.FC = () => {
       {/* NEW: Outcome Section */}
       <section className="py-8 bg-gray-900"> {/* Consistent padding and background */}
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">The Outcome</h2>
+          <h2 className="text-3xl font-bold mb-8 text-white">The </h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed">
-              Stronger Incentives & Better Proposals
- The winner-take-all approach drives higher-quality, more competitive proposals.
-Frictionless Treasury Distribution
- Automated payments improve speed and reduce operational overhead.
-Full Transparency
- Every step is auditable onchain, building trust and accountability.
-Community Engagement
- Interactive UI elements and clear feedback loops increase participation and enthusiasm.
+              - Drastically Improved Proposal Quality: The competitive, high-stakes model motivated teams to submit significantly more ambitious and well-researched proposals.
+              <br />
+              - Zero-Friction Payouts: Automated treasury distribution via smart contracts eliminated manual workload and payment delays that plagued previous systems.
+              <br />
+              - Enhanced Trust and Accountability: With every step auditable on-chain, the platform fostered confidence in the fairness and integrity of the grant allocation process.
             </p>
           </div>
         </div>

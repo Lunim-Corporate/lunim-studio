@@ -265,7 +265,7 @@ const expertiseAreas = [
   // Data for the FAQ section
   const faqData = [
     {
-      question: 'I’ve already completed part of this process—can you just help me with a specific section?',
+      question: 'I’ve already completed part of this process - can you just help me with a specific section?',
       answer: 'Modularity is at the heart of our process. Our kickoff meeting will assess the stage you are currently at, and discover where you want to be. We will always tailor our services to provide help only in the necessary and relevant areas that add maximum value, and avoid retreading old ground.',
     },
     {
@@ -747,7 +747,7 @@ const expertiseAreas = [
                     disabled={formStatus === 'submitting'}
                     className="bg-[#BBFEFF] text-black px-8 py-4 rounded-lg font-semibold 
            transition-all duration-200 transform hover:scale-105 
-           shadow-lg hover:shadow-xl inline-flex items-center justify-center space-x-2"Added space-x-2 for icon
+           shadow-lg hover:shadow-xl inline-flex items-center justify-center space-x-2"
                   >
                     {formStatus === 'submitting' ? (
                       <>

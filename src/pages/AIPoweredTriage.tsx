@@ -34,9 +34,17 @@ const AIPoweredTriage: React.FC = () => {
           <h2 className="text-3xl font-bold mb-8 text-white">The Challenge</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed">
-              ThisIsNumberOne is a pioneering multimedia NFT contract on the Stacks Network, launched in early 2021.
-              It houses multiple iconic collections that
-              broke ground in Stacks and Bitcoin’s NFT space—blending art, music, and generative creativity.
+              In early 2021, the NFT ecosystem on the Stacks network was in its infancy. The underlying technology and standards were still evolving, and there were significant bottlenecks for artists. Key limitations included:
+              <br />
+              <br />
+              - No Multimedia Support: Existing contracts could not handle music, audio, or mixed-media files, restricting artists to static images.
+              <br />
+              - Lack of Generative Art Capability: There was no way for artists to launch algorithmically generated art collections native to Stacks and Bitcoin.
+              <br />
+              - Primitive Editioning: The standards for creating and managing complex, multi-edition collections were not yet established.
+              <br />
+              <br />
+              These technical gaps stifled creative expression and limited the growth of the digital arts community on Stacks.
             </p>
           </div>
         </div>
@@ -48,10 +56,14 @@ const AIPoweredTriage: React.FC = () => {
           <h2 className="text-3xl font-bold mb-8 text-white">Our Solution</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed">
-              In early 2021, Stacks NFTs were limited by evolving standards
-              and lacked native support for multimedia and generative art.
-              Artists had no platform for music NFTs, mixed media, or complex editions—hindering
-              creative expression and community growth.
+              Instead of waiting for official network standards (SIPs) to be developed and approved, we created ThisIsNumberOne, the first-ever multimedia NFT contract on the Stacks network. This custom-built solution was engineered from the ground up to provide the infrastructure that artists needed, enabling:
+              <br />
+              <br />
+              - Music and Mixed-Media Integration: The contract was designed to embed audio and other file types directly into the NFT.
+              <br />
+              - Native Generative Art: It provided a framework for deploying collections created with algorithmic processes.
+              <br />
+              - Complex Edition Releases: The platform supported multi-edition mints, giving artists more flexibility and control over their work.
             </p>
           </div>
         </div>
@@ -60,16 +72,21 @@ const AIPoweredTriage: React.FC = () => {
       {/* NEW: Outcome Section */}
       <section className="py-8 bg-gray-900"> {/* Consistent padding and background */}
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">The Outcome</h2>
+          <h2 className="text-3xl font-bold mb-8 text-white">The Impact</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed">
-              ThisIsNumberOne created the first multimedia NFT contract on Stacks, enabling:
-              The Genesis Collection — the very first NFT collection on Stacks
-              The No. 1 Smileys — Stacks’ first music NFT collection, featuring exclusive tracks by Fatboy Slim and Chemical X
-              Hash Ones — the first algorithmically generated NFT art native to Bitcoin and Stacks
-              These collections pioneered multi-edition releases, music integration, and generative art before NFT improvement proposals (SIPs) existed.
-              The platform also supports a broader artistic ecosystem with collections like Apillforeveryill(andthrill),
-              MicroDots&JellyTots, and Love Hirsts (MDMA)—bringing culturally rich, unique digital art and music experiences to the blockchain.
+              ThisIsNumberOne successfully launched several of the most iconic and groundbreaking NFT collections in the history of the Stacks network:
+              <br />
+              <br />
+- Launching Stacks’ First-Ever NFT Collection: The "Genesis Collection" marked the beginning of the NFT ecosystem on the network.
+              <br />
+- Pioneering Music NFTs: The "No. 1 Smileys" became the first music NFT collection on Stacks, featuring exclusive tracks from world-renowned artists Fatboy Slim and Chemical X.
+              <br />
+- Native Generative Art: The "Hash Ones" collection was the first algorithmically generated art native to Bitcoin and Stacks.
+              <br />
+              <br />
+These collections set a precedent and provided a working model for multimedia NFTs long before official standards were ratified, paving the way for future creators and ecosystem growth.
+
             </p>
           </div>
         </div>
