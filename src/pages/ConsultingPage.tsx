@@ -3,8 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Import the images with the corrected lowercase 'p' for pizzahut2.png
-import pizzaHutImage from '../assets/pizzahut.jpeg'; // Main hero background image
-import pizzahut2 from '../assets/pizzahut2.png'; // Image for the lower content section (now using lowercase 'p')
+import pizzaHutImage from '../assets/pizza-hut-detail.png'; // Main hero background image
 
 const ConsultingPage: React.FC = () => {
   return (

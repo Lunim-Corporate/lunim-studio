@@ -3,8 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Import the image for this page
-import toucanboxImage from '../assets/Toucanbox.png';
-import Toucanbox1 from '../assets/Toucanbox1.png'; // Make sure this path is correct based on your project structure
+import toucanboxImage from '../assets/toucanbox-detail.png';
 
 const MaintenancePage: React.FC = () => {
   return (
@@ -13,7 +12,7 @@ const MaintenancePage: React.FC = () => {
       <section
         className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-black"
         style={{
-          backgroundImage: `url(${Toucanbox1})`, // Use Toucanbox.png for hero background
+          backgroundImage: `url(${toucanboxImage})`, // Use Toucanbox.png for hero background
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

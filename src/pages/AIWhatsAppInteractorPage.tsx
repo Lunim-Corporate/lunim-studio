@@ -1,7 +1,7 @@
 // src/pages/AIWhatsAppInteractorPage.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import aiwhatsappImage from '../assets/aiwhatsapp.png'; // Import your image, ensure path is correct
+import aiwhatsappImage from '../assets/ai-whatsapp-detail.png'; // Import your image, ensure path is correct
 
 const AIWhatsAppInteractorPage: React.FC = () => {
   return (

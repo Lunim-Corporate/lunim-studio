@@ -1,6 +1,6 @@
 // src/pages/ConsultingPage.tsx
 import React from 'react';
-import Doa from '../assets/Doa.png'; // Corrected import
+import Doa from '../assets/winner-takes-all-detail.png'; // Corrected import
 import { Link } from 'react-router-dom'; // Ensure this is imported
 
 const  ProjectAtlas: React.FC = () => {

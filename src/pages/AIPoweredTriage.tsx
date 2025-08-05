@@ -1,6 +1,6 @@
 // src/pages/ConsultingPage.tsx
 import React from 'react';
-import thisIsNumber from '../assets/thisIsNumber.png'; // Corrected import and now used for Hero background
+import thisIsNumber from '../assets/nft-collection-detail.png'; // Corrected import and now used for Hero background
 import { Link } from 'react-router-dom'; // Ensure this is imported
 
 const AIPoweredTriage: React.FC = () => {

@@ -3,8 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'; // Ensure this is imported
 
 // Import the new images
-import n8n6Image from '../assets/n8n6.png'; // For the hero section
-import n8n5Image from '../assets/n8n5.png'; // For the bottom card section
+import n8n5Image from '../assets/ai-agent-detail.png'; // For the hero section
 
 const aiagentbuilder: React.FC = () => {
   return (
