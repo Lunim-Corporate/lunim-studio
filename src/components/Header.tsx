@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import logo from '../assets/lunim-logo.png'
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,9 +40,9 @@ const Header: React.FC = () => {
             <div className="flex-shrink-0">
               <Link to="/" className="flex-shrink-0">
                 <img
-                  src="../src/assets/Lunim Logo.png" // Verify this path from Header.tsx
+                  src={logo} // Verify this path from Header.tsx
                   alt="Lunim Logo"
-                  className="h-12 w-auto hover:scale-105 transition-transform duration-300"
+                  className="h-10 sm:h-12 md:h-16 w-auto  hover:scale-105 transition-transform duration-300 hover-disabled"
                 />
               </Link>
             </div>
