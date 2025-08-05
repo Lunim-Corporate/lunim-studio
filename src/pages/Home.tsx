@@ -598,16 +598,16 @@ const expertiseAreas = [
           {/* Changed text-blue-400 to text-[#BBFEFF] */}
           <Mail className="w-6 h-6 text-[#BBFEFF] flex-shrink-0" />
           <div>
-            <p className="text-white font-semibold">Expert Consultation</p>
-            <p className="text-gray-400 text-sm">Email: hello@lunim.io</p>
+            <p className="text-white font-semibold">Drop Us An Email</p>
+            <p className="text-gray-400 text-sm">hello@lunim.io</p>
           </div>
         </li>
         <li className="flex items-start space-x-3">
           {/* Changed text-blue-400 to text-[#BBFEFF] */}
           <Phone className="w-6 h-6 text-[#BBFEFF] flex-shrink-0" />
           <div>
-            <p className="text-white font-semibold">Dedicated Support</p>
-            <p className="text-gray-400 text-sm">Phone: 020 3051 9057 </p>
+            <p className="text-white font-semibold">Give Us A Bell</p>
+            <p className="text-gray-400 text-sm">020 3051 9057 </p>
           </div>
         </li>
       </ul>

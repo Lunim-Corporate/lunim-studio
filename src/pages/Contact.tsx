@@ -108,11 +108,11 @@ const Contact: React.FC = () => {
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-gray-400">Monday - Friday</span>
-                  <span className="text-white font-medium">9:00 AM - 6:00 PM EST</span>
+                  <span className="text-white font-medium">9:00 AM - 6:00 PM BST</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-400">Saturday</span>
-                  <span className="text-white font-medium">10:00 AM - 4:00 PM EST</span>
+                  <span className="text-white font-medium">10:00 AM - 4:00 PM BST</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-400">Sunday</span>
