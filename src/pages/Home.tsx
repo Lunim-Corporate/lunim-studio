@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import backgroundImageSrc from "../assets/background.png"; // Your default background image
 import { supabase } from '../supabaseClient';
-import axios from 'axios';
+// import axios from 'axios';
 import creativityimage from '../assets/creativityimage.jpg'; // Assuming it's in the assets folder and has no file extension in its name, which is unusual for image files.
 import aiAgentImage from '../assets/ai-agent-listing.png'; // Assuming it's in the assets folder and has no file extension in its name, which is unusual for image files.
 import aiWhatsAppImage from '../assets/ai-whatsapp-listing.png'; // Assuming it's in the assets folder and has no file extension in its name, which is unusual for image files.
@@ -14,12 +14,11 @@ import winnerTakesAllImage from '../assets/winner-takes-all-listing.png'; // Ass
 
 // Import all Lucide React icons you are using, including new ones
 import {
-  FileDown, Search, Rocket, Target, ArrowRight, Star, Palette, Users, Brain, Coins, Zap, Timer,
-  ChevronDown, ChevronUp, Clock, Mail, Phone, Loader2, Telescope, PersonStanding, Network, UserStar, Cpu, Kanban, Images, 
+  Search, Rocket, Target, ArrowRight,
+  ChevronDown, Clock, Mail, Phone, Loader2, PersonStanding, UserStar, Cpu, Kanban, Images, 
   Network as NetworkIcon,
   Telescope as TelescopeIcon,
   Brain as BrainIcon,
-  Users as UsersIcon
   
 } from 'lucide-react';
 
@@ -365,9 +364,9 @@ const expertiseAreas = [
               </div>
             ) : (
               <>
-                <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+                <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 text-center ">
                   {heroContent?.hero_title_part1} <br />
-                  <span className="bg-gradient-to-r from-[#BBFEFF] to-cyan-500 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-[#BBFEFF] to-cyan-500 bg-clip-text text-transparent px-4 ">
                     {heroContent?.hero_title_part2}
                   </span>
                 </h1>
