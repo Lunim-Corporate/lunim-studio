@@ -75,7 +75,7 @@ const Header: React.FC = () => {
             {/* Desktop Button (remains as is) */}
             <div className="md:flex">
               <Link
-                to="#innovateForm"
+                to="/#innovateForm"
                 className="px-4 py-2 rounded-md text-black bg-[#BBFEFF] hover:bg-cyan-300 transition-colors duration-300 font-semibold"
               >
                 Get In Touch
