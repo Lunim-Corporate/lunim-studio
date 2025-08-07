@@ -234,14 +234,14 @@ const AdminPanel: React.FC = () => {
         <section className="bg-[#1a202c] p-8 rounded-lg shadow-xl border border-white mb-8">
           <h2 className="text-2xl font-bold mb-6 text-center">Hero Section Content</h2>
           {loadingHero ? (
-            <p className="text-center text-gray-400">Loading hero content...</p>
+            <p className="text-center text-gray-200">Loading hero content...</p>
           ) : heroContent ? (
             <form onSubmit={handleSaveHeroContent} className="space-y-6">
               {heroFormMessage && <p className="text-green-500 text-center mb-4">{heroFormMessage}</p>}
               {heroFormError && <p className="text-red-500 text-center mb-4">{heroFormError}</p>}
 
               <div>
-                <label htmlFor="hero_title_part1" className="block text-gray-300 text-sm font-semibold mb-2">
+                <label htmlFor="hero_title_part1" className="block text-gray-300 text-base font-semibold mb-2">
                   Hero Title (Part 1)
                 </label>
                 <input
@@ -257,7 +257,7 @@ const AdminPanel: React.FC = () => {
               </div>
 
               <div>
-                <label htmlFor="hero_title_part2" className="block text-gray-300 text-sm font-semibold mb-2">
+                <label htmlFor="hero_title_part2" className="block text-gray-300 text-base font-semibold mb-2">
                   Hero Title (Part 2)
                 </label>
                 <input
@@ -273,7 +273,7 @@ const AdminPanel: React.FC = () => {
               </div>
 
               <div>
-                <label htmlFor="hero_description" className="block text-gray-300 text-sm font-semibold mb-2">
+                <label htmlFor="hero_description" className="block text-gray-300 text-base font-semibold mb-2">
                   Hero Description
                 </label>
                 <textarea
@@ -290,7 +290,7 @@ const AdminPanel: React.FC = () => {
 
               {/* --- RE-ADDED IMAGE UPLOAD SECTION --- */}
               <div>
-                <label htmlFor="hero_image" className="block text-gray-300 text-sm font-semibold mb-2">
+                <label htmlFor="hero_image" className="block text-gray-300 text-base font-semibold mb-2">
                   Background Image
                 </label>
                 <input
@@ -299,12 +299,12 @@ const AdminPanel: React.FC = () => {
                   name="hero_image"
                   accept="image/*" // Only accept image files
                   onChange={handleHeroImageChange}
-                  className="w-full text-white text-sm file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 mb-4"
+                  className="w-full text-white text-base file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-base file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 mb-4"
                 />
 
                 {heroImagePreview && (
                   <div className="mt-4">
-                    <p className="block text-gray-300 text-sm font-semibold mb-2">Current/New Image Preview:</p>
+                    <p className="block text-gray-300 text-base font-semibold mb-2">Current/New Image Preview:</p>
                     <img
                       src={heroImagePreview}
                       alt="Hero Background Preview"
@@ -317,7 +317,7 @@ const AdminPanel: React.FC = () => {
                         setHeroImageFile(null);
                         setHeroImagePreview(heroContent?.background_image_url || null); // Revert to stored URL or null
                       }}
-                      className="mt-2 text-red-400 hover:text-red-600 text-sm"
+                      className="mt-2 text-red-400 hover:text-red-600 text-base"
                     >
                       Clear selected image
                     </button>
@@ -326,7 +326,7 @@ const AdminPanel: React.FC = () => {
 
                 {!heroImagePreview && (
                   <div className="mt-4 text-center text-gray-500">
-                    <ImageIcon className="mx-auto h-12 w-12 text-gray-400" />
+                    <ImageIcon className="mx-auto h-12 w-12 text-gray-200" />
                     <p className="mt-2">No background image selected.</p>
                   </div>
                 )}

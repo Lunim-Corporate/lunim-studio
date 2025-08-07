@@ -92,7 +92,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-white mb-1">{reason.title}</h4>
-                      <p className="text-gray-400 text-sm">{reason.description}</p>
+                      <p className="text-gray-200 text-base">{reason.description}</p>
                     </div>
                   </div>
                 ))}
@@ -105,17 +105,17 @@ const Contact: React.FC = () => {
               <h3 className="text-xl font-bold text-white mb-4">
                 Office Hours
               </h3>
-              <div className="space-y-2 text-sm">
+              <div className="space-y-2 text-base">
                 <div className="flex justify-between">
-                  <span className="text-gray-400">Monday - Friday</span>
+                  <span className="text-gray-200">Monday - Friday</span>
                   <span className="text-white font-medium">9:00 AM - 6:00 PM BST</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-400">Saturday</span>
+                  <span className="text-gray-200">Saturday</span>
                   <span className="text-white font-medium">10:00 AM - 4:00 PM BST</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-400">Sunday</span>
+                  <span className="text-gray-200">Sunday</span>
                   <span className="text-white font-medium">Closed</span>
                 </div>
               </div>
@@ -138,7 +138,7 @@ const Contact: React.FC = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
+                  <label htmlFor="name" className="block text-base font-medium text-white mb-2">
                     Full Name *
                   </label>
                   <input
@@ -153,7 +153,7 @@ const Contact: React.FC = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
+                  <label htmlFor="email" className="block text-base font-medium text-white mb-2">
                     Email Address *
                   </label>
                   <input
@@ -170,7 +170,7 @@ const Contact: React.FC = () => {
               </div>
 
               <div>
-                <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="company" className="block text-base font-medium text-gray-300 mb-2">
                   Company
                 </label>
                 <input
@@ -185,7 +185,7 @@ const Contact: React.FC = () => {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="subject" className="block text-base font-medium text-gray-300 mb-2">
                   Subject *
                 </label>
                 <select
@@ -205,7 +205,7 @@ const Contact: React.FC = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="message" className="block text-base font-medium text-gray-300 mb-2">
                   Message *
                 </label>
                 <textarea

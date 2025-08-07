@@ -26,7 +26,7 @@ const aiagentbuilder: React.FC = () => {
       {/* Challenge Section */}
       <section className="py-8 bg-gray-900">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">The Challenge</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#BBFEFF]">The Challenge</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed mb-4">
               Traditional, manual profile creation process is often a major source of user friction. Forcing new users to fill out extensive forms from scratch results in high drop-off rates and incomplete data, which can undermine a platform's core value. The client wanted a new onboarding system that would:
@@ -44,7 +44,7 @@ const aiagentbuilder: React.FC = () => {
       {/* Solution Section */}
       <section className="py-8 bg-black">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">Our Solution</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#BBFEFF]">Our Solution</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed mb-4">
               We built an autonomous AI agent that activates immediately upon sign-up, using publicly available information to automatically construct a user's profile. Key features of the solution include:
@@ -70,7 +70,7 @@ const aiagentbuilder: React.FC = () => {
       {/* Outcome Section */}
       <section className="py-8 bg-gray-900">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">The Impact</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#BBFEFF]">The Impact</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <ul className="text-gray-300 text-lg leading-relaxed list-disc pl-8 space-y-2">
               <li>

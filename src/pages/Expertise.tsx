@@ -100,7 +100,7 @@ const Expertise: React.FC = () => {
       pink: 'bg-pink-600 text-white',
       cyan: 'bg-cyan-600 text-white',
     };
-    return colors[color as keyof typeof colors] || 'bg-gray-800 text-gray-400';
+    return colors[color as keyof typeof colors] || 'bg-gray-800 text-gray-200';
   };
 
   return (
@@ -234,7 +234,7 @@ const Expertise: React.FC = () => {
                   <h3 className="text-2xl font-bold text-white mb-3">
                     Core Capabilities
                   </h3>
-                  <p className="text-gray-400 text-lg mb-6 leading-relaxed">
+                  <p className="text-gray-200 text-lg mb-6 leading-relaxed">
                     {expertise.subheading}
                   </p>
                   <ul className="space-y-4 text-lg">

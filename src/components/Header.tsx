@@ -54,7 +54,7 @@ const Header: React.FC = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`px-3 py-2 text-sm font-medium transition-colors duration-200 relative group ${
+                  className={`px-3 py-2 font-medium transition-colors duration-200 relative group ${
                     isActive(item.path)
                       ? 'text-white'
                       : 'text-white hover:text-white'

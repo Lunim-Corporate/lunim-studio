@@ -170,7 +170,7 @@ const Packages: React.FC = () => {
             >
               {pkg.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium flex items-center space-x-1">
+                  <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-full text-base font-medium flex items-center space-x-1">
                     <Star className="w-4 h-4 fill-current" />
                     <span>Most Popular</span>
                   </div>
@@ -187,7 +187,7 @@ const Packages: React.FC = () => {
 
                 <div className="mb-6">
                   <span className="text-4xl font-bold text-white">{pkg.price}</span>
-                  <span className="text-gray-400">{pkg.period}</span>
+                  <span className="text-gray-200">{pkg.period}</span>
                 </div>
 
                 <ul className="space-y-4 mb-8">
@@ -238,12 +238,12 @@ const Packages: React.FC = () => {
                 <p className="text-gray-300 mb-6">{pkg.description}</p>
                 
                 <h4 className="text-xl font-bold text-white mb-1">Buy Now</h4>
-                <p className="text-gray-400 text-sm mb-6">Now</p>
+                <p className="text-gray-200 text-base mb-6">Now</p>
                 {/* --- New Headings End --- */}
 
                 <div className="mb-6">
                   <span className="text-4xl font-bold text-white">{pkg.price}</span>
-                  <span className="text-gray-400">{pkg.period}</span>
+                  <span className="text-gray-200">{pkg.period}</span>
                 </div>
 
                 <ul className="space-y-4 mb-8">
@@ -290,12 +290,12 @@ const Packages: React.FC = () => {
                 <p className="text-gray-300 mb-6">{pkg.description}</p>
                 
                 <h4 className="text-xl font-bold text-white mb-1">Buy Now</h4>
-                <p className="text-gray-400 text-sm mb-6">Now</p>
+                <p className="text-gray-200 text-base mb-6">Now</p>
                 {/* --- New Headings End --- */}
 
                 <div className="mb-6">
                   <span className="text-4xl font-bold text-white">{pkg.price}</span>
-                  <span className="text-gray-400">{pkg.period}</span>
+                  <span className="text-gray-200">{pkg.period}</span>
                 </div>
 
                 <ul className="space-y-4 mb-8">
@@ -325,19 +325,19 @@ const Packages: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <h3 className="font-semibold text-white mb-2">Can I change my plan later?</h3>
-              <p className="text-gray-300 text-sm">Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately.</p>
+              <p className="text-gray-300 text-base">Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately.</p>
             </div>
             <div>
               <h3 className="font-semibold text-white mb-2">Is there a free trial?</h3>
-              <p className="text-gray-300 text-sm">We offer a 14-day free trial for all plans. No credit card required to start.</p>
+              <p className="text-gray-300 text-base">We offer a 14-day free trial for all plans. No credit card required to start.</p>
             </div>
             <div>
               <h3 className="font-semibold text-white mb-2">What payment methods do you accept?</h3>
-              <p className="text-gray-300 text-sm">We accept all major credit cards, PayPal, and bank transfers for enterprise plans.</p>
+              <p className="text-gray-300 text-base">We accept all major credit cards, PayPal, and bank transfers for enterprise plans.</p>
             </div>
             <div>
               <h3 className="font-semibold text-white mb-2">Do you offer refunds?</h3>
-              <p className="text-gray-300 text-sm">Yes, we offer a 30-day money-back guarantee for all plans.</p>
+              <p className="text-gray-300 text-base">Yes, we offer a 30-day money-back guarantee for all plans.</p>
             </div>
           </div>
         </div>

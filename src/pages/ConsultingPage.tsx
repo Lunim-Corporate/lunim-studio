@@ -26,7 +26,7 @@ const ConsultingPage: React.FC = () => {
       {/* Challenge Section */}
       <section className="py-8 bg-gray-900">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">The Challenge</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#BBFEFF]">The Challenge</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed mb-4">
               The original Pizza Hut checkout process presented too many steps and friction points, particularly for returning users. Repetitive inputs, unclear progress indicators, and poorly optimized mobile layouts led to drop-offs and frustrated users.
@@ -47,7 +47,7 @@ const ConsultingPage: React.FC = () => {
       {/* Solution Section */}
       <section className="py-8 bg-black">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">Our Solution</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#BBFEFF]">Our Solution</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed mb-4">
               Using rapid prototyping and usability testing, we redesigned the checkout flow with a mobile-first, user-centered approach.
@@ -76,7 +76,7 @@ const ConsultingPage: React.FC = () => {
       {/* Outcome Section */}
       <section className="py-8 bg-gray-900">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">The Impact</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#BBFEFF]">The Impact</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <ul className="text-gray-300 text-lg leading-relaxed list-disc pl-8 space-y-2">
               <li>

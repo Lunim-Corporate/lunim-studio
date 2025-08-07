@@ -357,7 +357,7 @@ const expertiseAreas = [
             {loadingHero ? (
               <div className="flex flex-col justify-center items-center h-64"> {/* Increased height for loader */}
                 <Loader2 className="animate-spin h-12 w-12 text-blue-500 mb-4" /> {/* Larger loader */}
-                <p className="text-xl text-gray-400">Loading hero content...</p>
+                <p className="text-xl text-gray-200">Loading hero content...</p>
               </div>
             ) : errorHero ? (
               <div className="text-red-500 text-lg">
@@ -389,7 +389,7 @@ const expertiseAreas = [
                     to="#expertiseSection"
                     className="bg-gradient-to-r from-[#BBFEFF] to-[#BBFEFF] text-black px-8 py-4 rounded-[0.3rem] font-semibold hover:from-[#BBFEFF] hover:to-[#BBFEFF] transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
                   >
-                    <span>Our Expertise</span>
+                    <span>Core Expertise</span>
                   </Link>
                 </div>
               </>
@@ -410,8 +410,8 @@ const expertiseAreas = [
                 <div className={`${area.iconBg} text-black w-14 h-14 rounded-xl flex items-center justify-center mb-4`}>
                   <area.icon className="w-7 h-7" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">{area.title}</h3>
-                <p className="text-gray-300 text-sm">{area.description}</p>
+                <h3 className="text-[#BBFEFF] text-xl font-bold mb-2">{area.title}</h3>
+                <p className="text-gray-300 text-base">{area.description}</p>
               </div>
             ))}
           </div>
@@ -445,8 +445,8 @@ const expertiseAreas = [
                   <div className="bg-[#BBFEFF] w-16 h-16 rounded-full flex items-center justify-center mb-4">
                     <Icon className="w-7 h-7 text-black" />
                   </div>
-                  <h3 className="text-white font-semibold text-lg mb-1">{item.title}</h3>
-                  <p className="text-gray-400 text-sm max-w-xs">{item.description}</p>
+                  <h3 className="text-[#BBFEFF] font-semibold text-lg mb-1">{item.title}</h3>
+                  <p className="text-gray-200 text-base max-w-xs">{item.description}</p>
                 </div>
               );
             })}
@@ -491,8 +491,8 @@ const expertiseAreas = [
                 <div className="bg-[#BBFEFF] w-16 h-16 rounded-full flex items-center justify-center mb-4 transform transition-transform duration-300 group-hover-disabled">
                   <span className="text-black text-2xl font-bold">{item.icon}</span>
                 </div>
-                <h3 className="text-white font-semibold text-lg mb-1">{item.title}</h3>
-                <p className="text-gray-400 text-sm max-w-xs">{item.description}</p>
+                <h3 className="text-[#BBFEFF] font-semibold text-lg mb-1">{item.title}</h3>
+                <p className="text-gray-200 text-base max-w-xs">{item.description}</p>
               </div>
             ))}
           </div>
@@ -526,8 +526,8 @@ const expertiseAreas = [
 
                 <div className="bg-[#1f2937] p-6 text-left flex flex-col justify-between h-35">
                   <div>
-                    <h3 className="text-white font-bold text-xl mb-2">{service.title}</h3>
-                    <p className="text-gray-400 text-sm">{service.description}</p>
+                    <h3 className="text-[#BBFEFF] font-bold text-xl mb-2">{service.title}</h3>
+                    <p className="text-gray-200 text-base">{service.description}</p>
                   </div>
                   <div className="flex flex-wrap gap-2 mt-4">
                     {service.tags.map((tag, tagIndex) => (
@@ -592,7 +592,7 @@ const expertiseAreas = [
           <Clock className="w-6 h-6 text-[#BBFEFF] flex-shrink-0" />
           <div>
             <p className="text-white font-semibold">Quick Response</p>
-            <p className="text-gray-400 text-sm">We respond to all inquiries within 24 hours. </p>
+            <p className="text-gray-200 text-base">We respond to all inquiries within 24 hours. </p>
           </div>
         </li>
         <li className="flex items-start space-x-3">
@@ -600,7 +600,7 @@ const expertiseAreas = [
           <Mail className="w-6 h-6 text-[#BBFEFF] flex-shrink-0" />
           <div>
             <p className="text-white font-semibold">Drop Us An Email</p>
-            <p className="text-gray-400 text-sm">hello@lunim.io</p>
+            <p className="text-gray-200 text-base">hello@lunim.io</p>
           </div>
         </li>
         <li className="flex items-start space-x-3">
@@ -608,7 +608,7 @@ const expertiseAreas = [
           <Phone className="w-6 h-6 text-[#BBFEFF] flex-shrink-0" />
           <div>
             <p className="text-white font-semibold">Give Us A Bell</p>
-            <p className="text-gray-400 text-sm">020 3051 9057 </p>
+            <p className="text-gray-200 text-base">020 3051 9057 </p>
           </div>
         </li>
       </ul>
@@ -642,7 +642,7 @@ const expertiseAreas = [
             <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left"> {/* <--- Added id="innovateForm" here */}
               {/* Full Name */}
                 <div>
-                  <label htmlFor="fullName" className="block text-gray-300 text-sm font-semibold mb-2">
+                  <label htmlFor="fullName" className="block text-gray-300 text-base font-semibold mb-2">
                     Your full name *
                   </label>
                   <input
@@ -659,7 +659,7 @@ const expertiseAreas = [
 
                 {/* Work Email */}
                 <div>
-                  <label htmlFor="workEmail" className="block text-gray-300 text-sm font-semibold mb-2">
+                  <label htmlFor="workEmail" className="block text-gray-300 text-base font-semibold mb-2">
                    Your Email *
                   </label>
                   <input
@@ -676,7 +676,7 @@ const expertiseAreas = [
 
                  {/* Company Name*/}
                 <div>
-                  <label htmlFor="workEmail" className="block text-gray-300 text-sm font-semibold mb-2">
+                  <label htmlFor="workEmail" className="block text-gray-300 text-base font-semibold mb-2">
                    Company Name*
                   </label>
                   <input
@@ -692,7 +692,7 @@ const expertiseAreas = [
 
                 {/* Project Budget */}
                 <div>
-                  <label htmlFor="projectBudget" className="block text-gray-300 text-sm font-semibold mb-2">
+                  <label htmlFor="projectBudget" className="block text-gray-300 text-base font-semibold mb-2">
                     Project Budget 
                   </label>
                   <div className="relative">
@@ -714,7 +714,7 @@ const expertiseAreas = [
                 
                     </select>
                     {/* Custom arrow for select */}
-                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
+                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-200">
                       <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                       </svg> 
@@ -724,7 +724,7 @@ const expertiseAreas = [
 
                 {/* Project Goals */}
                 <div className="md:col-span-2">
-                  <label htmlFor="projectGoals" className="block text-gray-300 text-sm font-semibold mb-2">
+                  <label htmlFor="projectGoals" className="block text-gray-300 text-base font-semibold mb-2">
                     Project Goals *
                   </label>
                   <textarea

@@ -26,7 +26,7 @@ const AIPoweredTriage: React.FC = () => {
       {/* Challenge Section */}
       <section className="py-8 bg-gray-900">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">The Challenge</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#BBFEFF]">The Challenge</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed mb-4">
               In early 2021, the NFT ecosystem on the Stacks network was in its infancy. The underlying technology and standards were still evolving, and there were significant bottlenecks for artists.
@@ -55,7 +55,7 @@ const AIPoweredTriage: React.FC = () => {
       {/* Solution Section */}
       <section className="py-8 bg-black">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">Our Solution</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#BBFEFF]">Our Solution</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed mb-4">
               Instead of waiting for official network standards (SIPs) to be developed and approved, we created ThisIsNumberOne, the first-ever multimedia NFT contract on the Stacks network. This custom-built solution was engineered from the ground up to provide the infrastructure that artists needed, enabling:
@@ -78,7 +78,7 @@ const AIPoweredTriage: React.FC = () => {
       {/* Outcome Section */}
       <section className="py-8 bg-gray-900">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">The Impact</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#BBFEFF]">The Impact</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed mb-4">
               ThisIsNumberOne successfully launched several of the most iconic and groundbreaking NFT collections in the history of the Stacks network:
