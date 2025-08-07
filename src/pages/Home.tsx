@@ -33,6 +33,7 @@ interface HeroContent {
 }
 
 const App: React.FC = () => {
+
   // --- Hero Section State (NEW) ---
   const [heroContent, setHeroContent] = useState<HeroContent | null>(null);
   const [loadingHero, setLoadingHero] = useState(true);
@@ -334,6 +335,7 @@ const expertiseAreas = [
   };
 
   return (
+    
     <div className="pt-16 bg-black">
       {/* Hero Section */}
       <section
@@ -440,7 +442,7 @@ const expertiseAreas = [
                   key={index}
                   className="flex flex-col items-center text-center group transition-transform duration-300 hover:scale-105"
                 >
-                  <div className="bg-[#BBFEFF] w-16 h-16 rounded-full flex items-center justify-center mb-4 transform transition-transform duration-300 group-hover:scale-125">
+                  <div className="bg-[#BBFEFF] w-16 h-16 rounded-full flex items-center justify-center mb-4 transform transition-transform duration-300 group-hover:scale-125 group-hover-disabled">
                     <Icon className="w-7 h-7 text-black" />
                   </div>
                   <h3 className="text-white font-semibold text-lg mb-1">{item.title}</h3>
