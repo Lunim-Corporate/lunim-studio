@@ -24,7 +24,7 @@ const ImageTextSection: React.FC<ImageTextSectionProps> = ({
       <div className="w-full md:w-1/2 text-white">
         <h2 className="text-3xl font-bold mb-4">{title}</h2>
         <p className="text-xl font-medium mb-4">{subtitle}</p>
-        <p className="text-gray-400">{description}</p>
+        <p className="text-gray-200">{description}</p>
       </div>
     </div>
   </section>
