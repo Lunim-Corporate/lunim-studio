@@ -50,7 +50,7 @@ const ContactForm = () => {
         />
         
         <div>
-          <label htmlFor="projectBudget" className="block text-gray-300 text-sm font-semibold mb-2">
+          <label htmlFor="projectBudget" className="block text-gray-300 text-base font-semibold mb-2">
             Project Budget 
           </label>
           <div className="relative">
@@ -78,7 +78,7 @@ const ContactForm = () => {
         </div>
 
         <div className="md:col-span-2">
-          <label htmlFor="projectGoals" className="block text-gray-300 text-sm font-semibold mb-2">
+          <label htmlFor="projectGoals" className="block text-gray-300 text-base font-semibold mb-2">
             Project Goals *
           </label>
           <textarea
@@ -134,7 +134,7 @@ const FormField: React.FC<{
   required?: boolean;
 }> = ({ id, label, value, onChange, type = 'text', placeholder, required = false }) => (
   <div>
-    <label htmlFor={id} className="block text-gray-300 text-sm font-semibold mb-2">
+    <label htmlFor={id} className="block text-gray-300 text-base font-semibold mb-2">
       {label}
     </label>
     <input

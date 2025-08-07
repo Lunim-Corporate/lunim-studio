@@ -53,7 +53,7 @@ const InfoItem: React.FC<{ icon: React.ComponentType<{ className?: string }>, ti
     <Icon className="w-6 h-6 text-[#BBFEFF] flex-shrink-0" />
     <div>
       <p className="text-white font-semibold">{title}</p>
-      <p className="text-gray-400 text-sm">{description}</p>
+      <p className="text-gray-400 text-base">{description}</p>
     </div>
   </li>
 );

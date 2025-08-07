@@ -32,7 +32,7 @@ const ProjectShowcaseSection: React.FC<ProjectShowcaseSectionProps> = ({ title, 
             <div className="bg-[#1f2937] p-6 flex-1 flex flex-col"> 
               <div className="flex-1">
                 <h3 className="text-white font-bold text-xl mb-2 text-left">{project.title}</h3>
-                <p className="text-gray-400 text-sm text-left">{project.description}</p>
+                <p className="text-gray-400 text-base text-left">{project.description}</p>
               </div>
               
               <div className="flex flex-wrap gap-2 mt-4">

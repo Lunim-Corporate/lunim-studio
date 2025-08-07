@@ -30,7 +30,7 @@ const ProcessSection: React.FC<ProcessSectionProps> = ({
                 )}
               </div>
               <h3 className="text-white font-semibold text-lg mb-1">{item.title}</h3>
-              <p className="text-gray-400 text-sm max-w-xs">{item.description}</p>
+              <p className="text-gray-400 text-base max-w-xs">{item.description}</p>
             </div>
           );
         })}

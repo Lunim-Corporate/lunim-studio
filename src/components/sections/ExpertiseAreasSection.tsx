@@ -22,7 +22,7 @@ const ExpertiseAreasSection: React.FC<ExpertiseAreasSectionProps> = ({ items }) 
                   <Icon className="w-7 h-7" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">{area.title}</h3>
-                <p className="text-gray-300 text-sm">{area.description}</p>
+                <p className="text-gray-300 text-base">{area.description}</p>
               </div>
             );
           })}
