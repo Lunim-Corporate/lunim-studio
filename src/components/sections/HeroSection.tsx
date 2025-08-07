@@ -32,14 +32,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ content, backgroundImage }) =
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
           <Link
             to="#contact-form"
-            className="bg-gradient-to-r from-[#BBFEFF] to-[#BBFEFF] text-black px-8 py-4 rounded-[0.3rem] font-semibold hover:from-[#BBFEFF] hover:to-[#BBFEFF] transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
+            className="bg-gradient-to-r from-[#BBFEFF] to-[#BBFEFF] text-black px-8 py-4 rounded-[0.3rem] font-semibold hover:bg-cyan-300 transition-colors duration-300 shadow-lg flex items-center justify-center space-x-2"
           >
             <span>Get In Touch</span>
             <ArrowRight className="w-5 h-5" />
           </Link>
           <Link
             to="#expertiseSection"
-            className="bg-gradient-to-r from-[#BBFEFF] to-[#BBFEFF] text-black px-8 py-4 rounded-[0.3rem] font-semibold hover:from-[#BBFEFF] hover:to-[#BBFEFF] transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
+            className="bg-gradient-to-r from-[#BBFEFF] to-[#BBFEFF] text-black px-8 py-4 rounded-[0.3rem] font-semibold hover:bg-cyan-300 transition-colors duration-300 shadow-lg flex items-center justify-center space-x-2"
           >
             <span>Our Expertise</span>
           </Link>

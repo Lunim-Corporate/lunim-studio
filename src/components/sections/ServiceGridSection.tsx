@@ -28,7 +28,7 @@ const ServiceGridSection: React.FC<ServiceGridSectionProps> = ({
                 key={index}
                 className="flex flex-col items-center text-center group"
               >
-                <div className={`${item.iconBg || 'bg-[#BBFEFF]'} w-16 h-16 rounded-full flex items-center justify-center mb-4`}>
+                <div className={`${item.iconBg || 'bg-[#BBFEFF]'} w-16 h-16 rounded-full flex items-center justify-center`}>
                   {typeof item.icon === 'number' ? (
                     <span className="text-black text-2xl font-bold">{item.icon}</span>
                   ) : (
