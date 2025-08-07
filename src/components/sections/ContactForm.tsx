@@ -107,8 +107,8 @@ const ContactForm = () => {
             type="submit"
             disabled={formStatus === 'submitting'}
             className="bg-[#BBFEFF] text-black px-8 py-4 rounded-lg font-semibold 
-                      transition-all duration-200 transform hover:scale-105 
-                      shadow-lg hover:shadow-xl inline-flex items-center justify-center space-x-2"
+                      hover:bg-cyan-300 transition-colors duration-300 
+                      shadow-lg inline-flex items-center justify-center space-x-2"
           >
             {formStatus === 'submitting' ? (
               <>
