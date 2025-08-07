@@ -16,12 +16,12 @@ const ExpertiseAreasSection: React.FC<ExpertiseAreasSectionProps> = ({ items }) 
             return (
               <div
                 key={index}
-                className="bg-black rounded-2xl p-6 transition-all duration-300 transform hover:scale-105 border border-white border-opacity-20 hover:border-opacity-100 hover:shadow-2xl hover:shadow-white/20"
+                className="bg-black rounded-2xl p-6 border border-white border-opacity-20"
               >
                 <div className={`${area.iconBg} text-black w-14 h-14 rounded-xl flex items-center justify-center mb-4`}>
                   <Icon className="w-7 h-7" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">{area.title}</h3>
+                <h3 className="text-xl font-bold text-[#BBFEFF] mb-2">{area.title}</h3>
                 <p className="text-gray-300 text-base">{area.description}</p>
               </div>
             );
@@ -30,7 +30,7 @@ const ExpertiseAreasSection: React.FC<ExpertiseAreasSectionProps> = ({ items }) 
 
         <div>
           <h2 className="text-4xl font-bold text-white mb-4">
-            Innovation Opportunities, Everywhere, For Everyone
+            Innovation Opportunities: Everywhere, For Everyone
           </h2>
           <p className="text-xl text-gray-300 leading-relaxed mb-6">
             Our team of experts in emerging tech will work closely with you to identify and implement custom strategies.

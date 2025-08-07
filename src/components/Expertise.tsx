@@ -69,9 +69,9 @@ const Expertise: React.FC = () => {
           {expertiseAreas.map((area) => (
             <div
               key={area.title}
-              className="group p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-gray-200 hover:transform hover:-translate-y-2"
+              className="group p-8 bg-white rounded-2xl shadow-lg border border-gray-100"
             >
-              <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl ${getColorClasses(area.color)} mb-6 group-hover:scale-110 transition-transform duration-300`}>
+              <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl ${getColorClasses(area.color)} mb-6`}>
                 <area.icon className="w-8 h-8" />
               </div>
               

@@ -26,7 +26,7 @@ const ServiceGridSection: React.FC<ServiceGridSectionProps> = ({
             return (
               <div
                 key={index}
-                className="flex flex-col items-center text-center group transition-transform duration-300 hover:scale-105"
+                className="flex flex-col items-center text-center group"
               >
                 <div className={`${item.iconBg || 'bg-[#BBFEFF]'} w-16 h-16 rounded-full flex items-center justify-center mb-4`}>
                   {typeof item.icon === 'number' ? (
@@ -35,7 +35,7 @@ const ServiceGridSection: React.FC<ServiceGridSectionProps> = ({
                     <Icon className="w-7 h-7 text-black" />
                   )}
                 </div>
-                <h3 className="text-white font-semibold text-lg mb-1">{item.title}</h3>
+                <h3 className="text-[#BBFEFF] font-semibold text-lg mb-1">{item.title}</h3>
                 <p className="text-gray-200 text-base max-w-xs">{item.description}</p>
               </div>
             );
