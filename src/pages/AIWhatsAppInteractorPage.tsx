@@ -25,7 +25,7 @@ const AIWhatsAppInteractorPage: React.FC = () => {
       {/* Challenge Section */}
       <section className="py-8 bg-gray-900">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">The Challenge</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#BBFEFF]">The Challenge</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed mb-4">
               For independent professionals and small businesses, WhatsApp is a primary client communication channel. However, managing the constant flow of messages manually was leading to significant business challenges.
@@ -46,7 +46,7 @@ const AIWhatsAppInteractorPage: React.FC = () => {
       {/* Solution Section */}
       <section className="py-8 bg-black">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">Our Solution</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#BBFEFF]">Our Solution</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed mb-4">
               We developed an AI-powered WhatsApp agent that acts as a real-time assistant, automating conversations and managing client interactions.
@@ -75,7 +75,7 @@ const AIWhatsAppInteractorPage: React.FC = () => {
       {/* Outcome Section */}
       <section className="py-8 bg-gray-900">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">The Outcome</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#BBFEFF]">The Outcome</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <ul className="text-gray-300 text-lg leading-relaxed list-disc pl-8 space-y-2">
               <li>

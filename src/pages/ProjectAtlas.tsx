@@ -26,7 +26,7 @@ const ProjectAtlas: React.FC = () => {
       {/* Challenge Section */}
       <section className="py-8 bg-gray-900">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">The Challenge</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#BBFEFF]">The Challenge</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed">
               Decentralised Autonomous Organisation (DAO) platforms were struggling with grant allocation processes that were slow and opaque, with low community engagement. The reliance on fragmented tools, combined with voter fatigue and unclear incentives, resulted in mediocre proposals and inefficient use of community funds. The core challenge was to create a system that encouraged high-quality submissions and active participation.
@@ -38,7 +38,7 @@ const ProjectAtlas: React.FC = () => {
       {/* Solution Section */}
       <section className="py-8 bg-black">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">Our Solution</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#BBFEFF]">Our Solution</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed mb-4">
               We designed and built a fully automated, on-chain governance platform that transforms grant allocation into a competitive, transparent, and engaging process. The system uses an epoch-based, winner-takes-all model to drive excellence.
@@ -59,7 +59,7 @@ const ProjectAtlas: React.FC = () => {
       {/* Outcome Section */}
       <section className="py-8 bg-gray-900">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">The Outcome</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#BBFEFF]">The Outcome</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <ul className="text-gray-300 text-lg leading-relaxed list-disc pl-8 space-y-2">
               <li>

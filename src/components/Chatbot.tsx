@@ -101,7 +101,7 @@ const Chatbot: React.FC = () => {
             <h3 className="text-white font-semibold">Lunim AI Support</h3>
             <button
               onClick={toggleChat}
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-gray-200 hover:text-white transition-colors"
               aria-label="Close Chat"
             >
               <X className="w-5 h-5" />
@@ -111,7 +111,7 @@ const Chatbot: React.FC = () => {
           {/* Chat Messages Display */}
           <div ref={chatWindowRef} className="flex-1 p-4 overflow-y-auto custom-scrollbar">
             {chatHistory.length === 0 && !isLoading && (
-              <div className="text-gray-400 text-center text-sm py-4">
+              <div className="text-gray-200 text-center text-base py-4">
                 ASk A question About Lunim. 
               </div>
             )}

@@ -7,7 +7,7 @@ const PrivacyPolicyPage: React.FC = () => {
         <h1 className="text-4xl font-bold mb-8 text-center" style={{ color: '#BBFEFF' }}>Privacy Policy</h1>
 
         <div className="prose prose-invert max-w-none text-gray-300 leading-relaxed">
-          <p className="text-sm text-gray-400 mb-6"><strong>Last Updated: July 31, 2025</strong></p>
+          <p className="text-base text-gray-200 mb-6"><strong>Last Updated: July 31, 2025</strong></p>
 
           <h2 className="text-2xl font-semibold text-white mb-3">1. Introduction</h2>
           <p className="mb-4">Welcome to Lunim Innovation Studio. We are committed to protecting and respecting your privacy. This policy explains what personal data we collect from you, how we use it, and how we keep it safe.</p>

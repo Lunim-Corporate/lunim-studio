@@ -57,7 +57,7 @@ const About: React.FC = () => {
                   <Users className="w-8 h-8" style={{ color: '#BBFEFF' }} />
                 </div>
                 <div className="text-3xl font-bold text-white mb-1">25+</div>
-                <div className="text-gray-400 text-sm">Expert Team Members</div>
+                <div className="text-gray-200 text-base">Expert Team Members</div>
               </div>
 
               <div className="text-center">
@@ -65,7 +65,7 @@ const About: React.FC = () => {
                   <Award className="w-8 h-8" style={{ color: '#BBFEFF' }} />
                 </div>
                 <div className="text-3xl font-bold text-white mb-1">200+</div>
-                <div className="text-gray-400 text-sm">Successful Projects</div>
+                <div className="text-gray-200 text-base">Successful Projects</div>
               </div>
 
               <div className="text-center">
@@ -73,7 +73,7 @@ const About: React.FC = () => {
                   <Clock className="w-8 h-8" style={{ color: '#BBFEFF' }} />
                 </div>
                 <div className="text-3xl font-bold text-white mb-1">8+</div>
-                <div className="text-gray-400 text-sm">Years of Experience</div>
+                <div className="text-gray-200 text-base">Years of Experience</div>
               </div>
 
               <div className="text-center">
@@ -81,7 +81,7 @@ const About: React.FC = () => {
                   <GlobeIcon className="w-8 h-8" style={{ color: '#BBFEFF' }} />
                 </div>
                 <div className="text-3xl font-bold text-white mb-1">15+</div>
-                <div className="text-gray-400 text-sm">Countries Served</div>
+                <div className="text-gray-200 text-base">Countries Served</div>
               </div>
             </div>
           </div>
@@ -97,7 +97,7 @@ const About: React.FC = () => {
                     <value.icon className="w-6 h-6" style={{ color: '#BBFEFF' }} />
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-2">{value.title}</h3>
-                  <p className="text-gray-300 text-sm">{value.description}</p>
+                  <p className="text-gray-300 text-base">{value.description}</p>
                 </div>
               ))}
             </div>

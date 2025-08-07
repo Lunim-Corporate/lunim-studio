@@ -26,7 +26,7 @@ const MaintenancePage: React.FC = () => {
       {/* Challenge Section */}
       <section className="py-8 bg-gray-900">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">The Challenge</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#BBFEFF]">The Challenge</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed mb-4">
               ToucanBox, a children's craft subscription service, found its initial digital touchpoints were creating a barrier for its target audience: busy parents. The original user flow suffered from critical issues that led to high drop-off rates:
@@ -52,7 +52,7 @@ const MaintenancePage: React.FC = () => {
       {/* Solution Section */}
       <section className="py-8 bg-black">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">Our Solution</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#BBFEFF]">Our Solution</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed mb-4">
               We conducted in-depth usability testing and rapid prototyping to redesign the entire onboarding experience with a parent-first mindset. The solution focused on clarity, convenience, and trust:
@@ -78,7 +78,7 @@ const MaintenancePage: React.FC = () => {
       {/* Outcome Section */}
       <section className="py-8 bg-gray-900">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-white">The Impact</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#BBFEFF]">The Impact</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <p className="text-gray-300 text-lg leading-relaxed mb-4">
               The redesigned flow delivered measurable improvements in user conversion and satisfaction:

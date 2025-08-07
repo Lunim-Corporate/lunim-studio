@@ -82,7 +82,7 @@ const LeadGenForm: React.FC<LeadGenFormProps> = ({ isOpen, onClose, onSuccess })
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-gray-400 hover:text-white transition"
+          className="absolute top-4 right-4 text-gray-200 hover:text-white transition"
           aria-label="Close"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

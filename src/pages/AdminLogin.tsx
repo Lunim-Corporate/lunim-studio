@@ -55,7 +55,7 @@ const AdminLogin: React.FC = () => {
 
         <form onSubmit={handleLogin} className="space-y-6">
           <div>
-            <label htmlFor="email" className="block text-gray-300 text-sm font-semibold mb-2">
+            <label htmlFor="email" className="block text-gray-300 text-base font-semibold mb-2">
               Email
             </label>
             <input
@@ -69,7 +69,7 @@ const AdminLogin: React.FC = () => {
             />
           </div>
           <div>
-            <label htmlFor="password" className="block text-gray-300 text-sm font-semibold mb-2">
+            <label htmlFor="password" className="block text-gray-300 text-base font-semibold mb-2">
               Password
             </label>
             <input
