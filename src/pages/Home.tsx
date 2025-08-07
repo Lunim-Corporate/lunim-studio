@@ -190,6 +190,7 @@ const expertiseAreas = [
     {
       icon: 1,
       title: 'FREE Introductory Session',
+      duration: '2 hours',
       description: 'A brief but intensive session to clarify your business goals, define the problem you’re solving, and align on your next steps.',
       bgColor: 'from-blue-400 to-blue-600',
       iconBg: 'bg-blue-500'
@@ -197,6 +198,7 @@ const expertiseAreas = [
     {
       icon: 2,
       title: 'Discovery Sprint',
+      duration: '1 week',
       description: 'An immersive and collaborative process where our teams ideate solutions and create the blueprint for your prototype.',
       bgColor: 'from-purple-400 to-purple-600',
       iconBg: 'bg-purple-500'
@@ -204,6 +206,7 @@ const expertiseAreas = [
     {
       icon: 3,
       title: 'Prototype Sprint',
+      duration: '2 weeks',
       description: 'Rapidly develop a clickable prototype that you can use to test your core assumptions with real users and stakeholders.',
       bgColor: 'from-pink-400 to-pink-600',
       iconBg: 'bg-pink-500'
@@ -211,6 +214,7 @@ const expertiseAreas = [
     {
       icon: 4,
       title: 'Build Sprint',
+      duration: '3 weeks',
       description: 'Build the core functional product, and outline the strategy and timeline of a successful launch.',
       bgColor: 'from-yellow-400 to-orange-500',
       iconBg: 'bg-yellow-500'
@@ -492,6 +496,7 @@ const expertiseAreas = [
                   <span className="text-black text-2xl font-bold">{item.icon}</span>
                 </div>
                 <h3 className="text-[#BBFEFF] font-semibold text-lg mb-1">{item.title}</h3>
+                <p className="text-gray-400 text-base max-w-xs">{item.duration}</p>
                 <p className="text-gray-200 text-base max-w-xs">{item.description}</p>
               </div>
             ))}
