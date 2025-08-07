@@ -48,7 +48,7 @@ const App: React.FC = () => {
       />
       
       <ImageTextSection 
-        title="Clarity in Days. Confidence for Years"
+        title="Clarity in Days, Confidence for Years"
         subtitle="Intensive design sprints to turn vision into reality."
         description="We don't just innovate for you, we equip you with the tools to do so yourself. By the end of our process, you will have more than just a product; you'll have a unified team, a validated concept, and a clear strategic plan to take your moonshot idea to market."
       />

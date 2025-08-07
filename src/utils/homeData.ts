@@ -63,7 +63,7 @@ export interface ProcessItem {
 export const heroContent: HeroContent = {
   hero_title_part1: 'Light the Way',
   hero_title_part2: 'To Your Next Moonshot',
-  hero_description: 'We specialise in design thinking, AI integration, and Web3 to power your next giant leap in digital innovation.',
+  hero_description: 'We specialise in design thinking, AI integration, and Web3 to power your next giant leap in digital innovation',
 };
 
 export const sprintPackages: ServiceItem[] = [
@@ -197,7 +197,7 @@ export const ourServices: ProjectItem[] = [
   },
   {
     title: 'Stacks\' First Curated Multimedia NFT Collection',
-    description: 'Launching the Network\'s First Music, Generative, and Mixed-Media Collections',
+    description: 'Launching the network\'s first music, generative, and mixed-media collections.',
     tags: ['AI Integration', 'Design thinking'],
     bgColor: 'bg-emerald-700',
     path: '/case-studies/ai-powered-triage',
@@ -213,7 +213,7 @@ export const ourServices: ProjectItem[] = [
   },
   {
     title: 'ToucanBox: Redesigning Sign-Up for Busy Parents',
-    description: 'How a User-Centric Overhaul Reduced Friction and Boosted Subscriber Conversion',
+    description: 'How a user-centric overhaul reduced friction and boosted subscriber conversion.',
     tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
     bgColor: 'bg-cyan-700',
     path: '/services/maintenance',
@@ -221,7 +221,7 @@ export const ourServices: ProjectItem[] = [
   },
   {
     title: 'AI Agent Portfolio Builder',
-    description: 'Slashing Onboarding Friction with AI-Powered Data Sourcing',
+    description: 'Slashing onboarding friction with AI-powered data sourcing.',
     tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
     bgColor: 'bg-orange-700',
     path: '/aiagentbuilder',
@@ -229,7 +229,7 @@ export const ourServices: ProjectItem[] = [
   },
   {
     title: 'AI WhatsApp Assistant',
-    description: 'Automated Assistant for Managing Bookings and Answering Questions 24/7',
+    description: 'Automated assistant for managing bookings and answering questions 24/7.',
     tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
     bgColor: 'bg-pink-700',
     path: '/ai-whatsapp-interactor',
@@ -248,12 +248,12 @@ export const faqData: FAQItem[] = [
   },
   {
     question: 'Who from my team needs to be involved in a Sprint?',
-    answer: 'Our philosophy is simple: you are the experts in your business, we are the experts in the process.\nYou will provide the primary decision-maker. Beyond that, we encourage bringing relevant team members to participate in the process alongside us. Your team\'s deep knowledge can be invaluable fuel for the sprint, and allow you to more effectively take the process forward after we finish working together.',
+    answer: 'Our philosophy is simple; you are the experts in your business, we are the experts in the process.\nYou will provide the primary decision-maker. Beyond that, we encourage you to bring relevant team members to participate in the process alongside us. Your team\'s deep knowledge can be invaluable fuel for the sprint, and allow you to more effectively take the process forward after we finish working together.',
   },
 ];
 
 export const imageTextContent = {
-  title: "Clarity in Days. Confidence for Years",
+  title: "Clarity in Days, Confidence for Years",
   subtitle: "Intensive design sprints to turn vision into reality.",
   description: "We don't just innovate for you, we equip you with the tools to do so yourself. By the end of our process, you will have more than just a product; you'll have a unified team, a validated concept, and a clear strategic plan to take your moonshot idea to market."
 };

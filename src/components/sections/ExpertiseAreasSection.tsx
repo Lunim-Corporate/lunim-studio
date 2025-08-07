@@ -30,7 +30,7 @@ const ExpertiseAreasSection: React.FC<ExpertiseAreasSectionProps> = ({ items }) 
 
         <div>
           <h2 className="text-4xl font-bold text-white mb-4">
-            Innovation Opportunities: Everywhere, For Everyone.
+            Innovation Opportunities, Everywhere, For Everyone
           </h2>
           <p className="text-xl text-gray-300 leading-relaxed mb-6">
             Our team of experts in emerging tech will work closely with you to identify and implement custom strategies.
