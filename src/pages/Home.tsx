@@ -405,7 +405,7 @@ const expertiseAreas = [
             {expertiseAreas.slice(0, 4).map((area, index) => (
               <div
                 key={index}
-                className="bg-black rounded-2xl p-6 transition-all duration-300 transform hover:scale-105 border border-white border-opacity-20 hover:border-opacity-100 hover:shadow-2xl hover:shadow-white/20"
+                className="bg-black rounded-2xl p-6 border border-white border-opacity-20"
               >
                 <div className={`${area.iconBg} text-black w-14 h-14 rounded-xl flex items-center justify-center mb-4`}>
                   <area.icon className="w-7 h-7" />
@@ -440,9 +440,9 @@ const expertiseAreas = [
               return (
                 <div
                   key={index}
-                  className="flex flex-col items-center text-center group transition-transform duration-300 hover:scale-105"
+                  className="flex flex-col items-center text-center group"
                 >
-                  <div className="bg-[#BBFEFF] w-16 h-16 rounded-full flex items-center justify-center mb-4 transform transition-transform duration-300 group-hover:scale-125 group-hover-disabled">
+                  <div className="bg-[#BBFEFF] w-16 h-16 rounded-full flex items-center justify-center mb-4">
                     <Icon className="w-7 h-7 text-black" />
                   </div>
                   <h3 className="text-white font-semibold text-lg mb-1">{item.title}</h3>
