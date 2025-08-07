@@ -190,7 +190,7 @@ const expertiseAreas = [
     {
       icon: 1,
       title: 'FREE Introductory Session',
-      duration: '2 hours',
+      duration: '1 hour',
       description: 'A brief but intensive session to clarify your business goals, define the problem you’re solving, and align on your next steps.',
       bgColor: 'from-blue-400 to-blue-600',
       iconBg: 'bg-blue-500'
@@ -198,7 +198,7 @@ const expertiseAreas = [
     {
       icon: 2,
       title: 'Discovery Sprint',
-      duration: '1 week',
+      duration: '1 - 2 weeks',
       description: 'An immersive and collaborative process where our teams ideate solutions and create the blueprint for your prototype.',
       bgColor: 'from-purple-400 to-purple-600',
       iconBg: 'bg-purple-500'
@@ -206,7 +206,7 @@ const expertiseAreas = [
     {
       icon: 3,
       title: 'Prototype Sprint',
-      duration: '2 weeks',
+      duration: '2 - 4 weeks',
       description: 'Rapidly develop a clickable prototype that you can use to test your core assumptions with real users and stakeholders.',
       bgColor: 'from-pink-400 to-pink-600',
       iconBg: 'bg-pink-500'
@@ -214,7 +214,7 @@ const expertiseAreas = [
     {
       icon: 4,
       title: 'Build Sprint',
-      duration: '3 weeks',
+      duration: '3 - 6 weeks',
       description: 'Build the core functional product, and outline the strategy and timeline of a successful launch.',
       bgColor: 'from-yellow-400 to-orange-500',
       iconBg: 'bg-yellow-500'
@@ -232,7 +232,7 @@ const expertiseAreas = [
     },
     {
       title: 'Stacks’ First Curated Multimedia NFT Collection',
-      description: 'Launching the Network’s First Music, Generative, and Mixed-Media Collections',
+      description: 'Launching the network’s first music, generative, and mixed-media collections.',
       tags: ['AI Integration', 'Design thinking'],
       bgColor: 'bg-emerald-700',
       path: '/case-studies/ai-powered-triage',
@@ -248,7 +248,7 @@ const expertiseAreas = [
     },
     {
       title: 'ToucanBox: Redesigning Sign-Up for Busy Parents',
-      description: 'How a User-Centric Overhaul Reduced Friction and Boosted Subscriber Conversion',
+      description: 'How a user-centric overhaul reduced friction and boosted subscriber conversion.',
       tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
       bgColor: 'bg-cyan-700',
       path: '/services/maintenance',
@@ -256,7 +256,7 @@ const expertiseAreas = [
     },
     {
       title: 'AI Agent Portfolio Builder',
-      description: 'Slashing Onboarding Friction with AI-Powered Data Sourcing',
+      description: 'Slashing Onboarding friction with AI-powered data sourcing.',
       tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
       bgColor: 'bg-orange-700',
       path: '/aiagentbuilder',
@@ -264,7 +264,7 @@ const expertiseAreas = [
     },
     {
       title: 'AI WhatsApp Assistant',
-      description: 'Automated Assistant for Managing Bookings and Answering Questions 24/7',
+      description: 'Automated assistant for managing bookings and answering questions 24/7.',
       tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
       bgColor: 'bg-pink-700',
       path: '/ai-whatsapp-interactor',
@@ -284,7 +284,7 @@ const expertiseAreas = [
     },
     {
       question: 'Who from my team needs to be involved in a Sprint?',
-      answer: 'Our philosophy is simple: you are the experts in your business, we are the experts in the process.\nYou will provide the primary decision-maker. Beyond that, we encourage bringing relevant team members to participate in the process alongside us. Your team’s deep knowledge can be invaluable fuel for the sprint, and allow you to more effectively take the process forward after we finish working together.',
+      answer: 'Our philosophy is simple; you are the experts in your business, we are the experts in the process.\nYou will provide the primary decision-maker. Beyond that, we encourage you to bring relevant team members to participate alongside us. Your team’s deep knowledge can be invaluable fuel for the sprint, and allow you to more effectively take the process forward after we finish working together.',
     },
   ];
   // --- END: of existing data arrays ---
@@ -422,7 +422,7 @@ const expertiseAreas = [
 
           <div>
             <h2 className="text-4xl font-bold text-white mb-4">
-                 Innovation Opportunities: Everywhere, For Everyone.
+                 Innovation Opportunities, Everywhere, For Everyone
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed mb-6">
               Our team of experts in emerging tech will work closely with you to identify and implement custom strategies.
@@ -471,7 +471,7 @@ const expertiseAreas = [
 </div>
         <div className="w-full md:w-1/2 text-white">
           <h2 className="text-3xl font-bold mb-4">
-            Clarity in Days. Confidence for Years
+            Clarity in Days, Confidence for Years
           </h2>
           <p className="text- font-medium mb-4">
             Intensive design sprints to turn vision into reality.
