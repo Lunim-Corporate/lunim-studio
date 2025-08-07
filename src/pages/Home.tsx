@@ -74,7 +74,7 @@ const App: React.FC = () => {
          
           hero_title_part1: 'Light the Way',
           hero_title_part2: 'To Your Next Moonshot',
-          hero_description: 'We specialise in design thinking, AI integration, and Web3 to power your next giant leap in digital innovation.',
+          hero_description: 'We specialise in design thinking, AI integration, and Web3 to power your next giant leap in digital innovation',
           background_image_url: backgroundImageSrc, // default local image
         });
       } catch (error: any) {
@@ -82,7 +82,7 @@ const App: React.FC = () => {
     
           hero_title_part1: 'Light the Way',
           hero_title_part2: 'To Your Next Moonshot',
-          hero_description: 'We specialise in design thinking, AI integration, and Web3 to power your next giant leap in digital innovation.',
+          hero_description: 'We specialise in design thinking, AI integration, and Web3 to power your next giant leap in digital innovation',
           background_image_url: backgroundImageSrc, //  default local image
         });
       } finally {
