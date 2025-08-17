@@ -31,14 +31,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ content, backgroundImage }) =
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
           <Link
-            to="#contact-form"
+            to="/contact"
             className="bg-gradient-to-r bg-[#BBFEFF] text-black px-8 py-4 rounded-[0.3rem] font-semibold hover:bg-cyan-300 transition-colors duration-300 shadow-lg flex items-center justify-center space-x-2"
           >
             <span>Get In Touch</span>
             <ArrowRight className="w-5 h-5" />
           </Link>
           <Link
-            to="#expertiseSection"
+            to="/expertise"
             className="bg-gradient-to-r bg-[#BBFEFF] text-black px-8 py-4 rounded-[0.3rem] font-semibold hover:bg-cyan-300 transition-colors duration-300 shadow-lg flex items-center justify-center space-x-2"
           >
             <span>Our Expertise</span>
