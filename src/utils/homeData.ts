@@ -54,6 +54,7 @@ export interface FAQItem {
 export interface ProcessItem {
   icon: number | React.ComponentType;
   title: string;
+  weeks: string;
   description: string;
   bgColor?: string;
   iconBg?: string;
@@ -212,7 +213,7 @@ export const ourServices: ProjectItem[] = [
     description: 'Expert guidance to navigate complex technical challenges.',
     tags: ['Tech Stack Audit', 'Scalability', 'Security'],
     bgColor: 'bg-rose-700',
-    path: '/services/consulting',
+    path: '/case-studies/consulting',
     image: pizzaHutImage
   },
   {
@@ -220,7 +221,7 @@ export const ourServices: ProjectItem[] = [
     description: 'How a user-centric overhaul reduced friction and boosted subscriber conversion.',
     tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
     bgColor: 'bg-cyan-700',
-    path: '/services/maintenance',
+    path: '/case-studies/maintenance',
     image: toucanBoxImage
   },
   {
@@ -228,7 +229,7 @@ export const ourServices: ProjectItem[] = [
     description: 'Slashing onboarding friction with AI-powered data sourcing.',
     tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
     bgColor: 'bg-orange-700',
-    path: '/aiagentbuilder',
+    path: '/case-studies/aiagentbuilder',
     image: aiAgentImage
   },
   {
@@ -236,7 +237,7 @@ export const ourServices: ProjectItem[] = [
     description: 'Automated assistant for managing bookings and answering questions 24/7.',
     tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
     bgColor: 'bg-pink-700',
-    path: '/ai-whatsapp-interactor',
+    path: '/case-studies/ai-whatsapp-interactor',
     image: aiWhatsAppImage
   },
 ];

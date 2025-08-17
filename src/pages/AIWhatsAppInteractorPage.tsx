@@ -75,7 +75,7 @@ const AIWhatsAppInteractorPage: React.FC = () => {
       {/* Outcome Section */}
       <section className="py-8 bg-gray-900">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-[#BBFEFF]">The Outcome</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#BBFEFF]">The Impact</h2>
           <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
             <ul className="text-gray-300 text-lg leading-relaxed list-disc pl-8 space-y-2">
               <li>
