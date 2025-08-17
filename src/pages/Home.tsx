@@ -18,18 +18,26 @@ import {
 } from '../utils/homeData';
 import backgroundImageSrc from "../assets/background.png";
 
-const App: React.FC = () => {
+interface HomeProps {
+  scrollTo?: string;
+}
+
+const App: React.FC<HomeProps> = ({ scrollTo }) => {
   const location = useLocation();
 
   // Handle scroll to hash
-  useEffect(() => {
-    if (location.hash) {
-      const element = document.getElementById(location.hash.substring(1));
+useEffect(() => {
+    const hash = location.hash || (scrollTo ? `#${scrollTo}` : '');
+    
+    if (hash) {
+      const element = document.getElementById(hash.substring(1));
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
       }
     }
-  }, [location]);
+  }, [location, scrollTo]);
 
   return (
     <div className="pt-16 bg-black">
@@ -44,7 +52,7 @@ const App: React.FC = () => {
         title="Core Expertise"
         items={expertiseSection}
         columns={4}
-        id="expertiseSection"
+        id="expertise"
       />
       
       <ImageTextSection 
