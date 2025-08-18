@@ -17,7 +17,7 @@ import ScrollToTop from './components/ScrollToTop';
 import AdminPanel from './pages/AdminPanel';
 import AdminLogin from './pages/AdminLogin';
 import PageNotFound from './components/PageNotFound/PageNotFound';
-import AboutPage from './pages/About';
+// import AboutPage from './pages/About';
 
 
 const SafeFooter = (props: any) => {
@@ -47,7 +47,7 @@ function App() {
           <Route path="/expertise" element={<Home scrollTo="expertise" />} />
           <Route path="/packages" element={<Packages />} />
           <Route path="/expertise" element={<Expertise />} />
-          <Route path="/about" element={<AboutPage />} />
+          {/* <Route path="/about" element={<AboutPage />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/case-studies/aiagentbuilder" element={<AIAgentBuilder />} />
           <Route path="/case-studies/project-atlas" element={<ProjectAtlas />} />

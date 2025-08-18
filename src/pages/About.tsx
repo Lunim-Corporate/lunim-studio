@@ -19,13 +19,13 @@ const AboutPage = () => {
       <FloatingBackground />
       
       <div className="relative z-10">
-        <HeroSection />
+        {/* <HeroSection />
         <JourneySection />
-        <ValuesSection />
+        <ValuesSection /> */}
         <TeamSection />
-        <BehindTheScenesSection />
+        {/* <BehindTheScenesSection />
         <ImpactSection />
-        <CallToActionSection />
+        <CallToActionSection /> */}
       </div>
     </motion.div>
   );
