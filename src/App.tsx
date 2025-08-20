@@ -17,6 +17,7 @@ import ScrollToTop from './components/ScrollToTop';
 import AdminPanel from './pages/AdminPanel';
 import AdminLogin from './pages/AdminLogin';
 import PageNotFound from './components/PageNotFound/PageNotFound';
+import OurTeam from './pages/OurTeam';
 // import AboutPage from './pages/About';
 
 
@@ -42,19 +43,20 @@ function App() {
         {/* Routes that use the MainLayout (with Header/Footer) */}
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/pastprojects" element={<Home scrollTo="past-projects" />} />
-          <Route path="/contact" element={<Home scrollTo="contact" />} />
+          <Route path="/case-studies" element={<Home scrollTo="case-studies" />} />
+          <Route path="/get-in-touch" element={<Home scrollTo="get-in-touch" />} />
           <Route path="/expertise" element={<Home scrollTo="expertise" />} />
           <Route path="/packages" element={<Packages />} />
           <Route path="/expertise" element={<Expertise />} />
           {/* <Route path="/about" element={<AboutPage />} /> */}
+          <Route path="/our-team" element={<OurTeam />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/case-studies/aiagentbuilder" element={<AIAgentBuilder />} />
-          <Route path="/case-studies/project-atlas" element={<ProjectAtlas />} />
-          <Route path="/case-studies/ai-powered-triage" element={<AIPoweredTriage />} />
-          <Route path="/case-studies/ai-whatsapp-interactor" element={<AIWhatsAppInteractorPage />} />
-          <Route path="/case-studies/consulting" element={<ConsultingPage />} />
-          <Route path="/case-studies/maintenance" element={<MaintenancePage />} />
+          <Route path="/case-studies/auto-portfolio-builder" element={<AIAgentBuilder />} />
+          <Route path="/case-studies/winner-takes-all-dao" element={<ProjectAtlas />} />
+          <Route path="/case-studies/stacks-nft-collection" element={<AIPoweredTriage />} />
+          <Route path="/case-studies/ai-whatsapp-assistant" element={<AIWhatsAppInteractorPage />} />
+          <Route path="/case-studies/pizza-hut-redesign" element={<ConsultingPage />} />
+          <Route path="/case-studies/toucanbox-sign-up" element={<MaintenancePage />} />
           <Route path="/admin" element={<AdminPanel />} />
           <Route path="/admin/login" element={<AdminLogin />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
