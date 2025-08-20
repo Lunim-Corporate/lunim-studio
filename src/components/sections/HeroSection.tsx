@@ -29,9 +29,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ content, backgroundImage }) =
         <p className="text-xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
           {content.hero_description}
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+        {/* <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
           <Link
-            to="/contact"
+            to="/get-in-touch"
             className="bg-gradient-to-r bg-[#BBFEFF] text-black px-8 py-4 rounded-[0.3rem] font-semibold hover:bg-cyan-300 transition-colors duration-300 shadow-lg flex items-center justify-center space-x-2"
           >
             <span>Get In Touch</span>
@@ -43,7 +43,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ content, backgroundImage }) =
           >
             <span>Our Expertise</span>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   </section>
