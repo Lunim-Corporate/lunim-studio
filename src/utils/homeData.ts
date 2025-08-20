@@ -197,7 +197,7 @@ export const ourServices: ProjectItem[] = [
     description: 'A decentralised application (dApp) that enables communities to run transparent, competitive funding rounds.',
     tags: ['Web 3.0', 'UI/UX Design'],
     bgColor: 'bg-indigo-700',
-    path: '/case-studies/project-atlas',
+    path: '/case-studies/winner-takes-all-dao',
     image: winnerTakesAllImage
   },
   {
@@ -205,7 +205,7 @@ export const ourServices: ProjectItem[] = [
     description: 'Launching the network\'s first music, generative, and mixed-media collections.',
     tags: ['AI Integration', 'Design thinking'],
     bgColor: 'bg-emerald-700',
-    path: '/case-studies/ai-powered-triage',
+    path: '/case-studies/stacks-nft-collection',
     image: nftCollectionImage
   },
   {
@@ -213,7 +213,7 @@ export const ourServices: ProjectItem[] = [
     description: 'Expert guidance to navigate complex technical challenges.',
     tags: ['Tech Stack Audit', 'Scalability', 'Security'],
     bgColor: 'bg-rose-700',
-    path: '/case-studies/consulting',
+    path: '/case-studies/pizza-hut-redesign',
     image: pizzaHutImage
   },
   {
@@ -221,7 +221,7 @@ export const ourServices: ProjectItem[] = [
     description: 'How a user-centric overhaul reduced friction and boosted subscriber conversion.',
     tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
     bgColor: 'bg-cyan-700',
-    path: '/case-studies/maintenance',
+    path: '/case-studies/toucanbox-sign-up',
     image: toucanBoxImage
   },
   {
@@ -229,7 +229,7 @@ export const ourServices: ProjectItem[] = [
     description: 'Slashing onboarding friction with AI-powered data sourcing.',
     tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
     bgColor: 'bg-orange-700',
-    path: '/case-studies/aiagentbuilder',
+    path: '/case-studies/auto-portfolio-builder',
     image: aiAgentImage
   },
   {
@@ -237,7 +237,7 @@ export const ourServices: ProjectItem[] = [
     description: 'Automated assistant for managing bookings and answering questions 24/7.',
     tags: ['Bug Fixing', 'Updates', 'Performance Monitoring'],
     bgColor: 'bg-pink-700',
-    path: '/case-studies/ai-whatsapp-interactor',
+    path: '/case-studies/ai-whatsapp-assistant',
     image: aiWhatsAppImage
   },
 ];
