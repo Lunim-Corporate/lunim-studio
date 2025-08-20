@@ -8,7 +8,7 @@ interface ProjectShowcaseSectionProps {
 }
 
 const ProjectShowcaseSection: React.FC<ProjectShowcaseSectionProps> = ({ title, items }) => (
-  <section id="past-projects" className="bg-[#0f172a] py-20">
+  <section id="case-studies" className="bg-[#0f172a] py-20">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 className="text-3xl font-bold text-white mb-12 text-center">{title}</h2>
       
