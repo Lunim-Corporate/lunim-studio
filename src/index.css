@@ -86,3 +86,24 @@ summary::-webkit-details-marker {
 summary::marker {
   display: none;
 }
+
+
+/* Custom arrow styles */
+.archer-container path {
+  animation: draw 1.5s ease-in-out forwards;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .archer-container {
+    display: none;
+  }
+}
