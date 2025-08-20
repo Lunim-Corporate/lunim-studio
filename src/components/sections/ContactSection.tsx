@@ -33,30 +33,78 @@ const ContactInfo = () => (
       <InfoItem 
         icon={Mail} 
         title="Drop Us An Email" 
-        description="hello@lunim.io" 
+        description="hello@lunim.io"
+        isEmail={true}
       />
       <InfoItem 
         icon={Phone} 
         title="Give Us A Bell" 
-        description="020 3051 9057" 
+        description="020 3051 9057"
+        isPhone={true}
       />
     </ul>
   </div>
 );
 
-const InfoItem: React.FC<{ icon: React.ComponentType<{ className?: string }>, title: string, description: string }> = ({ 
+interface InfoItemProps {
+  icon: React.ComponentType<{ className?: string }>;
+  title: string;
+  description: string;
+  isEmail?: boolean;
+  isPhone?: boolean;
+}
+
+const InfoItem: React.FC<InfoItemProps> = ({ 
   icon: Icon, 
   title, 
-  description 
-}) => (
-  <li className="flex items-start space-x-3">
-    <Icon className="w-6 h-6 text-[#BBFEFF] flex-shrink-0" />
-    <div>
-      <p className="text-white font-semibold">{title}</p>
-      <p className="text-gray-200 text-base">{description}</p>
-    </div>
-  </li>
-);
+  description,
+  isEmail = false,
+  isPhone = false
+}) => {
+  let href = '';
+  let linkProps = {};
+  
+  if (isEmail) {
+    href = `mailto:${description}`;
+    linkProps = {
+      href,
+      onClick: (e: React.MouseEvent) => {
+        e.preventDefault();
+        window.location.href = href;
+      }
+    };
+  } else if (isPhone) {
+    // Format phone number for tel: link (remove spaces and add country code)
+    const formattedPhone = description.replace(/\s/g, '');
+    href = `tel:+44${formattedPhone.substring(1)}`;
+    linkProps = {
+      href,
+      onClick: (e: React.MouseEvent) => {
+        e.preventDefault();
+        window.location.href = href;
+      }
+    };
+  }
+
+  return (
+    <li className="flex items-start space-x-3">
+      <Icon className="w-6 h-6 text-[#BBFEFF] flex-shrink-0" />
+      <div>
+        <p className="text-white font-semibold">{title}</p>
+        {isEmail || isPhone ? (
+          <a 
+            {...linkProps}
+            className="text-gray-200 text-base hover:text-cyan-400 transition-colors duration-200 cursor-pointer"
+          >
+            {description}
+          </a>
+        ) : (
+          <p className="text-gray-200 text-base">{description}</p>
+        )}
+      </div>
+    </li>
+  );
+};
 
 const OfficeHours = () => (
   <div className="bg-[#1a202c] p-8 rounded-lg shadow-xl border border-white">
