@@ -6,7 +6,7 @@ const PastProjects: React.FC = () => {
   return (
     
       <ProjectShowcaseSection 
-        title="Previous Work" 
+        title="Case Studies" 
         items={ourServices} 
       />
   );
