@@ -36,17 +36,18 @@ const Header: React.FC = () => {
 
   const menuItems = [
     { name: 'Home', path: '/' },
-    { name: 'Previous Work', path: '/pastprojects' },
-    // { name: 'About', path: '/about' },
+    { name: 'Case Studies', path: '/case-studies' },
+    { name: 'Our Team', path: '/our-team' },
+
   ];
 
   const isActive = (path: string) => {
     if (path === '/') {
       return location.pathname === '/' && location.hash === '';
     }
-    if (path === '/pastprojects') {
-      return location.pathname === '/pastprojects' || 
-             (location.pathname === '/' && location.hash === '#past-projects');
+    if (path === '/case-studies') {
+      return location.pathname === '/case-studies' || 
+             (location.pathname === '/' && location.hash === '#case-studies');
     }
     return location.pathname === path;
   };
@@ -56,7 +57,7 @@ const Header: React.FC = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isAtTop 
           ? 'bg-transparent py-4' 
-          : 'bg-transparent backdrop-blur-xl py-2 shadow-2xl shadow-cyan-500/20'
+          : 'bg-transparent backdrop-blur-xl py-4 shadow-2xl shadow-cyan-500/20'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -99,7 +100,7 @@ const Header: React.FC = () => {
           {/* Get in touch button */}
           <div className="flex items-center">
             <Link
-              to="/contact"
+              to="/get-in-touch"
               className="hidden md:block relative overflow-hidden group px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 transition-all duration-500 shadow-lg shadow-cyan-500/30 hover:shadow-cyan-400/40"
             >
               <span className="relative z-10 font-bold text-black">Get In Touch</span>
@@ -153,7 +154,7 @@ const Header: React.FC = () => {
         </div>
         
         <Link
-          to="/contact"
+          to="/getintouch"
           className="mt-8 relative z-10 px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-lg font-bold text-black"
           onClick={() => setIsMenuOpen(false)}
         >
