@@ -1,3 +1,4 @@
+import peterPonton from "../assets/Peter-headshot.png";
 import peteFrancomb from "../assets/pete-headshot.png";
 import nickCurum from "../assets/nick-headshot.png";
 
@@ -18,8 +19,7 @@ export const team: TeamMember[] = [
   {
     name: "Peter Ponton",
     role: "Chief Executive: Operations",
-    image:
-      "https://images.unsplash.com/phot-1502685104226-ee32379fefbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: peterPonton,
     bio: "Peter brings over 30 years of high-tech leadership, with extensive expertise in launching and transforming businesses within the digital landscape.",
     details: [
       "As CEO of Risidio, he pioneers sustainable applications using blockchain and NFT technology.",
@@ -34,8 +34,7 @@ export const team: TeamMember[] = [
   {
     name: "Pete Francomb",
     role: "Chief Executive: Creative",
-    image:
-      peteFrancomb,
+    image: peteFrancomb,
     bio: "Pete is a visionary entrepreneur dedicated to building sustainable ventures where commercial success and human flourishing converge.",
     details: [
       "Co-founder of Tabb, the UK's largest network of independent filmmakers, and Altt Productions, a data-driven film studio.",
@@ -50,8 +49,7 @@ export const team: TeamMember[] = [
   {
     name: "Nick Curum",
     role: "Chief Operating Officer (COO)",
-    image:
-        nickCurum,
+    image: nickCurum,
     bio: "A seasoned energy executive with over two decades of global experience, Nick is dedicated to advancing the energy sector through practical AI and intelligent workflows.",
     details: [
       "Founder of The AI Energy Think Tank, advising industry leaders on modernising operations.",

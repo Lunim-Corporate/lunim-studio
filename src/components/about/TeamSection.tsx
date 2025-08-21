@@ -1,9 +1,23 @@
-import { useState } from "react";
+// File: Team.tsx
+import { useState, useEffect } from "react";
 import { team } from "../../utils/teamData";
 import TeamMember from "./TeamCard";
 
 export default function Team() {
   const [active, setActive] = useState<string | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Check if device is mobile
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkIsMobile();
+    window.addEventListener('resize', checkIsMobile);
+    
+    return () => window.removeEventListener('resize', checkIsMobile);
+  }, []);
 
   return (
     <section className="max-w-6xl mx-auto px-4">
@@ -12,13 +26,14 @@ export default function Team() {
           <div
             key={i}
             className={`transition duration-300 ${
-              active && active !== member.name ? "blur-sm opacity-70" : ""
+              active && active !== member.name && !isMobile ? "blur-sm opacity-70" : ""
             }`}
           >
             <TeamMember
               member={member}
               isActive={active === member.name}
               setActive={setActive}
+              isMobile={isMobile}
             />
           </div>
         ))}
