@@ -38,7 +38,6 @@ const Header: React.FC = () => {
     { name: 'Home', path: '/' },
     { name: 'Case Studies', path: '/case-studies' },
     { name: 'Our Team', path: '/our-team' },
-
   ];
 
   const isActive = (path: string) => {
@@ -56,8 +55,8 @@ const Header: React.FC = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isAtTop 
-          ? 'bg-transparent py-4' 
-          : 'bg-transparent backdrop-blur-xl py-4 shadow-2xl shadow-cyan-500/20'
+          ? 'bg-transparent py-2' 
+          : 'bg-[#0a0a1a] py-2 shadow-2xl shadow-cyan-500/20'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -74,7 +73,7 @@ const Header: React.FC = () => {
             />
           </Link>
 
-          {/* Desktop navigation with fixed hover effect */}
+          {/* Desktop navigation */}
           <div className="hidden md:flex relative" ref={navRef}>
             <div className="flex space-x-1">
               {menuItems.map((item, index) => (
@@ -122,10 +121,11 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile menu with fixed close functionality */}
+      {/* Mobile menu with consistent background */}
       <div 
         ref={menuRef}
-        className={`md:hidden fixed inset-0 bg-[#0a0a1a]/95 backdrop-blur-3xl pt-24 pb-12 z-40 flex flex-col items-center transition-all duration-500 ${
+        className={`md:hidden fixed inset-0 bg-[#0a0a1a]/90 backdrop-blur-lg pt-24 pb-12 z-40 flex flex-col items-center transition-all duration-500 ${
+
           isMenuOpen 
             ? 'opacity-100 translate-y-0 pointer-events-auto' 
             : 'opacity-0 -translate-y-full pointer-events-none'
@@ -136,10 +136,10 @@ const Header: React.FC = () => {
             <Link
               key={item.name}
               to={item.path}
-              className={`block px-6 py-5 text-xl font-medium rounded-xl backdrop-blur-lg border ${
+              className={`block px-6 py-5 text-xl font-medium rounded-xl border ${
                 isActive(item.path)
-                  ? 'text-cyan-300 bg-cyan-500/10 border-cyan-500/30'
-                  : 'text-white/90 bg-white/5 border-white/10 hover:border-cyan-500/50'
+                  ? 'text-cyan-300 bg-cyan-500/20 border-cyan-500/50'
+                  : 'text-white bg-white/10 border-white/20 hover:border-cyan-500/50'
               } transition-all duration-300`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -154,7 +154,7 @@ const Header: React.FC = () => {
         </div>
         
         <Link
-          to="/getintouch"
+          to="/get-in-touch"
           className="mt-8 relative z-10 px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-lg font-bold text-black"
           onClick={() => setIsMenuOpen(false)}
         >
