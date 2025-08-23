@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
             </h3>
             <p className="text-gray-400 mb-6 max-w-xs">
               Light the way to your next moonshot.
-              We specialise in design thinking, AI integration, and Web3 to power your next giant leap in digital innovation
+              We specialise in design thinking, AI integration, and Web3 to power your next giant leap in digital innovation.
             </p>
             {/* <div className="flex space-x-4">
               <a
