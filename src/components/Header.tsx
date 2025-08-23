@@ -131,6 +131,14 @@ const Header: React.FC = () => {
             : 'opacity-0 -translate-y-full pointer-events-none'
         }`}
       >
+        <Link
+          to="/get-in-touch"
+          className="w-full max-w-xs mb-8 text-center relative z-10 px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-lg font-bold text-black"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          Get In Touch
+        </Link>
+
         <div className="w-full max-w-xs space-y-2 relative z-10">
           {menuItems.map((item) => (
             <Link
@@ -152,14 +160,6 @@ const Header: React.FC = () => {
             </Link>
           ))}
         </div>
-        
-        <Link
-          to="/get-in-touch"
-          className="mt-8 relative z-10 px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-lg font-bold text-black"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          Get In Touch
-        </Link>
       </div>
     </header>
   );
