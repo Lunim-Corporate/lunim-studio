@@ -23,7 +23,7 @@ const ContactSection = () => (
 
 const ContactInfo = () => (
   <div className="bg-[#1a202c] p-8 rounded-lg shadow-xl border border-white">
-    <h3 className="text-xl font-bold text-white mb-6">Why Contact Us?</h3>
+    <h3 className="text-xl font-bold text-white mt-1 mb-6">Contact Options</h3>
     <ul className="space-y-4">
       <InfoItem 
         icon={Clock} 
@@ -90,7 +90,7 @@ const InfoItem: React.FC<InfoItemProps> = ({
     <li className="flex items-start space-x-3">
       <Icon className="w-6 h-6 text-[#BBFEFF] flex-shrink-0" />
       <div>
-        <p className="text-white font-semibold">{title}</p>
+        <p className="text-white mb-1 font-semibold">{title}</p>
         {isEmail || isPhone ? (
           <a 
             {...linkProps}
@@ -108,7 +108,7 @@ const InfoItem: React.FC<InfoItemProps> = ({
 
 const OfficeHours = () => (
   <div className="bg-[#1a202c] p-8 rounded-lg shadow-xl border border-white">
-    <h3 className="text-xl font-bold text-white mb-6">Office Hours</h3>
+    <h3 className="text-xl font-bold text-white mt-1 mb-6">Office Hours</h3>
     <ul className="space-y-3 text-gray-300">
       <OfficeHourItem days="Monday - Friday" hours="9:00 AM - 6:00 PM BST" />
       <OfficeHourItem days="Saturday" hours="10:00 AM - 4:00 PM BST" />

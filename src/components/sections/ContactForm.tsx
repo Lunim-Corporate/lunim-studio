@@ -20,8 +20,8 @@ const ContactForm = () => {
   } = useContactForm();
 
   return (
-      <h3 className="text-xl font-bold text-white mb-6 text-center">Get In Touch</h3>
     <div id="get-in-touch" className="bg-[#1a202c] p-8 rounded-lg shadow-xl border border-white" style={{scrollMarginTop: '5rem'}} /* TTD: Implement as class */>
+      <h3 className="text-xl font-bold text-white mt-1 mb-6 text-center">Get In Touch</h3>
       <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
         <FormField
           id="fullName"
