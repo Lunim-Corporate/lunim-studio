@@ -153,9 +153,6 @@ const Header: React.FC = () => {
             >
               <div className="flex items-center">
                 <span>{item.name}</span>
-                {isActive(item.path) && (
-                  <div className="ml-2 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
-                )}
               </div>
             </Link>
           ))}
