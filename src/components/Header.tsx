@@ -37,7 +37,7 @@ const Header: React.FC = () => {
   const menuItems = [
     { name: 'Home', path: '/' },
     { name: 'Case Studies', path: '/case-studies' },
-    { name: 'Our Team', path: '/our-team' },
+    /*{ name: 'Our Team', path: '/our-team' },*/
   ];
 
   const isActive = (path: string) => {

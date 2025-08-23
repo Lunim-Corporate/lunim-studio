@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
   const menuItems = [
     { name: 'Home', path: '/' },
     { name: 'Case Studies', path: '/case-studies' },
-    { name: 'Our Team', path: '/our-team' },
+    /*{ name: 'Our Team', path: '/our-team' },*/
     { name: 'Get In Touch', path: '/get-in-touch' },
   ];
 
