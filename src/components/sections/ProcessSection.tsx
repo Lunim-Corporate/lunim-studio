@@ -54,8 +54,8 @@ const ProcessSection: React.FC<ProcessSectionProps> = ({ items, title }) => {
                   <h3 className="text-[#BBFEFF] font-semibold text-lg mt-4 mb-1">
                     {item.title}
                   </h3>
-                  <p className="text-gray-400 text-sm md:text-base max-w-xs">{item.weeks}</p>
-                  <p className="text-gray-200 text-sm md:text-base max-w-xs mt-2">{item.description}</p>
+                  <p className="text-gray-400 text-base max-w-xs">{item.weeks}</p>
+                  <p className="text-gray-200 text-base max-w-xs mt-2">{item.description}</p>
                 </div>
               );
             })}
