@@ -1,28 +1,53 @@
 import React from 'react';
-import { ServiceItem } from '../../utils/homeData';
+import { Content } from '@prismicio/client';
+import { PrismicRichText } from '@prismicio/react';
+import { asText } from '@prismicio/helpers'; 
+
+// Import the icons
+import { 
+  Telescope as TelescopeIcon, 
+  Brain as BrainIcon, 
+  Network as NetworkIcon, 
+  PersonStanding,
+  LucideProps,
+  HelpCircle // A fallback icon
+} from 'lucide-react';
+
+// This is icon mapping
+const iconComponents: { [key: string]: React.ComponentType<LucideProps> } = {
+  Telescope: TelescopeIcon,
+  PersonStanding: PersonStanding,
+  Brain: BrainIcon,
+  Network: NetworkIcon,
+};
 
 interface ExpertiseAreasSectionProps {
-  items: ServiceItem[];
+  slice: Content.ExpertiseareasSlice; 
 }
 
-const ExpertiseAreasSection: React.FC<ExpertiseAreasSectionProps> = ({ items }) => {
+const ExpertiseAreasSection: React.FC<ExpertiseAreasSectionProps> = ({ slice }) => {
   return (
     <section className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          {items.map((area, index) => {
-            const Icon = area.icon as React.ComponentType<{ className?: string }>;
+          {slice.items.map((item, index) => {
+            const Icon = iconComponents[item.icon_name || ''] || HelpCircle;
 
             return (
               <div
                 key={index}
                 className="bg-black rounded-2xl p-6 border border-white border-opacity-20"
               >
-                <div className={`${area.iconBg} text-black w-14 h-14 rounded-xl flex items-center justify-center mb-4`}>
+                <div className="bg-[#BBFEFF] text-black w-14 h-14 rounded-xl flex items-center justify-center mb-4">
                   <Icon className="w-7 h-7" />
                 </div>
-                <h3 className="text-xl font-bold text-[#BBFEFF] mb-2">{area.title}</h3>
-                <p className="text-gray-300 text-base">{area.description}</p>
+                <h3 className="text-xl font-bold text-[#BBFEFF] mb-2">
+                    {asText(item.item_title)}
+                </h3>
+                <div className="text-gray-300 text-base">
+                    <PrismicRichText field={item.item_description} />
+                </div>
               </div>
             );
           })}
@@ -30,14 +55,13 @@ const ExpertiseAreasSection: React.FC<ExpertiseAreasSectionProps> = ({ items }) 
 
         <div>
           <h2 className="text-4xl font-bold text-white mb-4">
-            Innovation Opportunities: Everywhere, For Everyone
+            <PrismicRichText field={slice.primary.heading} />
           </h2>
           <p className="text-xl text-gray-300 leading-relaxed mb-6">
-            Our team of experts in emerging tech will work closely with you to identify and implement custom strategies.
-            <br />
-            We combine creativity, cutting-edge technology, and agile practices to help you not only meet today's needs but also anticipate tomorrow's opportunities.
+            <PrismicRichText field={slice.primary.paragraph} />
           </p>
         </div>
+
       </div>
     </section>
   );

@@ -1,42 +1,62 @@
 import React from 'react';
-import { ServiceItem } from '../../utils/homeData';
+import { Content } from '@prismicio/client';
+import { PrismicRichText } from '@prismicio/react';
+import { asText } from '@prismicio/helpers';
+
+// Import the icons 
+import { 
+  UserStar, 
+  Cpu, 
+  Kanban, 
+  Images,
+  LucideProps,
+  HelpCircle 
+} from 'lucide-react';
+
+// Map the text from Prismic to the actual icon components
+const iconComponents: { [key: string]: React.ComponentType<LucideProps> } = {
+  UserStar: UserStar,
+  Cpu: Cpu,
+  Kanban: Kanban,
+  Images: Images,
+};
 
 interface ServiceGridSectionProps {
-  title: string;
-  items: ServiceItem[];
-  columns: number;
-  id?: string;
+  slice: Content.ServiceGridSlice;
 }
 
-const ServiceGridSection: React.FC<ServiceGridSectionProps> = ({ 
-  title, 
-  items, 
-  columns,
-  id 
-}) => {
+const ServiceGridSection: React.FC<ServiceGridSectionProps> = ({ slice }) => {
+  const columns = slice.primary.columns || 4;
   const gridClass = `grid grid-cols-1 sm:grid-cols-2 ${columns === 4 ? 'md:grid-cols-4' : ''} gap-10`;
   
   return (
-    <section id={id} className="py-20 bg-[#0f172a]">
+    // Use the section_id directly from the Key Text field
+    <section id={slice.primary.section_id || undefined} className="py-20 bg-[#0f172a]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl font-bold text-white mb-12">{title}</h2>
+        <div className="text-3xl font-bold text-white mb-12">
+            <PrismicRichText field={slice.primary.title} />
+        </div>
         <div className={gridClass}>
-          {items.map((item, index) => {
-            const Icon = item.icon as React.ComponentType<{ className?: string }>;
+          {slice.items.map((item, index) => {
+            const Icon = iconComponents[item.icon_name || ''] || HelpCircle;
+            
             return (
               <div
                 key={index}
                 className="flex flex-col items-center text-center group"
               >
-                <div className={`${item.iconBg || 'bg-[#BBFEFF]'} w-16 h-16 rounded-full flex items-center justify-center`}>
-                  {typeof item.icon === 'number' ? (
-                    <span className="text-black text-2xl font-bold">{item.icon}</span>
-                  ) : (
-                    <Icon className="w-7 h-7 text-black" />
-                  )}
+                <div 
+                    className="w-16 h-16 rounded-full flex items-center justify-center mb-4"
+                    style={{ backgroundColor: item.icon_background_color || '#BBFEFF' }}
+                >
+                  <Icon className="w-7 h-7 text-black" />
                 </div>
-                <h3 className="text-[#BBFEFF] font-semibold text-lg mb-1">{item.title}</h3>
-                <p className="text-gray-200 text-base max-w-xs">{item.description}</p>
+                <h3 className="text-[#BBFEFF] font-semibold text-lg mb-1">
+                    {asText(item.item_title)}
+                </h3>
+                <div className="text-gray-200 text-base max-w-xs">
+                    <PrismicRichText field={item.item_description} />
+                </div>
               </div>
             );
           })}

@@ -1,8 +1,32 @@
 import React from 'react';
 import { Loader2 } from 'lucide-react';
 import { useContactForm } from '../../hooks/useContactForm';
+import { asText } from '@prismicio/helpers';
+import { RichTextField } from '@prismicio/client';
 
-const ContactForm = () => {
+// Define the props the component will accept from its parent
+interface ContactFormProps {
+  title?: RichTextField;
+  fullNameLabel?: string;
+  emailLabel?: string;
+  companyLabel?: string;
+  budgetLabel?: string;
+  goalsLabel?: string;
+  buttonLabel?: string;
+  budgetOptions?: string;
+}
+
+const ContactForm: React.FC<ContactFormProps> = ({
+  title,
+  fullNameLabel,
+  emailLabel,
+  companyLabel,
+  budgetLabel,
+  goalsLabel,
+  buttonLabel,
+  budgetOptions,
+}) => {
+  // Form logic and state management are untouched and fully functional
   const {
     fullName,
     setFullName,
@@ -16,42 +40,47 @@ const ContactForm = () => {
     setProjectGoals,
     formStatus,
     errorMessage,
-    handleSubmit
+    handleSubmit,
   } = useContactForm();
 
+  // Create the budget options array from the comma-separated string from Prismic
+  const optionsArray = budgetOptions ? budgetOptions.split(',') : ['Estimated Budget'];
+
   return (
-    <div id="get-in-touch" className="bg-[#1a202c] p-8 rounded-lg shadow-xl border border-white" style={{scrollMarginTop: '5rem'}} /* TTD: Implement as class */>
-      <h3 className="text-xl font-bold text-white mt-1 mb-6 text-center">Get In Touch</h3>
+    <div id="get-in-touch" className="bg-[#1a202c] p-8 rounded-lg shadow-xl border border-white" style={{scrollMarginTop: '5rem'}}>
+      <h3 className="text-xl font-bold text-white mt-1 mb-6 text-center">
+        {title ? asText(title) : 'Get In Touch'}
+      </h3>
       <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
         <FormField
           id="fullName"
-          label="Your full name *"
+          label={fullNameLabel || 'Your full name *'}
           value={fullName}
           onChange={setFullName}
           placeholder="Your Full Name"
           required
         />
-        
+
         <FormField
           id="workEmail"
-          label="Your Email *"
+          label={emailLabel || 'Your Email *'}
           type="email"
           value={workEmail}
           onChange={setWorkEmail}
           placeholder="Your Email Address"
         />
-        
+
         <FormField
           id="companyname"
-          label="Company Name*"
+          label={companyLabel || 'Company Name*'}
           value={company}
           onChange={setCompany}
           placeholder="Your Company Name"
         />
-        
+
         <div>
           <label htmlFor="projectBudget" className="block text-gray-300 text-base font-semibold mb-2">
-            Project Budget 
+            {budgetLabel || 'Project Budget'}
           </label>
           <div className="relative">
             <select
@@ -61,25 +90,23 @@ const ContactForm = () => {
               onChange={(e) => setProjectBudget(e.target.value)}
               className="w-full p-3 rounded-lg bg-[#1f2937] border border-gray-700 text-white appearance-none focus:outline-none focus:border-blue-500"
             >
-              <option value="">Estimated Budget</option>
-              <option value=" ">I don't know yet</option>
-              <option value=" ">I'd rather not say</option>
-              <option value="<£500">Less than £500</option>
-              <option value="£1000 - £5000">£1000 - £5000</option>
-              <option value="£5000-£10000 ">£5000 - £10000</option>
-              <option value=">10000 ">Above £10000</option>
+              {optionsArray.map((option, index) => (
+                <option key={index} value={option.trim() === 'Estimated Budget' ? '' : option.trim()}>
+                  {option.trim()}
+                </option>
+              ))}
             </select>
             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-200">
               <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-              </svg> 
+              </svg>
             </div>
           </div>
         </div>
 
         <div className="md:col-span-2">
           <label htmlFor="projectGoals" className="block text-gray-300 text-base font-semibold mb-2">
-            Project Goals *
+            {goalsLabel || 'Project Goals *'}
           </label>
           <textarea
             id="projectGoals"
@@ -107,15 +134,15 @@ const ContactForm = () => {
             type="submit"
             disabled={formStatus === 'submitting'}
             className="bg-[#BBFEFF] text-black px-8 py-4 rounded-lg font-semibold 
-                      hover:bg-cyan-300 transition-colors duration-300 
-                      shadow-lg inline-flex items-center justify-center space-x-2"
+                       hover:bg-cyan-300 transition-colors duration-300 
+                       shadow-lg inline-flex items-center justify-center space-x-2"
           >
             {formStatus === 'submitting' ? (
               <>
                 <Loader2 className="mr-2 h-5 w-5 animate-spin" /> Sending...
               </>
             ) : (
-              'Send Enquiry'
+              buttonLabel || 'Send Enquiry'
             )}
           </button>
         </div>
@@ -124,6 +151,7 @@ const ContactForm = () => {
   );
 };
 
+// This sub-component does not need any changes
 const FormField: React.FC<{
   id: string;
   label: string;

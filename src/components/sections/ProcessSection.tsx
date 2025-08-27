@@ -1,16 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import Xarrow, { Xwrapper } from 'react-xarrows';
-import { ProcessItem } from '../../utils/homeData';
+import { Content } from '@prismicio/client';
+import { PrismicRichText } from '@prismicio/react';
+import { asText } from '@prismicio/helpers';
+import { LucideProps, HelpCircle } from 'lucide-react';
+import Xarrow, { Xwrapper } from 'react-xarrows'; 
+
+// You can add icon names here if you ever need to use this section with icons
+const iconComponents: { [key: string]: React.ComponentType<LucideProps> } = {
+  // Example: 'Star': StarIcon
+};
 
 interface ProcessSectionProps {
-  items: ProcessItem[];
-  title: string;
+  slice: Content.ProcessSlice;
 }
 
-const ProcessSection: React.FC<ProcessSectionProps> = ({ items, title }) => {
+const ProcessSection: React.FC<ProcessSectionProps> = ({ slice }) => {
   const [isMobile, setIsMobile] = useState(false);
 
-  // Check if device is mobile
+  // This hook checks the screen size to decide whether to show the arrows
   useEffect(() => {
     const checkIsMobile = () => {
       setIsMobile(window.innerWidth < 768);
@@ -25,44 +32,48 @@ const ProcessSection: React.FC<ProcessSectionProps> = ({ items, title }) => {
   return (
     <section className="bg-[#0f172a] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl font-bold text-white mb-12">{title}</h2>
+        <div className="text-3xl font-bold text-white mb-12">
+          <PrismicRichText field={slice.primary.title} />
+        </div>
 
         <Xwrapper>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 relative">
-            {items.map((item, index) => {
-              const Icon = item.icon as React.ComponentType<{ className?: string }>;
+            {slice.items.map((item, index) => {
+              const iconContent = item.icon_text || '';
+              const isNumber = !isNaN(parseInt(iconContent));
+              const IconComponent = iconComponents[iconContent] || HelpCircle;
 
               return (
                 <div
                   key={index}
                   className="flex flex-col items-center text-center relative"
                 >
-                  {/* Circle wrapper with unique ID for arrows */}
+                  {/* Each circle needs a unique ID for the arrows to connect to */}
                   <div
                     id={`process-circle-${index}`}
                     className="bg-[#BBFEFF] w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center shadow-xl"
                   >
-                    {typeof item.icon === 'number' ? (
-                      <span className="text-black text-xl md:text-2xl font-bold">
-                        {item.icon}
-                      </span>
+                    {isNumber ? (
+                      <span className="text-black text-xl md:text-2xl font-bold">{iconContent}</span>
                     ) : (
-                      <Icon className="w-6 h-6 md:w-8 md:h-8 text-black" />
+                      <IconComponent className="w-6 h-6 md:w-8 md:h-8 text-black" />
                     )}
                   </div>
 
                   <h3 className="text-[#BBFEFF] font-semibold text-lg mt-4 mb-1">
-                    {item.title}
+                    {asText(item.item_title)}
                   </h3>
-                  <p className="text-gray-400 text-base max-w-xs">{item.weeks}</p>
-                  <p className="text-gray-200 text-base max-w-xs mt-2">{item.description}</p>
+                  <p className="text-gray-400 text-base">{item.weeks}</p>
+                  <div className="text-gray-200 text-base max-w-xs mt-2">
+                    <PrismicRichText field={item.item_description} />
+                  </div>
                 </div>
               );
             })}
 
-            {/* Connectors (only show on larger screens) */}
-            {!isMobile && items.map((_, index) =>
-              index < items.length - 1 ? (
+            {/* This code maps over your Prismic items to draw the arrows, but only on desktop */}
+            {!isMobile && slice.items.map((_, index) =>
+              index < slice.items.length - 1 ? (
                 <Xarrow
                   key={index}
                   start={`process-circle-${index}`}
