@@ -182,7 +182,7 @@ const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
-            © {currentYear} Risidio Ltd. T/A Lunim Innovation Studio. All rights reserved.
+            © {currentYear} Risidio Ltd. T/A Lunim Innovation Studio. Company No. 12644101. All rights reserved.
           </p>
           
           <div className="flex items-center space-x-6">

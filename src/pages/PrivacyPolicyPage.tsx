@@ -16,6 +16,7 @@ const PrivacyPolicyPage: React.FC = () => {
           <h2 className="text-2xl font-semibold text-white mb-3">2. Who We Are</h2>
           <ul className="list-disc list-inside mb-6 space-y-1">
             <li><strong>Company Name:</strong> Risidio Ltd. T/A Lunim Innovation Studio</li>
+            <li><strong>Company Number:</strong> 12644101</li>
             <li><strong>Phone Number:</strong> 020 3051 9057</li>
             <li><strong>Contact for Privacy Queries:</strong> hello@lunim.io</li>
             <li><strong>Registered Address:</strong> 124 City Road, London, England, EC1V 2NX</li>
