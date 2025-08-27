@@ -49,10 +49,18 @@ function App() {
       <Routes>
         {/* Routes that use the MainLayout (with Header/Footer) */}
         <Route element={<MainLayout />}>
+          {/* Main Homepage Route */}
           <Route path="/" element={<Home />} />
+
+          {/* Routes that render the homepage and scroll to a section */}
           <Route path="/case-studies" element={<Home scrollTo="case-studies" />} />
           <Route path="/get-in-touch" element={<Home scrollTo="contact" />} />
           <Route path="/expertise" element={<Home scrollTo="expertise" />} />
+
+          {/* Dynamic route for individual case study pages */}
+          <Route path="/case-studies/:uid" element={<CaseStudyPage />} />
+          
+          {/* Other distinct pages */}
           <Route path="/packages" element={<Packages />} />
           <Route path="/expertise" element={<Expertise />} />
           {/* <Route path="/about" element={<AboutPage />} /> */}
@@ -64,7 +72,6 @@ function App() {
           <Route path="/case-studies/ai-whatsapp-assistant" element={<AIWhatsAppInteractorPage />} />
           <Route path="/case-studies/pizza-hut-redesign" element={<ConsultingPage />} />
           <Route path="/case-studies/toucanbox-sign-up" element={<MaintenancePage />} /> */}
-          <Route path="/case-studies/:uid" element={<CaseStudyPage />} />
           <Route path="/admin" element={<AdminPanel />} />
           <Route path="/admin/login" element={<AdminLogin />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
