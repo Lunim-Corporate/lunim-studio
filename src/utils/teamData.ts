@@ -22,9 +22,9 @@ export const team: TeamMember[] = [
     image: peterPonton,
     bio: "Peter brings over 30 years of high-tech leadership, with extensive expertise in launching and transforming businesses within the digital landscape.",
     details: [
-      "As CEO of Risidio, he pioneers sustainable applications using blockchain and NFT technology.",
-      "His work empowers creative and indigenous communities, aiming to build a more equitable and decentralised digital future.",
-      "His innovative approach drives the mission to turn today's moonshots into tomorrow's realities."
+      "Peter brings over 30 years of high-tech leadership, with extensive expertise in launching and transforming businesses within the digital landscape.",
+      "He is a pioneer in sustainable applications using blockchain and NFT technology.",
+      "His work empowers creative and indigenous communities, aiming to build a more equitable and decentralised digital future."
     ],
     social: [
       { icon: "linkedin", url: "#" },
@@ -37,9 +37,9 @@ export const team: TeamMember[] = [
     image: peteFrancomb,
     bio: "Pete is a visionary entrepreneur dedicated to building sustainable ventures where commercial success and human flourishing converge.",
     details: [
-      "Co-founder of Tabb, the UK's largest network of independent filmmakers, and Altt Productions, a data-driven film studio.",
-      "Has consistently pushed boundaries within creative industries.",
-      "His deep understanding of user experience and agile methodologies are key to crafting human-centric solutions."
+      "Pete is a designer and entrepreneur dedicated to building sustainable ventures where commercial success and human flourishing go hand in hand.",
+      "His core passion is helping creatives and entrepreneurs make their projects happen.",
+      "Pete's deep understanding of design thinking and user experience are central to crafting of human-centric solutions."
     ],
     social: [
       { icon: "linkedin", url: "#" },
@@ -52,8 +52,9 @@ export const team: TeamMember[] = [
     image: nickCurum,
     bio: "A seasoned energy executive with over two decades of global experience, Nick is dedicated to advancing the energy sector through practical AI and intelligent workflows.",
     details: [
-      "Founder of The AI Energy Think Tank, advising industry leaders on modernising operations.",
-      "Vocal advocate for the professionals driving a more sustainable energy future."
+      "A seasoned energy executive with over two decades of global experience, Nick is dedicated to advancing business processes through practical AI and intelligent workflows.",
+      "He is founder of The AI Energy Think Tank, advising industry leaders on modernising operations.",
+      "Nick is a vocal advocate for industry professionals driving a more sustainable energy future."
     ],
     social: [
       { icon: "linkedin", url: "#" },

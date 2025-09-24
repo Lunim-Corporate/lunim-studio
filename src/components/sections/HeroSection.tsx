@@ -24,7 +24,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slice }) => {
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             {asText(slice.primary.hero_title_part1)}
-            <span className="block bg-gradient-to-r from-[#BBFEFF] to-cyan-500 bg-clip-text text-transparent px-4">
+            <span className="block bg-gradient-to-r from-[#BBFEFF] to-cyan-500 bg-clip-text text-transparent px-4" style={{ lineHeight: 1.2 }}>
               {asText(slice.primary.hero_title_part2)}
             </span>
           </h1>

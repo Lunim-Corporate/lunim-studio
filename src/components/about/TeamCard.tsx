@@ -46,15 +46,15 @@ export default function TeamMember({ member, isActive, setActive, isMobile }: Pr
         <div
           className={`absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4 
           transition-all duration-500 ease-in-out
-          ${isActive && !isMobile ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"}
-          md:block ${isMobile ? "hidden" : "block"}`}
+          opacity-100 translate-y-0
+          block`}
         >
           <h3 className="text-lg font-semibold text-white">{member.name}</h3>
         </div>
       </div>
 
       {/* Expandable Bio Section */}
-      <BioCard member={member} expanded={isMobile ? true : isActive} isMobile={isMobile} />
+      <BioCard member={member} isMobile={isMobile} />
     </div>
   );
 }
