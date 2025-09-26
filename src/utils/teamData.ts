@@ -37,9 +37,9 @@ export const team: TeamMember[] = [
     image: peteFrancomb,
     bio: "Pete is a visionary entrepreneur dedicated to building sustainable ventures where commercial success and human flourishing converge.",
     details: [
-      "Pete is a designer and entrepreneur dedicated to building sustainable ventures where commercial success and human flourishing go hand in hand.",
-      "His core passion is helping creatives and entrepreneurs make their projects happen.",
-      "Pete's deep understanding of design thinking and user experience are central to crafting of human-centric solutions."
+      "Pete is a an entrepreneur and designer with a background in media and tech, dedicated to running businesses where commercial success and human flourishing go hand in hand.",
+      "His core passion is helping creatives make their projects happen.",
+      "Pete's deep understanding of design thinking and user experience are central to our crafting of human-centric solutions."
     ],
     social: [
       { icon: "linkedin", url: "#" },
