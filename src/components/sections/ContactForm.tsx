@@ -120,10 +120,10 @@ const ContactForm: React.FC<ContactFormProps> = ({
         </div>
 
         {formStatus === 'submitting' && (
-          <p className="md:col-span-2 text-center text-blue-400">Submitting...</p>
+          <p className="md:col-span-2 text-center text-blue-400">Sending enquiry...</p>
         )}
         {formStatus === 'success' && (
-          <p className="md:col-span-2 text-center text-green-400">Submitted!</p>
+          <p className="md:col-span-2 text-center text-green-400">Enquiry received, thank you!</p>
         )}
         {formStatus === 'error' && (
           <p className="md:col-span-2 text-center text-red-400">{errorMessage}</p>
